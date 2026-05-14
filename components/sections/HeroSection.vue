@@ -1,96 +1,112 @@
 <template>
-  <section class="relative min-h-screen flex flex-col justify-center pt-20 px-6 md:px-12 overflow-hidden">
+  <section class="relative min-h-screen flex flex-col justify-between overflow-hidden"
+    style="padding: 130px clamp(20px,3.4vw,56px) 60px">
 
-    <!-- Background abstract shape -->
+    <!-- Three.js canvas (client only to avoid SSR) -->
+    <ClientOnly>
+      <HeroCanvas />
+    </ClientOnly>
+
+    <!-- Top meta bar -->
     <div
-      class="absolute top-1/2 right-0 -translate-y-1/2 w-[60vw] max-w-[700px] aspect-square rounded-full opacity-[0.04] bg-ink pointer-events-none"
-      style="filter: blur(120px);"
-    />
-
-    <div class="max-w-[1400px] mx-auto w-full">
-
-      <!-- Main headline -->
-      <div class="overflow-hidden mb-2">
-        <h1 class="font-display italic font-light leading-none text-[clamp(3.5rem,10vw,9rem)] tracking-tight text-ink">
-          <span
-            v-for="(word, i) in line1Words"
-            :key="i"
-            class="hero-word"
-            :style="`animation-delay: ${0.3 + i * 0.08}s`"
-          >{{ word }}&nbsp;</span>
-        </h1>
+      class="relative z-10 flex justify-between font-mono text-[11px] tracking-[0.1em] uppercase"
+      style="color: rgba(11,12,11,0.55)"
+      :style="{ opacity: isReady ? 1 : 0, transition: 'opacity 0.8s ease 0.5s' }"
+    >
+      <div class="max-w-[34ch]">
+        <span>Portfolio</span><br>
+        <span style="color: #0B0C0B">Selected works, fragments &amp; frames.</span>
       </div>
+    </div>
 
-      <div class="overflow-hidden mb-10 md:mb-14">
-        <h1 class="font-sans font-bold leading-none text-[clamp(3.5rem,10vw,9rem)] tracking-tight text-ink">
+    <!-- Name title -->
+    <div class="relative z-10 flex flex-col my-auto pointer-events-none">
+      <h1
+        class="font-display font-light leading-[0.86] tracking-[-0.045em]"
+        style="font-size: clamp(74px, 16vw, 285px); font-variation-settings: 'opsz' 144; color: #0B0C0B"
+      >
+        <div class="overflow-hidden flex items-baseline">
           <span
-            v-for="(word, i) in line2Words"
-            :key="i"
-            class="hero-word"
-            :style="`animation-delay: ${0.5 + i * 0.08}s`"
-          >{{ word }}&nbsp;</span>
-        </h1>
-      </div>
-
-      <!-- Description + CTA row -->
-      <div class="hero-fade flex flex-col md:flex-row md:items-end justify-between gap-10" style="animation-delay: 1.1s;">
-
-        <div class="max-w-md">
-          <p class="text-lg md:text-xl text-smoke leading-relaxed">
-            UX/UI designer bridging artistic intuition with<br class="hidden md:block"/>
-            product precision. I design experiences that<br class="hidden md:block"/>
-            <em class="font-display italic text-ink not-italic">feel inevitable.</em>
-          </p>
+            class="inline-block"
+            :style="{
+              transform: isReady ? 'translateY(0)' : 'translateY(110%)',
+              transition: 'transform 1.4s cubic-bezier(.7,.05,.2,1) 0.05s',
+            }"
+          >Marina</span>
         </div>
-
-        <div class="flex items-center gap-6">
-          <a
-            href="#work"
-            class="group flex items-center gap-3 font-semibold text-sm hover:text-fire transition-colors duration-300"
-            data-hoverable
-            @click.prevent="scrollToWork"
+        <div class="overflow-hidden flex items-baseline">
+          <span
+            class="inline-block"
+            :style="{
+              transform: isReady ? 'translateY(0)' : 'translateY(110%)',
+              transition: 'transform 1.4s cubic-bezier(.7,.05,.2,1) 0.2s',
+            }"
           >
-            Selected Work
-            <span class="w-10 h-10 rounded-full border border-ink group-hover:border-fire group-hover:bg-fire group-hover:text-cream flex items-center justify-center text-lg transition-all duration-300">
-              ↓
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Stats row (bottom) -->
-    <div class="hero-fade max-w-[1400px] mx-auto w-full mt-20 md:mt-28 pb-12" style="animation-delay: 1.3s;">
-      <div class="border-t border-border pt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div v-for="stat in stats" :key="stat.label" class="flex flex-col gap-1">
-          <span class="font-display italic text-3xl md:text-4xl font-light text-ink stat-number">
-            {{ stat.value }}
+            <em
+              style="font-style: normal; color: #D63D14; font-variation-settings: 'opsz' 144, 'SOFT' 100"
+            >Markus</em><sup
+              class="font-mono"
+              style="font-style: normal; color: #0B0C0B; font-weight: 400; font-size: 0.13em; letter-spacing: 0.05em; vertical-align: top; margin-left: 0.15em"
+            >★</sup>
           </span>
-          <span class="text-xs text-smoke tracking-wide uppercase font-medium">{{ stat.label }}</span>
         </div>
-      </div>
+      </h1>
     </div>
 
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 hero-fade" style="animation-delay: 1.6s;">
-      <div class="w-px h-12 bg-gradient-to-b from-transparent to-smoke/50 animate-[pulseDot_2s_ease-in-out_infinite]" />
+    <!-- Bottom grid: Discipline · Trajectory · Scroll -->
+    <div
+      class="relative z-10 grid items-end font-mono text-[11px] tracking-[0.08em] uppercase"
+      style="gap: 30px; grid-template-columns: 1.4fr 1fr 1fr; color: #0B0C0B"
+      :style="{ opacity: isReady ? 1 : 0, transition: 'opacity 0.9s ease 0.72s' }"
+    >
+      <div>
+        <span class="block font-medium mb-2">Discipline</span>
+        <p style="color: rgba(11,12,11,0.55); line-height: 1.6">
+          Product design, design systems, and the slow craft of getting the interface out of the way.
+        </p>
+
+      </div>
+      <div>
+        <span class="block font-medium mb-2">Trajectory</span>
+        <p style="color: rgba(11,12,11,0.55); line-height: 1.6">
+          Cinematography → Photography → Interfaces. Twelve years behind a lens, six years inside a viewport.
+        </p>
+      </div>
+      <div class="flex items-center gap-2.5 justify-self-end">
+        <span style="color: rgba(11,12,11,0.55)">Scroll</span>
+        <span class="scroll-cue-line" />
+        <span style="color: rgba(11,12,11,0.55)">↓</span>
+      </div>
     </div>
 
   </section>
 </template>
 
 <script setup lang="ts">
-const line1Words = 'Crafting experiences'.split(' ')
-const line2Words = 'people remember.'.split(' ')
-
-const stats = [
-  { value: '7+', label: 'Years of craft' },
-  { value: '100K+', label: 'Users impacted' },
-  { value: '2×', label: 'Best of Swiss Apps' },
-  { value: '5+', label: 'Industries designed' },
-]
-
-const scrollToWork = () => {
-  document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })
-}
+const isReady = useAppReady()
 </script>
+
+<style scoped>
+.scroll-cue-line {
+  display: inline-block;
+  width: 36px;
+  height: 1px;
+  background: var(--ink, #0B0C0B);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-cue-line::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent, #D63D14);
+  transform: translateX(-100%);
+  animation: scrollLine 2.4s cubic-bezier(.7,.05,.2,1) infinite;
+}
+
+@keyframes scrollLine {
+  50% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+</style>

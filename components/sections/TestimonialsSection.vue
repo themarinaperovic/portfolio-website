@@ -4,7 +4,7 @@
     <!-- Section header -->
     <div class="px-6 md:px-12 max-w-[1400px] mx-auto mb-16" data-reveal>
       <div class="flex items-center gap-4 mb-4">
-        <span class="text-xs tracking-widest uppercase font-semibold text-smoke">04 / Voices</span>
+        <span class="text-xs tracking-widest uppercase font-mono text-smoke">[04] Voices</span>
         <span class="flex-1 h-px bg-border max-w-[80px]" />
       </div>
       <h2 class="font-display italic font-light text-5xl md:text-7xl leading-none text-ink">
@@ -16,31 +16,44 @@
     <div class="relative">
       <!-- Fade edges -->
       <div class="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-        style="background: linear-gradient(to right, #F7F6F1, transparent);" />
+        style="background: linear-gradient(to right, #E8E2D5, transparent);" />
       <div class="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-        style="background: linear-gradient(to left, #F7F6F1, transparent);" />
+        style="background: linear-gradient(to left, #E8E2D5, transparent);" />
 
-      <div class="ticker-track">
-        <div
-          v-for="(testimonial, i) in tickerItems"
-          :key="i"
-          class="shrink-0 w-[min(85vw,420px)] mx-3"
-        >
-          <div class="border border-border rounded-sm p-7 bg-cream hover:border-ink/20 transition-colors duration-300 h-full flex flex-col justify-between gap-6">
-            <div>
-              <span class="font-display italic text-fire text-4xl leading-none">"</span>
-              <p class="text-ink/80 text-sm leading-relaxed mt-1">
-                {{ testimonial.quote }}
-              </p>
-            </div>
-            <div class="flex items-center gap-3">
-              <!-- Avatar initials -->
-              <div class="w-9 h-9 rounded-full bg-ink/10 flex items-center justify-center shrink-0">
-                <span class="text-xs font-bold text-ink">{{ initials(testimonial.name) }}</span>
-              </div>
+      <div
+        ref="trackEl"
+        class="ticker-scroll"
+        :class="{ 'is-dragging': isDragging }"
+        @mousedown="onDragStart"
+        @mousemove="onDragMove"
+        @mouseup="onDragEnd"
+        @mouseleave="onDragEnd"
+        @mouseenter="isHovering = true"
+        @wheel="onUserInteract"
+        @touchstart="onUserInteract"
+      >
+        <div class="ticker-track">
+          <div
+            v-for="(testimonial, i) in tickerItems"
+            :key="i"
+            class="shrink-0 w-[min(85vw,420px)] mx-3"
+          >
+            <div class="border border-border rounded-sm p-7 bg-cream hover:border-ink/20 transition-colors duration-300 h-full flex flex-col justify-between gap-6">
               <div>
-                <p class="text-xs font-semibold text-ink">{{ testimonial.name }}</p>
-                <p class="text-xs text-smoke">{{ testimonial.role }}</p>
+                <span class="font-display italic text-fire text-4xl leading-none">"</span>
+                <p class="text-ink/80 text-sm leading-relaxed mt-1">
+                  {{ testimonial.quote }}
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <!-- Avatar initials -->
+                <div class="w-9 h-9 rounded-full bg-ink/10 flex items-center justify-center shrink-0">
+                  <span class="text-xs font-bold text-ink">{{ initials(testimonial.name) }}</span>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold text-ink">{{ testimonial.name }}</p>
+                  <p class="text-xs text-smoke">{{ testimonial.role }}</p>
+                </div>
               </div>
             </div>
           </div>

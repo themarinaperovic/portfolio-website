@@ -13,13 +13,16 @@ export default {
       fontFamily: {
         display: ['Fraunces', 'Georgia', 'serif'],
         sans: ['DM Sans', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
-        cream: '#F7F6F1',
-        ink: '#111110',
-        fire: '#FF3B1F',
-        smoke: '#7A7A74',
-        border: '#E4E3DC',
+        cream: '#E8E2D5',
+        'cream-2': '#DED7C7',
+        ink: '#0B0C0B',
+        fire: '#D63D14',
+        gold: '#FFB800',
+        smoke: '#8C8475',
+        border: '#BEB9AF',
         card: {
           bucherer: '#1C1B28',
           abc: '#0F2952',

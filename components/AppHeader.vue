@@ -1,121 +1,169 @@
 <template>
-  <header
-    :class="[
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
-      isScrolled ? 'bg-cream/90 backdrop-blur-md border-b border-border' : 'bg-transparent'
-    ]"
-  >
-    <nav class="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
-      <!-- Logo: replace bg-ink + MM span with an <img> once you have a photo -->
-      <NuxtLink to="/" class="block group" data-hoverable>
-        <div class="w-9 h-9 rounded-full bg-ink overflow-hidden flex items-center justify-center group-hover:opacity-75 transition-opacity duration-300">
-          <span class="text-cream text-xs font-bold tracking-tight font-sans">MM</span>
-        </div>
-      </NuxtLink>
+  <nav class="top">
+    <!-- Logo -->
+    <NuxtLink class="logo" to="/" data-hoverable aria-label="Marina Markus — home"
+      @mousemove="onLogoMove"
+      @mouseleave="onLogoLeave"
+    >
+      <span class="dot" aria-hidden="true" />
+      <span>Marina Markus</span>
+    </NuxtLink>
 
-      <!-- Nav Links (desktop) -->
-      <ul class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
-        <li v-for="link in navLinks" :key="link.href">
-          <a
-            :href="link.href"
-            class="nav-link text-ink/70 hover:text-ink transition-colors duration-200"
-            data-hoverable
-            @click.prevent="scrollTo(link.href)"
-          >
-            {{ link.label }}
-          </a>
-        </li>
-      </ul>
+    <!-- Desktop menu — home only -->
+    <ul v-if="isHome" class="menu">
+      <li v-for="link in navLinks" :key="link.href">
+        <a :href="link.href" data-hoverable @click.prevent="scrollTo(link.href)">{{ link.label }}</a>
+      </li>
+    </ul>
 
-      <!-- Contact link (desktop) -->
-      <a
-        href="mailto:themarinamarkus@gmail.com"
-        class="hidden md:block text-sm font-semibold text-ink/60 hover:text-ink transition-colors duration-200 nav-link"
-        data-hoverable
-      >
-        Get in touch
-      </a>
-
-      <!-- Mobile menu button -->
-      <button
-        class="md:hidden flex flex-col gap-1.5 p-1"
-        data-hoverable
-        @click="mobileOpen = !mobileOpen"
-        aria-label="Toggle menu"
-      >
-        <span
-          :class="['block w-6 h-px bg-ink transition-all duration-300', mobileOpen && 'translate-y-[7px] rotate-45']"
-        />
-        <span
-          :class="['block w-6 h-px bg-ink transition-all duration-300', mobileOpen && 'opacity-0']"
-        />
-        <span
-          :class="['block w-6 h-px bg-ink transition-all duration-300', mobileOpen && '-translate-y-[7px] -rotate-45']"
-        />
-      </button>
-    </nav>
-
-    <!-- Mobile Nav -->
-    <Transition name="mobile-nav">
-      <div
-        v-if="mobileOpen"
-        class="md:hidden absolute top-full left-0 right-0 bg-cream border-b border-border px-6 py-8 flex flex-col gap-6"
-      >
-        <a
-          v-for="link in navLinks"
-          :key="link.href"
-          :href="link.href"
-          class="font-display italic text-3xl font-light text-ink"
-          @click.prevent="scrollTo(link.href); mobileOpen = false"
-        >
-          {{ link.label }}
-        </a>
-        <a
-          href="mailto:themarinamarkus@gmail.com"
-          class="text-sm font-semibold text-fire mt-4"
-        >
-          themarinamarkus@gmail.com
-        </a>
-      </div>
-    </Transition>
-  </header>
+    <!-- Get in touch -->
+    <a href="mailto:themarinamarkus@gmail.com" class="contact-link" data-hoverable>
+      Get in touch
+    </a>
+  </nav>
 </template>
 
 <script setup lang="ts">
-const isScrolled = ref(false)
-const mobileOpen = ref(false)
-
 const navLinks = [
-  { label: 'Work', href: '#work' },
-  { label: 'About', href: '#about' },
+  { label: 'About',   href: '#about' },
+  { label: 'Work',    href: '#work' },
   { label: 'Contact', href: '#contact' },
 ]
 
+const route = useRoute()
+const isHome = computed(() => route.path === '/')
+
 const scrollTo = (href: string) => {
-  const id = href.replace('#', '')
-  const el = document.getElementById(id)
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' })
-  }
+  const el = document.getElementById(href.replace('#', ''))
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
 }
 
-onMounted(() => {
-  const handleScroll = () => {
-    isScrolled.value = window.scrollY > 60
-  }
-  window.addEventListener('scroll', handleScroll, { passive: true })
-  onUnmounted(() => window.removeEventListener('scroll', handleScroll))
-})
+const onLogoMove = (e: MouseEvent) => {
+  const el = e.currentTarget as HTMLElement
+  const r = el.getBoundingClientRect()
+  const x = e.clientX - (r.left + r.width / 2)
+  const y = e.clientY - (r.top + r.height / 2)
+  el.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px)`
+}
+
+const onLogoLeave = (e: MouseEvent) => {
+  (e.currentTarget as HTMLElement).style.transform = ''
+}
 </script>
 
 <style scoped>
-.mobile-nav-enter-active,
-.mobile-nav-leave-active {
-  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px clamp(20px, 3.4vw, 56px);
+  z-index: 80;
+  mix-blend-mode: difference;
+  color: #F4EFE2;
 }
-.mobile-nav-enter-from,
-.mobile-nav-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
+
+.top a,
+.logo,
+.contact-link {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  transition: transform 0.6s cubic-bezier(.7,.05,.2,1);
+}
+
+.logo:hover {
+  transition: transform 0.1s linear;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #D63D14;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+  animation: pulse 2.4s cubic-bezier(.7,.05,.2,1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(.55); opacity: .5; }
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  position: relative;
+  padding: 6px 0;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.55s cubic-bezier(.7,.05,.2,1);
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+/* Get in touch */
+.contact-link {
+  display: block;
+  position: relative;
+  padding: 6px 0;
+}
+
+.contact-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.55s cubic-bezier(.7,.05,.2,1);
+}
+
+.contact-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+@media (max-width: 720px) {
+  .menu { display: none; }
+  .contact-link { display: none; }
 }
 </style>

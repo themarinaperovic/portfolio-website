@@ -1,94 +1,268 @@
 <template>
-  <section id="work" class="py-28 md:py-40 px-6 md:px-12">
-    <div class="max-w-[1400px] mx-auto">
+  <section id="work" class="work-section">
 
-      <!-- Section header -->
-      <div class="flex items-end justify-between mb-16 gap-6" data-reveal>
-        <div>
-          <div class="flex items-center gap-4 mb-4">
-            <span class="text-xs tracking-widest uppercase font-semibold text-smoke">02 / Work</span>
-            <span class="flex-1 h-px bg-border max-w-[80px]" />
-          </div>
-          <h2 class="font-display italic font-light text-5xl md:text-7xl leading-none text-ink">
-            Selected<br/>Work.
-          </h2>
-        </div>
-        <p class="hidden md:block text-smoke text-sm max-w-[200px] text-right leading-relaxed">
-          End-to-end design across luxury, SaaS, and social impact.
-        </p>
-      </div>
-
-      <!-- Project grid — asymmetric magazine layout -->
-      <div v-if="projects.length" class="flex flex-col gap-4">
-
-        <!-- Row 1: Full width — Bucherer (featured) -->
-        <div data-reveal style="--delay: 0ms">
-          <ProjectCard
-            v-if="projects[0]"
-            :project="projects[0]"
-            :index="0"
-            height="520px"
-          />
-        </div>
-
-        <!-- Row 2: 2/3 + 1/3 -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="md:col-span-2" data-reveal style="--delay: 100ms">
-            <ProjectCard
-              v-if="projects[1]"
-              :project="projects[1]"
-              :index="1"
-              height="440px"
-            />
-          </div>
-          <div class="md:col-span-1" data-reveal style="--delay: 200ms">
-            <ProjectCard
-              v-if="projects[2]"
-              :project="projects[2]"
-              :index="2"
-              height="440px"
-            />
-          </div>
-        </div>
-
-        <!-- Row 3: 1/3 + 2/3 -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="md:col-span-1" data-reveal style="--delay: 100ms">
-            <ProjectCard
-              v-if="projects[3]"
-              :project="projects[3]"
-              :index="3"
-              height="400px"
-            />
-          </div>
-          <div class="md:col-span-2" data-reveal style="--delay: 200ms">
-            <ProjectCard
-              v-if="projects[4]"
-              :project="projects[4]"
-              :index="4"
-              height="400px"
-            />
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Loading state -->
-      <div v-else class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div
-          v-for="n in 4"
-          :key="n"
-          class="bg-border/60 rounded-sm animate-pulse"
-          style="height: 420px"
-        />
-      </div>
-
+    <div class="sect-header">
+      <span><span class="num">[ 02 ]</span> — Selected Works</span>
+      <span>05 Projects · 2021 → 2026</span>
     </div>
+
+    <div class="work-list">
+      <NuxtLink
+        v-for="item in works"
+        :key="item.slug"
+        :to="`/projects/${item.slug}`"
+        class="work-item"
+        :class="{ 'is-coming-soon': item.comingSoon }"
+        data-hoverable
+      >
+        <div class="item-main">
+          <h3>{{ item.title }}</h3>
+          <p class="tagline">{{ item.tagline }}</p>
+          <div class="tags">
+            <span v-for="tag in item.tags" :key="tag" class="tag">{{ tag }}</span>
+          </div>
+        </div>
+
+        <p class="desc">{{ item.desc }}</p>
+
+        <span class="arrow">{{ item.comingSoon ? '— Coming soon' : '→ Case study' }}</span>
+      </NuxtLink>
+    </div>
+
   </section>
 </template>
 
 <script setup lang="ts">
-const { data: projects } = await useAsyncData('projects', () =>
-  queryContent('/projects').sort({ order: 1 }).find()
-)
+const works = [
+  {
+    slug: 'bucherer',
+    title: 'Timeless elegance, exceptional craftsmanship',
+    tagline: 'Bucherer AG',
+    tags: ['E-commerce', 'Luxury', 'WCAG', "Bronze · Swiss Apps '25"],
+    desc: 'Simplifying complex systems into experiences aligned with the brand\'s premium positioning.',
+    comingSoon: true,
+  },
+  {
+    slug: 'abc-redesign',
+    title: 'Reinventing fitness',
+    tagline: 'ABC Fitness · App Redesign',
+    tags: ['Mobile', 'Redesign', 'Design Systems'],
+    desc: 'Redesigning the app to modernise visual appeal, improve functionality and drive user satisfaction.',
+  },
+  {
+    slug: 'abc-referral',
+    title: 'Effortlessly increasing customer base',
+    tagline: 'ABC Fitness · B2B2C',
+    tags: ['SaaS', 'Acquisition', 'White-label'],
+    desc: 'Understanding and addressing the requirements of client businesses and their members.',
+  },
+  {
+    slug: 'kroon',
+    title: 'For the love of dog',
+    tagline: 'Kroon Studio',
+    tags: ['Web', 'Adoption', 'Research', 'Pro bono'],
+    desc: 'Research and proposal for a platform dedicated to reducing dog abandonment and promoting adoption.',
+    comingSoon: true,
+  },
+  {
+    slug: 'snapshots',
+    title: 'Here & There',
+    tagline: 'Snapshots',
+    tags: ['Misc', 'Snapshots'],
+    desc: 'Web and app designs across different clients, briefs and moments — presented as screens, not stories.',
+    comingSoon: true,
+  },
+]
 </script>
+
+<style scoped>
+.work-section {
+  padding: clamp(80px, 11vw, 180px) clamp(20px, 3.4vw, 56px);
+}
+
+/* ── Section header ── */
+.sect-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid rgba(11, 12, 11, 0.15);
+  padding-top: 20px;
+  margin-bottom: clamp(60px, 9vw, 140px);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(11, 12, 11, 0.55);
+}
+
+.sect-header .num {
+  color: #0B0C0B;
+  font-weight: 500;
+}
+
+/* ── Work list ── */
+.work-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(11, 12, 11, 0.15);
+}
+
+.work-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(11, 12, 11, 0.15);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.5s cubic-bezier(.7,.05,.2,1),
+              padding 0.5s cubic-bezier(.7,.05,.2,1);
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Accent fill from bottom */
+.work-item::before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background: #D63D14;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 0.6s cubic-bezier(.7,.05,.2,1);
+  z-index: -1;
+}
+
+/* Coming-soon items use warm graphite fill instead of accent */
+.work-item.is-coming-soon::before {
+  background: #4A4642;
+}
+
+.work-item:hover::before {
+  transform: scaleY(1);
+  transform-origin: top center;
+}
+
+.work-item:hover {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: clamp(20px, 3.4vw, 56px);
+  padding-right: clamp(20px, 3.4vw, 56px);
+  margin-left: calc(clamp(20px, 3.4vw, 56px) * -1);
+  margin-right: calc(clamp(20px, 3.4vw, 56px) * -1);
+}
+
+/* Main title block */
+.item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(18px, 2.2vw, 32px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #0B0C0B;
+  transition: color 0.45s cubic-bezier(.7,.05,.2,1);
+}
+
+.work-item:hover h3 {
+  color: #E8E2D5;
+}
+
+.tagline {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(11, 12, 11, 0.45);
+  transition: color 0.45s cubic-bezier(.7,.05,.2,1);
+}
+
+.work-item:hover .tagline {
+  color: rgba(232, 226, 213, 0.65);
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.tag {
+  display: inline-block;
+  border: 1px solid rgba(11, 12, 11, 0.15);
+  border-radius: 99px;
+  padding: 3px 10px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: rgba(11, 12, 11, 0.55);
+  transition: border-color 0.4s, color 0.4s;
+}
+
+.work-item:hover .tag {
+  border-color: rgba(232, 226, 213, 0.3);
+  color: rgba(232, 226, 213, 0.85);
+}
+
+/* Description */
+.desc {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(11, 12, 11, 0.55);
+  max-width: 36ch;
+  line-height: 1.7;
+  transition: color 0.45s cubic-bezier(.7,.05,.2,1);
+}
+
+.work-item:hover .desc {
+  color: rgba(232, 226, 213, 0.85);
+}
+
+/* Arrow */
+.arrow {
+  position: absolute;
+  right: clamp(20px, 3.4vw, 56px);
+  top: 50%;
+  transform: translate(30px, -50%);
+  opacity: 0;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #E8E2D5;
+  transition: transform 0.6s cubic-bezier(.7,.05,.2,1),
+              opacity 0.45s cubic-bezier(.7,.05,.2,1);
+  pointer-events: none;
+}
+
+.work-item:hover .arrow {
+  transform: translate(0, -50%);
+  opacity: 1;
+}
+
+/* ── Responsive ── */
+@media (max-width: 880px) {
+  .work-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .arrow { display: none; }
+
+  .work-item:hover {
+    padding-left: clamp(20px, 3.4vw, 56px);
+    padding-right: clamp(20px, 3.4vw, 56px);
+  }
+}
+</style>
