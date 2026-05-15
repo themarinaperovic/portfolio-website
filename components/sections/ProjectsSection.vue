@@ -60,7 +60,7 @@ const works = [
     slug: 'kroon',
     title: 'For the love of dog',
     tagline: 'Kroon Studio',
-    tags: ['Web', 'Adoption', 'Research', 'Pro bono'],
+    tags: ['Web', 'Research', 'Pro bono'],
     desc: 'Research and proposal for a platform dedicated to reducing dog abandonment and promoting adoption.',
     comingSoon: true,
   },
