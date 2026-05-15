@@ -15,7 +15,7 @@
           <p class="hero-sub">Referral system</p>
         </div>
 
-        <img src="/case/abc-referral/1hero.png" alt="ABC Fitness Referral System" class="case-img" />
+        <img src="/case/abc-referral/1hero.webp" alt="ABC Fitness Referral System" class="case-img" />
       </section>
 
       <!-- ── Overview strip ── -->
@@ -120,7 +120,7 @@
         <h2 class="section-title">Jobs, pains &amp; gains.</h2>
         <p class="body-copy">We identified the main challenges and frustrations the business might have in setting up their custom referrals and aimed to solve as many as possible for the first release.</p>
 
-        <img src="/case/abc-referral/3asset.png" alt="Jobs, Pains and Gains — Business, Member, Prospect" class="case-img case-img--rounded case-img--65" />
+        <img src="/case/abc-referral/3asset.webp" alt="Jobs, Pains and Gains — Business, Member, Prospect" class="case-img case-img--rounded case-img--65" />
       </section>
 
       <!-- ── Roadmap ── -->
@@ -152,7 +152,7 @@
           </div>
         </div>
 
-        <img src="/case/abc-referral/4asset.png" alt="MVP and milestones roadmap diagram" class="case-img case-img--rounded case-img--65" />
+        <img src="/case/abc-referral/4asset.webp" alt="MVP and milestones roadmap diagram" class="case-img case-img--rounded case-img--65" />
       </section>
 
       <!-- ── Design / Screens ── -->
@@ -165,31 +165,31 @@
         <!-- Business: setup flow -->
         <h3 class="flow-label">User Flow</h3>
         <p class="body-copy">Configuration steps are planned to align with members and prospects flow, ensuring that businesses, during setup, accurately understand the process their users will undertake to complete the task.</p>
-        <img src="/case/abc-referral/5asset.png" alt="Business referral configuration steps flow" class="case-img case-img--rounded" />
+        <img src="/case/abc-referral/5asset.webp" alt="Business referral configuration steps flow" class="case-img case-img--rounded" />
         <h3 class="flow-label">Configuration Dialog</h3>
         <p class="body-copy">Each step is presented in a separate dialog. To ensure comprehensive understanding, each step contains information describing its function, along with a visual preview illustrating how it will appear to users. Additionally, there is a recommended prepopulated universal text available, suitable for any business that prefers not to create their own.</p>
-        <img src="/case/abc-referral/6asset.png" alt="Business referral setup wireframe with annotations" class="case-img case-img--rounded" />
+        <img src="/case/abc-referral/6asset.webp" alt="Business referral setup wireframe with annotations" class="case-img case-img--rounded" />
         <h3 class="flow-label">Final Flow</h3>
         <p class="body-copy">The completed referral setup offers a streamlined process with intuitive dialogs for users. Overall, this flow aims to empower businesses in implementing the referral system smoothly, promoting engagement and effortless user referrals.</p>
-        <img src="/case/abc-referral/7asset.png" alt="Business referral configuration screens" class="case-img case-img--rounded" />
+        <img src="/case/abc-referral/7asset.webp" alt="Business referral configuration screens" class="case-img case-img--rounded" />
 
         <!-- Member: invite flow -->
         <h3 class="flow-section">Member</h3>
         <h3 class="flow-label flow-label--no-rule">MVP</h3>
         <p class="body-copy">A banner prominently displayed on the members' dashboard encourages them to easily invite their acquaintances. The process is simplified for effortless action.</p>
-        <img src="/case/abc-referral/8asset.png" alt="Member invitation banner and share flow" class="case-img case-img--rounded case-img--contained" />
+        <img src="/case/abc-referral/8asset.webp" alt="Member invitation banner and share flow" class="case-img case-img--rounded case-img--contained" />
 
         <!-- Prospect: sign-up flows -->
         <h3 class="flow-section">Prospect</h3>
         <h3 class="flow-label flow-label--no-rule">MVP</h3>
         <p class="body-copy">The simplified process is designed to reduce the effort required for prospects to sign up, preventing any obstacles that might discourage them from completing the process. Upon registration, their information is stored in the Members Operation system. This enables the gym's sales team to reach out to them or allows prospects to visit the club in person and explore available membership options.</p>
-        <img src="/case/abc-referral/9asset.png" alt="Prospect email and web sign-up flow" class="case-img case-img--rounded case-img--contained" />
+        <img src="/case/abc-referral/9asset.webp" alt="Prospect email and web sign-up flow" class="case-img case-img--rounded case-img--contained" />
         <h3 class="flow-label">Milestone 2 — Prospect Signup</h3>
         <p class="body-copy">In Milestone 2, we've streamlined the process for prospects to initiate their gym trial. Instead of signing up via the web, prospects can instantly download the app and access the gym facilities. This update eliminates the need for employees to individually engage with new clients. Instead, prospects can utilize a predetermined number of trial days specified in the Members Operations system. This improvement aims to simplify the onboarding process and provide a more seamless experience for potential new members.</p>
-        <img src="/case/abc-referral/91asset.png" alt="Prospect app onboarding flow" class="case-img case-img--rounded case-img--contained" />
+        <img src="/case/abc-referral/91asset.webp" alt="Prospect app onboarding flow" class="case-img case-img--rounded case-img--contained" />
         <h3 class="flow-label">Milestone 3 — Prospect to Member</h3>
         <p class="body-copy">In Milestone 3, prospects can seamlessly become full members within the app, bypassing any intricate procedures. They can access available membership plans and, depending on the club, receive a special offer code. All information is automatically stored in Membership Operations.</p>
-        <img src="/case/abc-referral/92asset.png" alt="Prospect membership plans, promo code and checkout" class="case-img case-img--rounded case-img--contained" />
+        <img src="/case/abc-referral/92asset.webp" alt="Prospect membership plans, promo code and checkout" class="case-img case-img--rounded case-img--contained" />
       </section>
 
       <!-- ── Success Rate ── -->

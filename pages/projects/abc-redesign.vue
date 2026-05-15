@@ -16,7 +16,7 @@
         </div>
 
         <div class="img-hero">
-          <img src="/case/abc-redesign/abcshow10.png" alt="Ignite App — The next level gym management software" class="case-img" />
+          <img src="/case/abc-redesign/abcshow10.webp" alt="Ignite App — The next level gym management software" class="case-img" />
         </div>
       </section>
 
@@ -65,8 +65,8 @@
         <p class="body-copy">Drawing from insights gathered through app usage, there was a clear opportunity to enhance the user experience beyond simple workout tracking and calorie counting — providing personalized, motivating solutions for users with varying fitness levels, preferences, and health conditions.</p>
 
         <div class="img-grid img-grid--2">
-          <img src="/case/abc-redesign/lifestyle11.png" alt="Member logging a meal in the ABC Fitness app" class="case-img case-img--rounded" />
-          <img src="/case/abc-redesign/lifestyle12.png" alt="Member checking in at the gym with the ABC Fitness app" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/lifestyle11.webp" alt="Member logging a meal in the ABC Fitness app" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/lifestyle12.webp" alt="Member checking in at the gym with the ABC Fitness app" class="case-img case-img--rounded" />
         </div>
       </section>
 
@@ -102,7 +102,7 @@
         <p class="body-copy">After analyzing four types of members and four types of business models, we've identified common needs that must be addressed in creating a universal app design.</p>
 
         <!-- Packages matrix -->
-        <h3 class="sub-title">ABC Packages</h3>
+        <h3 class="sub-title">ABC packages and members</h3>
 
         <div class="packages-grid">
           <div class="package-card">
@@ -152,7 +152,7 @@
         </div>
         <p class="body-copy">ABC Fitness presents four distinct packages for businesses to choose from, allowing them to tailor their selection based on their needs and the types of members they intend to target — one or multiple packages that align with their specific requirements.</p>
 
-        <img src="/case/abc-redesign/abcshow11.png" alt="ABC Fitness — Businesses to Packages diagram" class="case-img case-img--rounded" />
+        <img src="/case/abc-redesign/abcshow11.webp" alt="ABC Fitness — Businesses to Packages diagram" class="case-img case-img--rounded" />
       </section>
 
       <!-- ── 04 Design System ── -->
@@ -177,10 +177,19 @@
             <p>A recognizable, highly simplified icon system. Icon content is constrained to a 20dp live area with 2dp padding, supporting six sizes: 20px, 24px, 40px, 48px, 64px, and 88px. Outlined style throughout.</p>
           </div>
         </div>
+        <img src="/case/abc-redesign/16.webp" alt="Design System — Color palette, typography and iconography" class="case-img case-img--rounded" />
 
         <div class="callout">
           <span class="callout-label">Custom Branded Colours</span>
           <p>To align with each brand's style guide, all components needed to support both dark and light mode variations. Further stages introduced the "softness" style — allowing businesses to achieve an even more personalized app appearance through new icon styles, border radius, and typefaces.</p>
+        </div>
+
+        <div class="img-row">
+          <img src="/case/abc-redesign/17a.webp" alt="" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/17b.webp" alt="" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/17c.webp" alt="" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/17d.webp" alt="" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/17e.webp" alt="" class="case-img case-img--rounded" />
         </div>
 
         <!-- Softness styles -->
@@ -202,7 +211,8 @@
           </div>
         </div>
 
-        <img src="/case/abc-redesign/abcshow12.png" alt="Design System — Color palette, typography and iconography" class="case-img case-img--rounded" />
+        <img src="/case/abc-redesign/18.webp" alt="" class="case-img case-img--rounded" />
+
       </section>
 
       <!-- ── 05 Roadmap ── -->
@@ -212,17 +222,19 @@
         </div>
         <p class="body-copy">The initial plan was to establish a base style, map the app architecture and wireframes, starting with the most complex version — Engagement Total. The design system would then be completed and applied to all elements, allowing adaptation to simpler versions.</p>
         <p class="body-copy">Due to time constraints and immediate user demand, the business decided to begin with the simpler version: Engagement Go.</p>
+        <div class="text-image-row">
+          <div class="text-image-row__text">
+            <span class="label-red">Ignite Engagement Go</span>
+            <p class="body-copy">The redesign was first implemented on the basic app version — Engagement Go — primarily used by members for check-ins and membership management.</p>
+          </div>
+          <img src="/case/abc-redesign/19.webp" alt="" class="case-img case-img--rounded text-image-row__img" />
+        </div>
 
-        <img src="/case/abc-redesign/abcshow15.png" alt="Original vs redesigned app — dashboard comparison" class="case-img case-img--rounded" />
       </section>
 
       <!-- ── 06 Ignite Go ── -->
       <section class="case-section case-section--alt">
-        <div class="sect-header">
-          <span><span class="num">[ 06 ]</span> — Ignite Go</span>
-        </div>
         <h2 class="section-title">Start simple. Ship fast.</h2>
-        <p class="body-copy">The redesign was first implemented on the basic app version — Engagement Go — primarily used by members for check-ins and membership management.</p>
 
         <!-- HMW -->
         <h3 class="sub-title">How Might We?</h3>
@@ -255,6 +267,7 @@
             <p>...seamlessly integrate the app with popular health platforms like Apple Health or Google Fit, synchronising data to provide a holistic view of their wellness journey?</p>
           </div>
         </div>
+        <p class="body-copy">After brainstorming sessions and defining HMW questions, we did feature prioritization where we evaluated all possible features that we have for this app and listed out the most important features that we have to create for our MVP Product.</p>
 
         <!-- MVP -->
         <div class="mvp-block">
@@ -281,13 +294,30 @@
         <h3 class="sub-title">Wireframes</h3>
         <p class="body-copy">To identify all areas for improvement, we mapped the architecture of the current app and began reconstructing wireframes with necessary adjustments.</p>
 
-        <img src="/case/abc-redesign/abcshow13.png" alt="Original ABC app — full screen architecture" class="case-img case-img--rounded" />
+        <div class="img-labeled">
+          <span class="img-label">Original App</span>
+          <img src="/case/abc-redesign/23.webp" alt="" class="case-img case-img--rounded wireframe-img" />
+        </div>
+        <div class="img-labeled">
+          <span class="img-label">Architecture</span>
+          <img src="/case/abc-redesign/24.webp" alt="" class="case-img case-img--rounded wireframe-img wireframe-img--sm" />
+        </div>
+        <div class="img-labeled">
+          <span class="img-label">Mockups</span>
+          <img src="/case/abc-redesign/25.webp" alt="" class="case-img case-img--rounded wireframe-img" />
+        </div>
+
+        <hr class="section-divider" />
 
         <!-- Example 1 -->
         <h3 class="sub-title">Example 1 — "Find a club" UX &amp; UI</h3>
-        <div class="img-grid img-grid--2">
-          <img src="/case/abc-redesign/abcshow13.png" alt="Find a club — current design" class="case-img case-img--rounded" />
-          <img src="/case/abc-redesign/abcshow14.png" alt="Find a club — redesigned" class="case-img case-img--rounded" />
+        <div class="img-labeled">
+          <span class="img-label">Original</span>
+          <img src="/case/abc-redesign/abcshow13.webp" alt="Find a club — current design" class="case-img case-img--rounded" />
+        </div>
+        <div class="img-labeled">
+          <span class="img-label">Redesigned</span>
+          <img src="/case/abc-redesign/abcshow14.webp" alt="Find a club — redesigned" class="case-img case-img--rounded" />
         </div>
 
         <div class="improvements-list">
@@ -305,10 +335,16 @@
 
         <!-- Example 2 -->
         <h3 class="sub-title">Example 2 — "Payment methods" UI</h3>
-        <div class="img-grid img-grid--2">
-          <img src="/case/abc-redesign/abcshow15.png" alt="Payment methods — before and after" class="case-img case-img--rounded" />
-          <img src="/case/abc-redesign/abcshow14.png" alt="Redesigned membership and payment screens" class="case-img case-img--rounded" />
+
+        <div class="img-labeled">
+          <span class="img-label">Original</span>
+          <img src="/case/abc-redesign/29.webp" alt="" class="case-img case-img--rounded" />
         </div>
+        <div class="img-labeled">
+          <span class="img-label">Redesigned</span>
+          <img src="/case/abc-redesign/30.webp" alt="" class="case-img case-img--rounded" />
+        </div>
+
       </section>
 
       <!-- ── 07 Ignite Total ── -->
@@ -318,12 +354,11 @@
         </div>
         <h2 class="section-title">The full picture.</h2>
         <p class="body-copy">After establishing the visual concept through Ignite Go, we advanced to the app's most complex version — Ignite Total — containing all available features: workout tracking, class booking, nutrition logging, personal training, and more.</p>
-        <p class="body-copy">The project was put on hold before its completion.</p>
-
-        <div class="img-grid img-grid--2">
-          <img src="/case/abc-redesign/abcshow101.png" alt="Ignite Total — full feature app screens" class="case-img case-img--rounded" />
-          <img src="/case/abc-redesign/abc2.png" alt="Ignite Total — home dashboard" class="case-img case-img--rounded" />
+        <div class="text-image-row">
+          <p class="body-copy text-image-row__text">The project was put on hold before its completion.</p>
+          <img src="/case/abc-redesign/31.webp" alt="" class="case-img case-img--rounded text-image-row__img" />
         </div>
+
       </section>
 
       <!-- ── Nav ── -->
@@ -477,6 +512,80 @@ main {
   letter-spacing: -0.03em;
   color: #0B0C0B;
   margin-bottom: 32px;
+}
+
+.text-image-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 32px 0;
+}
+
+.text-image-row__text {
+  flex: 1;
+}
+
+.text-image-row__text .body-copy {
+  margin: 0;
+}
+
+.text-image-row__img.case-img {
+  width: 20%;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.wireframe-img.case-img {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-labeled:has(.wireframe-img) .img-label {
+  width: 60%;
+}
+
+.wireframe-img--sm.case-img {
+  width: 40%;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #E0E0E0;
+  margin: 64px 0;
+}
+
+.img-labeled {
+  margin: 40px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #E0291A;
+  margin-bottom: 40px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.img-labeled .case-img {
+  margin: 0;
+}
+
+.label-red {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #E0291A;
+  margin-bottom: 8px;
 }
 
 .sub-title {
@@ -812,6 +921,11 @@ main {
   .style-variants { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 760px) {
+  .text-image-row { flex-direction: column; }
+  .text-image-row__img.case-img { width: 100%; }
+}
+
 /* ── HMW grid ── */
 .hmw-grid {
   display: grid;
@@ -983,6 +1097,19 @@ main {
   margin: 0;
   width: 100%;
   height: auto;
+}
+
+.img-row {
+  display: flex;
+  gap: 8px;
+  margin: 32px 0;
+}
+
+.img-row .case-img {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  object-fit: cover;
 }
 
 .img-grid {

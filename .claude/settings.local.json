@@ -1,16 +1,30 @@
 {
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | { read -r f; if [ -n \"$f\" ] && echo \"$f\" | grep -q '/public/case/.*\\.png$'; then base=$(basename \"$f\"); newbase=\"${base%.png}.webp\"; npx --yes sharp-cli -i \"$f\" -o \"${f%.png}.webp\" --format webp --quality 80 && find /Users/marinaadresta/Desktop/claude-portfolio -name '*.vue' -exec sed -i '' \"s|${base}|${newbase}|g\" {} +; fi; } 2>/dev/null || true",
+            "statusMessage": "Converting PNG to WebP..."
+          }
+        ]
+      }
+    ]
+  },
   "permissions": {
     "allow": [
       "Read(//Users/marinaadresta/Desktop/**)",
-      "Bash(awk '/nav/,/\\\\}/' \"/Users/marinaadresta/Desktop/PRIVATE/claude portfolio/index.html\")",
+      "Bash(awk '/nav/,/\\}/' \"/Users/marinaadresta/Desktop/PRIVATE/claude portfolio/index.html\")",
       "Bash(sed -n '145,160p' /Users/marinaadresta/Desktop/claude-portfolio/assets/css/main.css)",
       "Bash(sed -n '305,312p' /Users/marinaadresta/Desktop/claude-portfolio/assets/css/main.css)",
       "WebFetch(domain:marinamarkus.framer.website)",
       "mcp__Claude_in_Chrome__tabs_context_mcp",
       "Bash(python3 -c ' *)",
-      "Bash(grep -v \"^$\\\\|^\\\\\\\\\\\\\\\\\")",
+      "Bash(grep -v \"^$\\|^\\\\\\\")",
       "Bash(grep -v \"^$\")",
-      "Bash(grep -v \"^\\\\s*$\")"
+      "Bash(grep -v \"^\\s*$\")"
     ]
   }
 }
