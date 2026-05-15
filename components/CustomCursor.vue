@@ -10,6 +10,32 @@ const cursorOuter = ref<HTMLElement | null>(null)
 const cursorInner = ref<HTMLElement | null>(null)
 
 onMounted(() => {
+  // Tap ripple for touch devices
+  const isTouchDevice = window.matchMedia('(hover: none), (pointer: coarse)').matches
+  if (isTouchDevice) {
+    const onTap = (e: TouchEvent) => {
+      const { clientX: x, clientY: y } = e.touches[0]
+      const el = document.createElement('div')
+      el.style.cssText = `
+        position:fixed;left:${x}px;top:${y}px;
+        width:56px;height:56px;border-radius:50%;
+        background:rgba(233,43,0,0.22);
+        transform:translate(-50%,-50%) scale(0);
+        pointer-events:none;z-index:9999;
+        transition:transform 0.35s cubic-bezier(0.22,1,0.36,1),opacity 0.35s ease;
+      `
+      document.body.appendChild(el)
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        el.style.transform = 'translate(-50%,-50%) scale(1)'
+        el.style.opacity = '0'
+      }))
+      setTimeout(() => el.remove(), 400)
+    }
+    window.addEventListener('touchstart', onTap, { passive: true })
+    onUnmounted(() => window.removeEventListener('touchstart', onTap))
+    return
+  }
+
   const outer = cursorOuter.value
   const inner = cursorInner.value
   if (!outer || !inner) return

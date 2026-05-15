@@ -53,7 +53,7 @@ const works = [
     slug: 'abc-referral',
     title: 'Effortlessly increasing customer base',
     tagline: 'ABC Fitness · B2B2C',
-    tags: ['SaaS', 'Acquisition', 'White-label'],
+    tags: ['SaaS', 'Feature Design', 'White-label'],
     desc: 'Understanding and addressing the requirements of client businesses and their members.',
   },
   {
@@ -119,7 +119,6 @@ const works = [
   color: inherit;
   transition: background 0.5s cubic-bezier(.7,.05,.2,1),
               padding 0.5s cubic-bezier(.7,.05,.2,1);
-  overflow: hidden;
   z-index: 0;
 }
 
@@ -127,7 +126,10 @@ const works = [
 .work-item::before {
   content: '';
   position: absolute;
-  left: 0; right: 0; top: 0; bottom: 0;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  top: 0; bottom: 0;
   background: #D63D14;
   transform: scaleY(0);
   transform-origin: bottom center;
@@ -146,12 +148,8 @@ const works = [
 }
 
 .work-item:hover {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: clamp(20px, 3.4vw, 56px);
-  padding-right: clamp(20px, 3.4vw, 56px);
-  margin-left: calc(clamp(20px, 3.4vw, 56px) * -1);
-  margin-right: calc(clamp(20px, 3.4vw, 56px) * -1);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* Main title block */

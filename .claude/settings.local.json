@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/marinaadresta/Desktop/**)",
+      "Bash(awk '/nav/,/\\\\}/' \"/Users/marinaadresta/Desktop/PRIVATE/claude portfolio/index.html\")",
+      "Bash(sed -n '145,160p' /Users/marinaadresta/Desktop/claude-portfolio/assets/css/main.css)",
+      "Bash(sed -n '305,312p' /Users/marinaadresta/Desktop/claude-portfolio/assets/css/main.css)",
+      "WebFetch(domain:marinamarkus.framer.website)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(python3 -c ' *)",
+      "Bash(grep -v \"^$\\\\|^\\\\\\\\\\\\\\\\\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(grep -v \"^\\\\s*$\")"
+    ]
+  }
+}

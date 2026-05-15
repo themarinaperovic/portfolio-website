@@ -15,8 +15,8 @@
           <p class="hero-sub">The next level gym management software.</p>
         </div>
 
-        <div class="img-block img-hero">
-          <span class="img-label">Hero / Cover Image</span>
+        <div class="img-hero">
+          <img src="/case/abc-redesign/abcshow10.png" alt="Ignite App — The next level gym management software" class="case-img" />
         </div>
       </section>
 
@@ -32,11 +32,7 @@
         </div>
         <div class="overview-item">
           <span class="ov-label">Platform</span>
-          <span class="ov-val">iOS · Android · Web</span>
-        </div>
-        <div class="overview-item">
-          <span class="ov-label">Type</span>
-          <span class="ov-val">Redesign · Design System · B2B2C</span>
+          <span class="ov-val">iOS · Android</span>
         </div>
       </div>
 
@@ -50,10 +46,10 @@
             <p class="body-copy">ABC Fitness aimed to redesign its app for various reasons. Primarily, the goal was to enhance user experience, stay competitive among technological advancements, modernize the design for visual appeal, and improve functionalities to boost user satisfaction and drive business growth.</p>
           </div>
           <div class="col-tags">
-            <span class="pill">User Experience</span>
-            <span class="pill">Design Systems</span>
+            <span class="pill">App Redesign</span>
+            <span class="pill">Design System</span>
+            <span class="pill">White-label</span>
             <span class="pill">Mobile</span>
-            <span class="pill">B2B2C SaaS</span>
           </div>
         </div>
       </section>
@@ -68,8 +64,9 @@
         </blockquote>
         <p class="body-copy">Drawing from insights gathered through app usage, there was a clear opportunity to enhance the user experience beyond simple workout tracking and calorie counting — providing personalized, motivating solutions for users with varying fitness levels, preferences, and health conditions.</p>
 
-        <div class="img-block">
-          <span class="img-label">Before — Original App</span>
+        <div class="img-grid img-grid--2">
+          <img src="/case/abc-redesign/lifestyle11.png" alt="Member logging a meal in the ABC Fitness app" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/lifestyle12.png" alt="Member checking in at the gym with the ABC Fitness app" class="case-img case-img--rounded" />
         </div>
       </section>
 
@@ -156,9 +153,7 @@
           </div>
         </div>
 
-        <div class="img-block">
-          <span class="img-label">Member Personas & Business Model Packages</span>
-        </div>
+        <img src="/case/abc-redesign/abcshow11.png" alt="ABC Fitness — Businesses to Packages diagram" class="case-img case-img--rounded" />
       </section>
 
       <!-- ── 04 Design System ── -->
@@ -208,21 +203,7 @@
           </div>
         </div>
 
-        <div class="img-block">
-          <span class="img-label">Design System — Tokens & Components</span>
-        </div>
-
-        <div class="img-grid img-grid--3">
-          <div class="img-block">
-            <span class="img-label">Soft Style</span>
-          </div>
-          <div class="img-block">
-            <span class="img-label">Neutral (MVP)</span>
-          </div>
-          <div class="img-block">
-            <span class="img-label">Sharp Style</span>
-          </div>
-        </div>
+        <img src="/case/abc-redesign/abcshow12.png" alt="Design System — Color palette, typography and iconography" class="case-img case-img--rounded" />
       </section>
 
       <!-- ── 05 Roadmap ── -->
@@ -233,9 +214,7 @@
         <p class="body-copy">The initial plan was to establish a base style, map the app architecture and wireframes, starting with the most complex version — Engagement Total. The design system would then be completed and applied to all elements, allowing adaptation to simpler versions.</p>
         <p class="body-copy">Due to time constraints and immediate user demand, the business decided to begin with the simpler version: Engagement Go.</p>
 
-        <div class="img-block">
-          <span class="img-label">Product Roadmap</span>
-        </div>
+        <img src="/case/abc-redesign/abcshow15.png" alt="Original vs redesigned app — dashboard comparison" class="case-img case-img--rounded" />
       </section>
 
       <!-- ── 06 Ignite Go ── -->
@@ -303,22 +282,13 @@
         <h3 class="sub-title">Wireframes</h3>
         <p class="body-copy">To identify all areas for improvement, we mapped the architecture of the current app and began reconstructing wireframes with necessary adjustments.</p>
 
-        <div class="img-block img-full">
-          <span class="img-label">Original App Architecture</span>
-        </div>
+        <img src="/case/abc-redesign/abcshow13.png" alt="Original ABC app — full screen architecture" class="case-img case-img--rounded" />
 
         <!-- Example 1 -->
         <h3 class="sub-title">Example 1 — "Find a club" UX &amp; UI</h3>
-        <div class="img-grid img-grid--3">
-          <div class="img-block">
-            <span class="img-label">Current</span>
-          </div>
-          <div class="img-block">
-            <span class="img-label">Redesigned</span>
-          </div>
-          <div class="img-block">
-            <span class="img-label">Improvements</span>
-          </div>
+        <div class="img-grid img-grid--2">
+          <img src="/case/abc-redesign/abcshow13.png" alt="Find a club — current design" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/abcshow14.png" alt="Find a club — redesigned" class="case-img case-img--rounded" />
         </div>
 
         <div class="improvements-list">
@@ -336,13 +306,9 @@
 
         <!-- Example 2 -->
         <h3 class="sub-title">Example 2 — "Payment methods" UI</h3>
-        <div class="img-grid">
-          <div class="img-block">
-            <span class="img-label">Current</span>
-          </div>
-          <div class="img-block">
-            <span class="img-label">Redesigned</span>
-          </div>
+        <div class="img-grid img-grid--2">
+          <img src="/case/abc-redesign/abcshow15.png" alt="Payment methods — before and after" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/abcshow14.png" alt="Redesigned membership and payment screens" class="case-img case-img--rounded" />
         </div>
       </section>
 
@@ -355,14 +321,15 @@
         <p class="body-copy">After establishing the visual concept through Ignite Go, we advanced to the app's most complex version — Ignite Total — containing all available features: workout tracking, class booking, nutrition logging, personal training, and more.</p>
         <p class="body-copy">The project was put on hold before its completion.</p>
 
-        <div class="img-block img-full">
-          <span class="img-label">Ignite Total — Full Feature Screens</span>
+        <div class="img-grid img-grid--2">
+          <img src="/case/abc-redesign/abcshow101.png" alt="Ignite Total — full feature app screens" class="case-img case-img--rounded" />
+          <img src="/case/abc-redesign/abc2.png" alt="Ignite Total — home dashboard" class="case-img case-img--rounded" />
         </div>
       </section>
 
       <!-- ── Nav ── -->
       <div class="case-nav">
-        <NuxtLink to="/" class="nav-back" data-hoverable>
+        <NuxtLink to="/#work" class="nav-back" data-hoverable>
           <span>←</span> Back to work
         </NuxtLink>
         <NuxtLink to="/projects/abc-referral" class="nav-next" data-hoverable>
@@ -995,54 +962,48 @@ main {
   color: rgba(11, 12, 11, 0.65);
 }
 
-/* ── Image placeholders ── */
-.img-block {
+/* ── Images ── */
+.case-img {
+  display: block;
   width: 100%;
-  min-height: 400px;
-  background: rgba(11, 12, 11, 0.05);
-  border: 1px dashed rgba(11, 12, 11, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
   margin: 32px 0;
 }
 
+.case-img--rounded {
+  border-radius: 4px;
+}
+
 .img-hero {
-  min-height: 560px;
+  margin-top: 0;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
-.img-full {
-  min-height: 480px;
-}
-
-.img-label {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.35);
+.img-hero .case-img {
+  margin: 0;
+  width: 100%;
+  height: auto;
 }
 
 .img-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin: 32px 0;
 }
 
-.img-grid--3 {
-  grid-template-columns: 1fr 1fr 1fr;
+.img-grid--2 {
+  grid-template-columns: 1fr 1fr;
 }
 
-.img-grid .img-block {
+.img-grid .case-img {
   margin: 0;
-  min-height: 320px;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 760px) {
-  .img-grid { grid-template-columns: 1fr; }
-  .img-grid--3 { grid-template-columns: 1fr; }
-  .img-grid .img-block { min-height: 240px; }
+  .img-grid--2 { grid-template-columns: 1fr; }
 }
 
 /* ── Case nav ── */

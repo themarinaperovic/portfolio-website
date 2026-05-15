@@ -105,7 +105,7 @@
 
       <!-- ── Nav ── -->
       <div class="case-nav">
-        <NuxtLink to="/" class="nav-back" data-hoverable>
+        <NuxtLink to="/#work" class="nav-back" data-hoverable>
           <span>←</span> Back to work
         </NuxtLink>
         <NuxtLink to="/projects/snapshots" class="nav-next" data-hoverable>

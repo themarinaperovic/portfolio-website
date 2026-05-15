@@ -13,7 +13,7 @@
 
         <div data-reveal>
           <h2 class="font-display italic font-light text-4xl md:text-5xl lg:text-6xl leading-tight text-ink">
-            If something caught your eye,<br/>you know where to <em class="text-fire">find me.</em>
+            If something caught your eye,<br/>you know where to <em style="color: #D63D14; font-style: italic;">find me.</em>
           </h2>
         </div>
 
@@ -28,7 +28,7 @@
               <p class="text-xs tracking-widest uppercase font-mono text-smoke group-hover:text-cream/40 mb-3 transition-colors duration-300">
                 Email
               </p>
-              <p class="font-display italic text-2xl md:text-3xl font-light break-all group-hover:text-cream transition-colors duration-300">
+              <p class="font-display italic font-light break-all group-hover:text-cream transition-colors duration-300" style="font-size: clamp(calc(1.5rem * 0.95), 2.5vw, calc(1.875rem * 0.95))">
                 themarinamarkus@gmail.com
               </p>
               <div class="flex items-center gap-2 mt-6">

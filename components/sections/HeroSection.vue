@@ -69,7 +69,7 @@
       <div>
         <span class="block font-medium mb-2">Trajectory</span>
         <p style="color: rgba(11,12,11,0.55); line-height: 1.6">
-          Cinematography → Photography → Interfaces. Twelve years behind a lens, six years inside a viewport.
+          Photography → Interfaces. Twelve years behind a lens, six years inside a viewport.
         </p>
       </div>
       <div class="flex items-center gap-2.5 justify-self-end">

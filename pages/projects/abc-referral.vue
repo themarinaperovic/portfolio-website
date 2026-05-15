@@ -15,9 +15,7 @@
           <p class="hero-sub">Referral system</p>
         </div>
 
-        <div class="img-block img-hero">
-          <span class="img-label">Hero / Cover Image</span>
-        </div>
+        <img src="/case/abc-referral/1hero.png" alt="ABC Fitness Referral System" class="case-img" />
       </section>
 
       <!-- ── Overview strip ── -->
@@ -33,10 +31,6 @@
         <div class="overview-item">
           <span class="ov-label">Type</span>
           <span class="ov-val">B2B2C · SaaS · White-label</span>
-        </div>
-        <div class="overview-item">
-          <span class="ov-label">Impact</span>
-          <span class="ov-val">40% of US clubs on ABC Ignite</span>
         </div>
       </div>
 
@@ -56,7 +50,7 @@
           <div class="col-tags">
             <span class="pill">B2B2C</span>
             <span class="pill">SaaS</span>
-            <span class="pill">Acquisition</span>
+<span class="pill">Feature Design</span>
             <span class="pill">White-label</span>
           </div>
         </div>
@@ -126,10 +120,7 @@
         <h2 class="section-title">Jobs, pains &amp; gains.</h2>
         <p class="body-copy">We identified the main challenges and frustrations the business might have in setting up their custom referrals and aimed to solve as many as possible for the first release.</p>
 
-        <!-- Empathy map image -->
-        <div class="img-block img-full">
-          <span class="img-label">Empathy Map — Business / Member / Prospect</span>
-        </div>
+        <img src="/case/abc-referral/3asset.png" alt="Jobs, Pains and Gains — Business, Member, Prospect" class="case-img case-img--rounded case-img--65" />
       </section>
 
       <!-- ── Roadmap ── -->
@@ -161,10 +152,7 @@
           </div>
         </div>
 
-        <!-- Roadmap image -->
-        <div class="img-block">
-          <span class="img-label">Roadmap Diagram</span>
-        </div>
+        <img src="/case/abc-referral/4asset.png" alt="MVP and milestones roadmap diagram" class="case-img case-img--rounded case-img--65" />
       </section>
 
       <!-- ── Design / Screens ── -->
@@ -174,39 +162,34 @@
         </div>
         <h2 class="section-title">The referral flow.</h2>
 
-        <!-- Business setup flow -->
-        <div class="img-block img-full">
-          <span class="img-label">Business — Referral Setup Flow</span>
-        </div>
+        <!-- Business: setup flow -->
+        <h3 class="flow-label">User Flow</h3>
+        <p class="body-copy">Configuration steps are planned to align with members and prospects flow, ensuring that businesses, during setup, accurately understand the process their users will undertake to complete the task.</p>
+        <img src="/case/abc-referral/5asset.png" alt="Business referral configuration steps flow" class="case-img case-img--rounded" />
+        <h3 class="flow-label">Configuration Dialog</h3>
+        <p class="body-copy">Each step is presented in a separate dialog. To ensure comprehensive understanding, each step contains information describing its function, along with a visual preview illustrating how it will appear to users. Additionally, there is a recommended prepopulated universal text available, suitable for any business that prefers not to create their own.</p>
+        <img src="/case/abc-referral/6asset.png" alt="Business referral setup wireframe with annotations" class="case-img case-img--rounded" />
+        <h3 class="flow-label">Final Flow</h3>
+        <p class="body-copy">The completed referral setup offers a streamlined process with intuitive dialogs for users. Overall, this flow aims to empower businesses in implementing the referral system smoothly, promoting engagement and effortless user referrals.</p>
+        <img src="/case/abc-referral/7asset.png" alt="Business referral configuration screens" class="case-img case-img--rounded" />
 
-        <!-- Member invite flow -->
-        <div class="img-block img-full">
-          <span class="img-label">Member — Invite a Friend Flow</span>
-        </div>
+        <!-- Member: invite flow -->
+        <h3 class="flow-section">Member</h3>
+        <h3 class="flow-label flow-label--no-rule">MVP</h3>
+        <p class="body-copy">A banner prominently displayed on the members' dashboard encourages them to easily invite their acquaintances. The process is simplified for effortless action.</p>
+        <img src="/case/abc-referral/8asset.png" alt="Member invitation banner and share flow" class="case-img case-img--rounded case-img--contained" />
 
-        <!-- Prospect sign-up -->
-        <div class="img-grid">
-          <div class="img-block">
-            <span class="img-label">Prospect — Membership Plans</span>
-          </div>
-          <div class="img-block">
-            <span class="img-label">Prospect — Promo Code</span>
-          </div>
-        </div>
-
-        <div class="img-grid">
-          <div class="img-block">
-            <span class="img-label">Prospect — Checkout</span>
-          </div>
-          <div class="img-block">
-            <span class="img-label">Prospect — Find a Club</span>
-          </div>
-        </div>
-
-        <!-- Member progress / app screens -->
-        <div class="img-block img-full">
-          <span class="img-label">Member — Progress Dashboard & App Screens</span>
-        </div>
+        <!-- Prospect: sign-up flows -->
+        <h3 class="flow-section">Prospect</h3>
+        <h3 class="flow-label flow-label--no-rule">MVP</h3>
+        <p class="body-copy">The simplified process is designed to reduce the effort required for prospects to sign up, preventing any obstacles that might discourage them from completing the process. Upon registration, their information is stored in the Members Operation system. This enables the gym's sales team to reach out to them or allows prospects to visit the club in person and explore available membership options.</p>
+        <img src="/case/abc-referral/9asset.png" alt="Prospect email and web sign-up flow" class="case-img case-img--rounded case-img--contained" />
+        <h3 class="flow-label">Milestone 2 — Prospect Signup</h3>
+        <p class="body-copy">In Milestone 2, we've streamlined the process for prospects to initiate their gym trial. Instead of signing up via the web, prospects can instantly download the app and access the gym facilities. This update eliminates the need for employees to individually engage with new clients. Instead, prospects can utilize a predetermined number of trial days specified in the Members Operations system. This improvement aims to simplify the onboarding process and provide a more seamless experience for potential new members.</p>
+        <img src="/case/abc-referral/91asset.png" alt="Prospect app onboarding flow" class="case-img case-img--rounded case-img--contained" />
+        <h3 class="flow-label">Milestone 3 — Prospect to Member</h3>
+        <p class="body-copy">In Milestone 3, prospects can seamlessly become full members within the app, bypassing any intricate procedures. They can access available membership plans and, depending on the club, receive a special offer code. All information is automatically stored in Membership Operations.</p>
+        <img src="/case/abc-referral/92asset.png" alt="Prospect membership plans, promo code and checkout" class="case-img case-img--rounded case-img--contained" />
       </section>
 
       <!-- ── Success Rate ── -->
@@ -220,7 +203,7 @@
 
       <!-- ── Nav ── -->
       <div class="case-nav">
-        <NuxtLink to="/" class="nav-back" data-hoverable>
+        <NuxtLink to="/#work" class="nav-back" data-hoverable>
           <span>←</span> Back to work
         </NuxtLink>
         <NuxtLink to="/projects/kroon" class="nav-next" data-hoverable>
@@ -530,40 +513,57 @@ main { padding-top: 80px; }
 }
 
 /* ── Images ── */
-.img-block {
+.case-img {
+  display: block;
   width: 100%;
-  min-height: 400px;
-  background: rgba(11, 12, 11, 0.05);
-  border: 1px dashed rgba(11, 12, 11, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
   margin: 32px 0;
 }
 
-.img-hero { min-height: 560px; }
-.img-full { min-height: 480px; }
+.case-img--rounded { border-radius: 4px; }
 
-.img-label {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.35);
+/* Diagrams and wireframes with lots of whitespace — cap width so they don't stretch awkwardly */
+.case-img--contained {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.img-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin: 32px 0;
+.case-img--65 {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.img-grid .img-block { margin: 0; min-height: 320px; }
 
 @media (max-width: 760px) {
-  .img-grid { grid-template-columns: 1fr; }
-  .img-grid .img-block { min-height: 240px; }
+  .case-img--65 { width: 95%; }
+}
+
+.flow-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #D63D14;
+  font-weight: 500;
+  margin: 56px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(11, 12, 11, 0.1);
+}
+.flow-label--no-rule {
+  border-top: none;
+  padding-top: 0;
+}
+.flow-section {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D63D14;
+  font-weight: 600;
+  margin: 80px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(11, 12, 11, 0.1);
 }
 
 /* ── Nav ── */

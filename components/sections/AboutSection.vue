@@ -183,16 +183,6 @@ section {
   opacity: 0;
 }
 
-.body-text::first-letter {
-  font-family: 'Fraunces', Georgia, serif;
-  font-size: 3.2em;
-  float: left;
-  line-height: 0.85;
-  padding: 0.05em 0.08em 0 0;
-  color: #D63D14;
-  font-style: italic;
-  font-weight: 400;
-}
 
 /* Role detail overlay */
 .role-detail {

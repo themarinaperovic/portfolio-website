@@ -20,18 +20,7 @@
       <div class="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
         style="background: linear-gradient(to left, #E8E2D5, transparent);" />
 
-      <div
-        ref="trackEl"
-        class="ticker-scroll"
-        :class="{ 'is-dragging': isDragging }"
-        @mousedown="onDragStart"
-        @mousemove="onDragMove"
-        @mouseup="onDragEnd"
-        @mouseleave="onDragEnd"
-        @mouseenter="isHovering = true"
-        @wheel="onUserInteract"
-        @touchstart="onUserInteract"
-      >
+      <div class="overflow-hidden">
         <div class="ticker-track">
           <div
             v-for="(testimonial, i) in tickerItems"
@@ -46,7 +35,6 @@
                 </p>
               </div>
               <div class="flex items-center gap-3">
-                <!-- Avatar initials -->
                 <div class="w-9 h-9 rounded-full bg-ink/10 flex items-center justify-center shrink-0">
                   <span class="text-xs font-bold text-ink">{{ initials(testimonial.name) }}</span>
                 </div>
@@ -98,7 +86,6 @@ const testimonials = [
   },
 ]
 
-// Duplicate for seamless ticker loop
 const tickerItems = [...testimonials, ...testimonials]
 
 const initials = (name: string) =>
