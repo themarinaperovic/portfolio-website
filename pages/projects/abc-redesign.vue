@@ -76,8 +76,6 @@
           <span><span class="num">[ 03 ]</span> — Define</span>
         </div>
         <h2 class="section-title">Member Personas</h2>
-        <p class="body-copy">After analyzing four types of members and four types of business models, we identified common needs that had to be addressed in creating a universal app design.</p>
-
         <!-- Personas -->
         <div class="persona-grid">
           <div class="persona-card">
@@ -101,10 +99,10 @@
             <p class="persona-desc">Fitness motivation is primarily event driven (vacation, wedding, etc.)</p>
           </div>
         </div>
+        <p class="body-copy">After analyzing four types of members and four types of business models, we've identified common needs that must be addressed in creating a universal app design.</p>
 
         <!-- Packages matrix -->
         <h3 class="sub-title">ABC Packages</h3>
-        <p class="body-copy">ABC Fitness presents four distinct packages for businesses to choose from, allowing them to tailor their selection based on their needs and the types of members they intend to target — one or multiple packages that align with their specific requirements.</p>
 
         <div class="packages-grid">
           <div class="package-card">
@@ -152,6 +150,7 @@
             </ul>
           </div>
         </div>
+        <p class="body-copy">ABC Fitness presents four distinct packages for businesses to choose from, allowing them to tailor their selection based on their needs and the types of members they intend to target — one or multiple packages that align with their specific requirements.</p>
 
         <img src="/case/abc-redesign/abcshow11.png" alt="ABC Fitness — Businesses to Packages diagram" class="case-img case-img--rounded" />
       </section>
