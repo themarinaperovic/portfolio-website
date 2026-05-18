@@ -104,6 +104,10 @@ body {
   animation: grain 1.2s steps(6) infinite;
 }
 
+@media (max-width: 760px) {
+  .grain { opacity: 0.15; }
+}
+
 @keyframes grain {
   0%   { transform: translate(0,    0)   }
   20%  { transform: translate(-3%,  2%)  }

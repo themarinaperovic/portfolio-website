@@ -40,18 +40,18 @@
           <div class="facts-hint">
             <span>Click for more</span>
             <span class="hint-line" />
-            <span>→</span>
+            <span>↓</span>
           </div>
           <template v-for="(row, i) in cv" :key="row.yr">
             <div
               class="row"
               :class="{
                 'is-active': activeIndex === i,
-                'is-dimmed': activeIndex !== null && activeIndex !== i,
+                'is-dimmed': !isTouch && activeIndex !== null && activeIndex !== i,
               }"
-              @mouseenter="activeIndex = i"
-              @mouseleave="activeIndex = null"
-              @click="activeIndex = activeIndex === i ? null : i"
+              @mouseenter="!isTouch && (activeIndex = i)"
+              @mouseleave="!isTouch && (activeIndex = null)"
+              @click="isTouch && (activeIndex = activeIndex === i ? null : i)"
             >
               <b>{{ row.yr }}</b>
               <span>
@@ -80,6 +80,10 @@
 
 <script setup lang="ts">
 const activeIndex = ref<number | null>(null)
+const isTouch = ref(false)
+onMounted(() => {
+  isTouch.value = window.matchMedia('(hover: none)').matches
+})
 
 const cv = [
   {
