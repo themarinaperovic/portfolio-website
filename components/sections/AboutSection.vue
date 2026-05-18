@@ -89,19 +89,28 @@ onMounted(() => {
 
 function onEnter(el: Element) {
   const e = el as HTMLElement
+  const targetHeight = e.scrollHeight
   e.style.overflow = 'hidden'
   e.style.height = '0'
+  e.style.paddingTop = '0'
+  e.style.paddingBottom = '0'
   e.style.opacity = '0'
   requestAnimationFrame(() => {
-    e.style.transition = 'height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.35s ease'
-    e.style.height = e.scrollHeight + 'px'
-    e.style.opacity = '1'
+    requestAnimationFrame(() => {
+      e.style.transition = 'height 0.42s cubic-bezier(.4,0,.2,1), opacity 0.35s ease, padding 0.42s cubic-bezier(.4,0,.2,1)'
+      e.style.height = targetHeight + 'px'
+      e.style.paddingTop = '16px'
+      e.style.paddingBottom = '20px'
+      e.style.opacity = '1'
+    })
   })
 }
 function onAfterEnter(el: Element) {
   const e = el as HTMLElement
   e.style.overflow = ''
   e.style.height = ''
+  e.style.paddingTop = ''
+  e.style.paddingBottom = ''
   e.style.transition = ''
 }
 function onLeave(el: Element) {
@@ -110,9 +119,13 @@ function onLeave(el: Element) {
   e.style.height = e.scrollHeight + 'px'
   e.style.opacity = '1'
   requestAnimationFrame(() => {
-    e.style.transition = 'height 0.35s cubic-bezier(.4,0,.2,1), opacity 0.25s ease'
-    e.style.height = '0'
-    e.style.opacity = '0'
+    requestAnimationFrame(() => {
+      e.style.transition = 'height 0.35s cubic-bezier(.4,0,.2,1), opacity 0.25s ease, padding 0.35s cubic-bezier(.4,0,.2,1)'
+      e.style.height = '0'
+      e.style.paddingTop = '0'
+      e.style.paddingBottom = '0'
+      e.style.opacity = '0'
+    })
   })
 }
 
