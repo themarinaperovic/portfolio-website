@@ -54,12 +54,14 @@
               @click="isTouch && (activeIndex = activeIndex === i ? null : i)"
             >
               <b>{{ row.yr }}</b>
-              <span>
-                <span class="ti">{{ row.ti }}</span><br>
-                <span class="co">{{ row.co }}</span>
-              </span>
+              <span class="ti">{{ row.ti }}</span>
+              <span class="co">{{ row.co }}</span>
             </div>
-            <Transition name="inline-expand">
+            <Transition
+              @enter="onEnter"
+              @after-enter="onAfterEnter"
+              @leave="onLeave"
+            >
               <div v-if="activeIndex === i" class="role-detail-inline">
                 <div class="role-detail-meta">
                   <span class="dot" />
@@ -84,6 +86,35 @@ const isTouch = ref(false)
 onMounted(() => {
   isTouch.value = window.matchMedia('(hover: none)').matches
 })
+
+function onEnter(el: Element) {
+  const e = el as HTMLElement
+  e.style.overflow = 'hidden'
+  e.style.height = '0'
+  e.style.opacity = '0'
+  requestAnimationFrame(() => {
+    e.style.transition = 'height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.35s ease'
+    e.style.height = e.scrollHeight + 'px'
+    e.style.opacity = '1'
+  })
+}
+function onAfterEnter(el: Element) {
+  const e = el as HTMLElement
+  e.style.overflow = ''
+  e.style.height = ''
+  e.style.transition = ''
+}
+function onLeave(el: Element) {
+  const e = el as HTMLElement
+  e.style.overflow = 'hidden'
+  e.style.height = e.scrollHeight + 'px'
+  e.style.opacity = '1'
+  requestAnimationFrame(() => {
+    e.style.transition = 'height 0.35s cubic-bezier(.4,0,.2,1), opacity 0.25s ease'
+    e.style.height = '0'
+    e.style.opacity = '0'
+  })
+}
 
 const cv = [
   {
@@ -254,26 +285,6 @@ section {
   transform: translateY(-8px);
 }
 
-/* Inline expand — mobile */
-.inline-expand-enter-active {
-  transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s ease 0.05s, padding 0.4s cubic-bezier(.4,0,.2,1);
-  overflow: hidden;
-}
-.inline-expand-leave-active {
-  transition: max-height 0.35s cubic-bezier(.4,0,.2,1), opacity 0.25s ease, padding 0.35s cubic-bezier(.4,0,.2,1);
-  overflow: hidden;
-}
-.inline-expand-enter-from,
-.inline-expand-leave-to {
-  max-height: 0;
-  opacity: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.inline-expand-enter-to,
-.inline-expand-leave-from {
-  max-height: 400px;
-}
 
 /* Hint */
 .facts-hint {
@@ -325,9 +336,10 @@ section {
 }
 
 .row {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 20px;
   padding: 16px 12px;
   border-bottom: 1px solid rgba(15, 15, 15, 0.15);
   margin: 0 -12px;
@@ -335,6 +347,24 @@ section {
   transition: background-color 0.4s cubic-bezier(.7,.05,.2,1),
               opacity 0.4s cubic-bezier(.7,.05,.2,1),
               padding 0.4s cubic-bezier(.7,.05,.2,1);
+}
+
+.row b {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.row .ti {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: right;
+}
+
+.row .co {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: right;
 }
 
 .row:first-child {
@@ -353,7 +383,6 @@ section {
   font-weight: 500;
   color: #0B0C0B;
   white-space: nowrap;
-  flex-shrink: 0;
   transition: color 0.4s cubic-bezier(.7,.05,.2,1);
 }
 
@@ -361,20 +390,14 @@ section {
   color: #D63D14;
 }
 
-.row span {
-  color: rgba(15, 15, 15, 0.55);
-  text-align: right;
-  line-height: 1.6;
-}
-
 .row .ti {
   color: #0B0C0B;
-  display: block;
+  line-height: 1.6;
 }
 
 .row .co {
   color: rgba(15, 15, 15, 0.55);
-  display: block;
+  line-height: 1.6;
 }
 
 /* Inline detail — mobile only */
@@ -389,6 +412,30 @@ section {
   .facts-hint {
     display: flex;
   }
+
+  .row {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .row b {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: auto;
+  }
+
+  .row .ti {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+  }
+
+  .row .co {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    text-align: right;
+  }
+
 
   .role-detail-inline {
     display: flex;
