@@ -72,7 +72,7 @@
           Photography → Interfaces. Twelve years behind a lens, six years inside a viewport.
         </p>
       </div>
-      <div class="flex items-center gap-2.5 justify-self-end">
+      <div class="flex items-center gap-2.5 justify-self-end scroll-cue">
         <span class="scroll-label">Scroll</span>
         <span class="scroll-cue-line" />
         <span class="scroll-label">↓</span>
@@ -92,11 +92,16 @@ const isReady = useAppReady()
 .scroll-label { color: rgba(11, 12, 11, 0.55); }
 
 @media (max-width: 760px) {
-  .bottom-grid { color: rgba(232, 226, 213, 0.9); }
+  .bottom-grid {
+    color: rgba(232, 226, 213, 0.9);
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
   .body-p { color: rgba(232, 226, 213, 0.6); }
   .scroll-label { color: rgba(232, 226, 213, 0.6); }
   .scroll-cue-line { background: rgba(232, 226, 213, 0.4); }
   .hero-name { color: rgba(232, 226, 213, 0.9) !important; }
+  .scroll-cue { justify-self: start; }
 }
 
 .scroll-cue-line {

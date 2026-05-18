@@ -59,7 +59,7 @@
                 <span class="co">{{ row.co }}</span>
               </span>
             </div>
-            <Transition name="detail-fade">
+            <Transition name="inline-expand">
               <div v-if="activeIndex === i" class="role-detail-inline">
                 <div class="role-detail-meta">
                   <span class="dot" />
@@ -252,6 +252,27 @@ section {
 .detail-fade-leave-to {
   opacity: 0;
   transform: translateY(-8px);
+}
+
+/* Inline expand — mobile */
+.inline-expand-enter-active {
+  transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s ease 0.05s, padding 0.4s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+}
+.inline-expand-leave-active {
+  transition: max-height 0.35s cubic-bezier(.4,0,.2,1), opacity 0.25s ease, padding 0.35s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+}
+.inline-expand-enter-from,
+.inline-expand-leave-to {
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.inline-expand-enter-to,
+.inline-expand-leave-from {
+  max-height: 400px;
 }
 
 /* Hint */
