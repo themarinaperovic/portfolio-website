@@ -51,7 +51,6 @@
             <span class="pill">B2B2C</span>
             <span class="pill">SaaS</span>
 <span class="pill">Feature Design</span>
-            <span class="pill">White-label</span>
           </div>
         </div>
       </section>

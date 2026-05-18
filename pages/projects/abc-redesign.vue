@@ -49,7 +49,6 @@
             <span class="pill">App Redesign</span>
             <span class="pill">Design System</span>
             <span class="pill">White-label</span>
-            <span class="pill">Mobile</span>
           </div>
         </div>
       </section>
@@ -184,7 +183,7 @@
           <p>To align with each brand's style guide, all components needed to support both dark and light mode variations. Further stages introduced the "softness" style — allowing businesses to achieve an even more personalized app appearance through new icon styles, border radius, and typefaces.</p>
         </div>
 
-        <div class="img-row">
+        <div class="img-row img-row--70">
           <img src="/case/abc-redesign/17a.webp" alt="" class="case-img case-img--rounded" />
           <img src="/case/abc-redesign/17b.webp" alt="" class="case-img case-img--rounded" />
           <img src="/case/abc-redesign/17c.webp" alt="" class="case-img case-img--rounded" />
@@ -1078,9 +1077,13 @@ main {
 /* ── Images ── */
 .case-img {
   display: block;
-  width: 100%;
+  width: 70%;
   height: auto;
-  margin: 32px 0;
+  margin: 32px auto;
+}
+
+@media (max-width: 760px) {
+  .case-img { width: 100%; margin: 32px 0; }
 }
 
 .case-img--rounded {
@@ -1105,8 +1108,15 @@ main {
   margin: 32px 0;
 }
 
+.img-row--70 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img-row .case-img {
   flex: 1;
+  width: 100%;
   min-width: 0;
   margin: 0;
   object-fit: cover;
@@ -1123,6 +1133,7 @@ main {
 }
 
 .img-grid .case-img {
+  width: 100%;
   margin: 0;
   height: 100%;
   object-fit: cover;

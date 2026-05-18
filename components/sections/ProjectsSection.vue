@@ -46,21 +46,21 @@ const works = [
     slug: 'abc-redesign',
     title: 'Reinventing fitness',
     tagline: 'ABC Fitness · App Redesign',
-    tags: ['Mobile', 'Redesign', 'Design Systems'],
+    tags: ['App Redesign', 'Design System', 'White-label'],
     desc: 'Redesigning the app to modernise visual appeal, improve functionality and drive user satisfaction.',
   },
   {
     slug: 'abc-referral',
     title: 'Effortlessly increasing customer base',
     tagline: 'ABC Fitness · B2B2C',
-    tags: ['SaaS', 'Feature Design', 'White-label'],
+    tags: ['B2B2C', 'SaaS', 'Feature Design'],
     desc: 'Understanding and addressing the requirements of client businesses and their members.',
   },
   {
     slug: 'kroon',
     title: 'For the love of dog',
     tagline: 'Kroon Studio',
-    tags: ['Web', 'Adoption', 'Research'],
+    tags: ['Web', 'Research', 'Pro bono'],
     desc: 'Research and proposal for a platform dedicated to reducing dog abandonment and promoting adoption.',
     comingSoon: true,
   },
@@ -256,7 +256,14 @@ h3 {
     gap: 10px;
   }
 
-  .arrow { display: none; }
+  .arrow {
+    display: block;
+    position: static;
+    transform: none;
+    opacity: 1;
+    color: rgba(11, 12, 11, 0.45);
+    margin-top: 6px;
+  }
 
   .work-item:hover {
     padding-left: clamp(20px, 3.4vw, 56px);

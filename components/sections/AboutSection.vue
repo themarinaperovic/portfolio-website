@@ -37,23 +37,38 @@
 
         <!-- Right column: CV rows -->
         <div class="facts">
-          <div
-            v-for="(row, i) in cv"
-            :key="row.yr"
-            class="row"
-            :class="{
-              'is-active': activeIndex === i,
-              'is-dimmed': activeIndex !== null && activeIndex !== i,
-            }"
-            @mouseenter="activeIndex = i"
-            @mouseleave="activeIndex = null"
-          >
-            <b>{{ row.yr }}</b>
-            <span>
-              <span class="ti">{{ row.ti }}</span><br>
-              <span class="co">{{ row.co }}</span>
-            </span>
+          <div class="facts-hint">
+            <span>Click for more</span>
+            <span class="hint-line" />
+            <span>→</span>
           </div>
+          <template v-for="(row, i) in cv" :key="row.yr">
+            <div
+              class="row"
+              :class="{
+                'is-active': activeIndex === i,
+                'is-dimmed': activeIndex !== null && activeIndex !== i,
+              }"
+              @mouseenter="activeIndex = i"
+              @mouseleave="activeIndex = null"
+              @click="activeIndex = activeIndex === i ? null : i"
+            >
+              <b>{{ row.yr }}</b>
+              <span>
+                <span class="ti">{{ row.ti }}</span><br>
+                <span class="co">{{ row.co }}</span>
+              </span>
+            </div>
+            <Transition name="detail-fade">
+              <div v-if="activeIndex === i" class="role-detail-inline">
+                <div class="role-detail-meta">
+                  <span class="dot" />
+                  <span>{{ row.yr }} · {{ row.ti }}</span>
+                </div>
+                <p class="role-detail-text">{{ row.detail }}</p>
+              </div>
+            </Transition>
+          </template>
         </div>
 
       </div>
@@ -235,6 +250,44 @@ section {
   transform: translateY(-8px);
 }
 
+/* Hint */
+.facts-hint {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 16px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(15, 15, 15, 0.4);
+}
+
+.hint-line {
+  display: inline-block;
+  width: 36px;
+  height: 1px;
+  background: rgba(15, 15, 15, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hint-line::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #D63D14;
+  transform: translateX(-100%);
+  animation: hintLine 2.4s cubic-bezier(.7,.05,.2,1) infinite;
+}
+
+@keyframes hintLine {
+  0%   { transform: translateX(-100%); }
+  50%  { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
 /* Right column — facts/CV */
 .facts {
   display: flex;
@@ -244,8 +297,6 @@ section {
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  border-top: 1px solid rgba(15, 15, 15, 0.15);
-  padding-top: 20px;
 }
 
 .row {
@@ -259,6 +310,10 @@ section {
   transition: background-color 0.4s cubic-bezier(.7,.05,.2,1),
               opacity 0.4s cubic-bezier(.7,.05,.2,1),
               padding 0.4s cubic-bezier(.7,.05,.2,1);
+}
+
+.row:first-child {
+  border-top: 1px solid rgba(15, 15, 15, 0.15);
 }
 
 .row.is-active {
@@ -295,5 +350,42 @@ section {
 .row .co {
   color: rgba(15, 15, 15, 0.55);
   display: block;
+}
+
+/* Inline detail — mobile only */
+.role-detail-inline {
+  display: none;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@media (max-width: 760px) {
+  .facts-hint {
+    display: flex;
+  }
+
+  .role-detail-inline {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 12px 20px;
+    border-bottom: 1px solid rgba(15, 15, 15, 0.15);
+    margin: 0 -12px;
+  }
+
+  .role-detail-inline .role-detail-meta {
+    display: none;
+  }
+
+  /* Hide the left-col overlay on mobile */
+  .left-col .role-detail {
+    display: none;
+  }
+
+  /* Keep body text visible on mobile regardless */
+  .body-text.is-faded {
+    opacity: 1;
+  }
 }
 </style>

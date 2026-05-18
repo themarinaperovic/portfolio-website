@@ -22,7 +22,7 @@
     <!-- Name title -->
     <div class="relative z-10 flex flex-col my-auto pointer-events-none">
       <h1
-        class="font-display font-light leading-[0.86] tracking-[-0.045em]"
+        class="font-display font-light leading-[0.86] tracking-[-0.045em] hero-name"
         style="font-size: clamp(74px, 16vw, 285px); font-variation-settings: 'opsz' 144; color: #0B0C0B"
       >
         <div class="overflow-hidden flex items-baseline">
@@ -55,27 +55,27 @@
 
     <!-- Bottom grid: Discipline · Trajectory · Scroll -->
     <div
-      class="relative z-10 grid items-end font-mono text-[11px] tracking-[0.08em] uppercase"
-      style="gap: 30px; grid-template-columns: 1.4fr 1fr 1fr; color: #0B0C0B"
+      class="relative z-10 grid items-end font-mono text-[11px] tracking-[0.08em] uppercase bottom-grid"
+      style="gap: 30px; grid-template-columns: 1.4fr 1fr 1fr;"
       :style="{ opacity: isReady ? 1 : 0, transition: 'opacity 0.9s ease 0.72s' }"
     >
       <div>
-        <span class="block font-medium mb-2">Discipline</span>
-        <p style="color: rgba(11,12,11,0.55); line-height: 1.6">
+        <span class="block font-medium mb-2 label">Discipline</span>
+        <p class="body-p" style="line-height: 1.6">
           Product design, design systems, and the slow craft of getting the interface out of the way.
         </p>
 
       </div>
       <div>
-        <span class="block font-medium mb-2">Trajectory</span>
-        <p style="color: rgba(11,12,11,0.55); line-height: 1.6">
+        <span class="block font-medium mb-2 label">Trajectory</span>
+        <p class="body-p" style="line-height: 1.6">
           Photography → Interfaces. Twelve years behind a lens, six years inside a viewport.
         </p>
       </div>
       <div class="flex items-center gap-2.5 justify-self-end">
-        <span style="color: rgba(11,12,11,0.55)">Scroll</span>
+        <span class="scroll-label">Scroll</span>
         <span class="scroll-cue-line" />
-        <span style="color: rgba(11,12,11,0.55)">↓</span>
+        <span class="scroll-label">↓</span>
       </div>
     </div>
 
@@ -87,6 +87,18 @@ const isReady = useAppReady()
 </script>
 
 <style scoped>
+.bottom-grid { color: #0B0C0B; }
+.body-p { color: rgba(11, 12, 11, 0.55); }
+.scroll-label { color: rgba(11, 12, 11, 0.55); }
+
+@media (max-width: 760px) {
+  .bottom-grid { color: rgba(232, 226, 213, 0.9); }
+  .body-p { color: rgba(232, 226, 213, 0.6); }
+  .scroll-label { color: rgba(232, 226, 213, 0.6); }
+  .scroll-cue-line { background: rgba(232, 226, 213, 0.4); }
+  .hero-name { color: rgba(232, 226, 213, 0.9) !important; }
+}
+
 .scroll-cue-line {
   display: inline-block;
   width: 36px;
@@ -109,4 +121,5 @@ const isReady = useAppReady()
   50% { transform: translateX(0); }
   100% { transform: translateX(100%); }
 }
+
 </style>
