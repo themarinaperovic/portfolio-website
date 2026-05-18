@@ -115,12 +115,16 @@ function onAfterEnter(el: Element) {
 }
 function onLeave(el: Element) {
   const e = el as HTMLElement
+  const currentHeight = e.scrollHeight
   e.style.overflow = 'hidden'
-  e.style.height = e.scrollHeight + 'px'
+  e.style.height = currentHeight + 'px'
+  e.style.paddingTop = '16px'
+  e.style.paddingBottom = '20px'
   e.style.opacity = '1'
+  e.style.transition = 'none'
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
-      e.style.transition = 'height 0.35s cubic-bezier(.4,0,.2,1), opacity 0.25s ease, padding 0.35s cubic-bezier(.4,0,.2,1)'
+      e.style.transition = 'height 0.38s cubic-bezier(.4,0,.2,1), opacity 0.28s ease, padding 0.38s cubic-bezier(.4,0,.2,1)'
       e.style.height = '0'
       e.style.paddingTop = '0'
       e.style.paddingBottom = '0'
