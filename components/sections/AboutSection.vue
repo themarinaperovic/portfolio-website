@@ -9,10 +9,8 @@
     <div class="about-stage">
 
       <h2 class="big-statement">
-        I make interfaces<br>
-        that move like <em>cinema</em>—<br>
-        <span class="u">quietly framed</span>, generously<br>
-        lit, almost <em>invisible</em>.
+        First I framed <em>light</em>.<br>
+        Now I frame <em>logic</em>.
       </h2>
 
       <div class="about-grid">
@@ -212,9 +210,7 @@ section {
 }
 
 .big-statement .u {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.12em;
+  text-decoration: none;
 }
 
 .about-grid {
