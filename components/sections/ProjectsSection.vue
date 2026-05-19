@@ -3,7 +3,7 @@
 
     <div class="sect-header">
       <span><span class="num">[ 02 ]</span> — Selected Works</span>
-      <span>05 Projects · 2021 → 2026</span>
+      <span>Under construction · More case studies incoming</span>
     </div>
 
     <div class="work-list">
@@ -38,7 +38,7 @@ const works = [
     slug: 'bucherer',
     title: 'Timeless elegance, exceptional craftsmanship',
     tagline: 'Bucherer AG',
-    tags: ['E-commerce', 'Luxury', 'WCAG', "Bronze · Swiss Apps '25"],
+    tags: ['E-commerce', 'WCAG', "Bronze · Swiss Apps '25"],
     desc: 'Simplifying complex systems into experiences aligned with the brand\'s premium positioning.',
     comingSoon: true,
   },
@@ -70,7 +70,6 @@ const works = [
     tagline: 'Snapshots',
     tags: ['Misc', 'Snapshots'],
     desc: 'Web and app designs across different clients, briefs and moments — presented as screens, not stories.',
-    comingSoon: true,
   },
 ]
 </script>
@@ -142,14 +141,26 @@ const works = [
   background: #4A4642;
 }
 
-.work-item:hover::before {
-  transform: scaleY(1);
-  transform-origin: top center;
+@media (hover: hover) {
+  .work-item:hover::before {
+    transform: scaleY(1);
+    transform-origin: top center;
+  }
+  .work-item:hover {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
-.work-item:hover {
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media (hover: none) {
+  .work-item:active::before {
+    transform: scaleY(1);
+    transform-origin: top center;
+  }
+  .work-item:active {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 /* Main title block */
@@ -169,8 +180,11 @@ h3 {
   transition: color 0.45s cubic-bezier(.7,.05,.2,1);
 }
 
-.work-item:hover h3 {
-  color: #E8E2D5;
+@media (hover: hover) {
+  .work-item:hover h3 { color: #E8E2D5; }
+}
+@media (hover: none) {
+  .work-item:active h3 { color: #E8E2D5; }
 }
 
 .tagline {
@@ -182,8 +196,11 @@ h3 {
   transition: color 0.45s cubic-bezier(.7,.05,.2,1);
 }
 
-.work-item:hover .tagline {
-  color: rgba(232, 226, 213, 0.65);
+@media (hover: hover) {
+  .work-item:hover .tagline { color: rgba(232, 226, 213, 0.65); }
+}
+@media (hover: none) {
+  .work-item:active .tagline { color: rgba(232, 226, 213, 0.65); }
 }
 
 /* Tags */
@@ -206,9 +223,11 @@ h3 {
   transition: border-color 0.4s, color 0.4s;
 }
 
-.work-item:hover .tag {
-  border-color: rgba(232, 226, 213, 0.3);
-  color: rgba(232, 226, 213, 0.85);
+@media (hover: hover) {
+  .work-item:hover .tag { border-color: rgba(232, 226, 213, 0.3); color: rgba(232, 226, 213, 0.85); }
+}
+@media (hover: none) {
+  .work-item:active .tag { border-color: rgba(232, 226, 213, 0.3); color: rgba(232, 226, 213, 0.85); }
 }
 
 /* Description */
@@ -223,8 +242,11 @@ h3 {
   transition: color 0.45s cubic-bezier(.7,.05,.2,1);
 }
 
-.work-item:hover .desc {
-  color: rgba(232, 226, 213, 0.85);
+@media (hover: hover) {
+  .work-item:hover .desc { color: rgba(232, 226, 213, 0.85); }
+}
+@media (hover: none) {
+  .work-item:active .desc { color: rgba(232, 226, 213, 0.85); }
 }
 
 /* Arrow */
@@ -244,9 +266,11 @@ h3 {
   pointer-events: none;
 }
 
-.work-item:hover .arrow {
-  transform: translate(0, -50%);
-  opacity: 1;
+@media (hover: hover) {
+  .work-item:hover .arrow { transform: translate(0, -50%); opacity: 1; }
+}
+@media (hover: none) {
+  .work-item:active .arrow { transform: translate(0, -50%); opacity: 1; }
 }
 
 /* ── Responsive ── */
@@ -261,8 +285,12 @@ h3 {
     position: static;
     transform: none;
     opacity: 1;
-    color: rgba(11, 12, 11, 0.45);
+    color: #D63D14;
     margin-top: 6px;
+  }
+
+  .is-coming-soon .arrow {
+    color: #4A4642;
   }
 
   .work-item:hover {

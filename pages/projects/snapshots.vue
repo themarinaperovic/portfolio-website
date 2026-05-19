@@ -12,9 +12,8 @@
             <span>Web · Mobile · Interface Design</span>
           </div>
           <h1 class="hero-title"><em>Here</em><br><span class="amp">&amp;</span> There.</h1>
-          <p class="hero-sub">Real work, presented as screens — not every project needs a case study to prove it happened.</p>
+          <p class="hero-sub">Not every project needs a case study.</p>
         </div>
-        <p class="hero-coming-soon">Coming soon</p>
       </section>
 
       <!-- ── Overview strip ── -->
@@ -29,19 +28,107 @@
         </div>
         <div class="overview-item">
           <span class="ov-label">Period</span>
-          <span class="ov-val">2021 → ongoing</span>
-        </div>
-        <div class="overview-item">
-          <span class="ov-label">Status</span>
-          <span class="ov-val ov-val--pending">Coming soon</span>
+          <span class="ov-val">2020 → ongoing</span>
         </div>
       </div>
 
-      <!-- ── Coming soon ── -->
-      <section class="coming-soon">
-        <p class="cs-label">[ — ] In assembly</p>
-        <h2 class="cs-title">Various. Assorted. <em>All real.</em></h2>
-        <p class="cs-body">Not every project needs a ten-page breakdown to be worth showing. Web and app designs across different clients, briefs and moments — presented as screens, not stories.</p>
+      <!-- ── THE STUDIO ── -->
+      <section class="snap-section">
+
+        <div class="snap-header">
+          <div class="snap-meta">
+            <span class="snap-index">[ 01 ]</span>
+            <span class="snap-rule" />
+            <span class="snap-title">The Studio</span>
+          </div>
+          <div class="snap-info">
+            <span class="snap-tag">Web</span>
+            <span class="snap-tag">Architecture · Interior Design</span>
+          </div>
+        </div>
+
+        <div class="snap-body">
+          <p class="snap-desc">
+            A website for an architecture and interior design studio — dark, deliberate, and built around the work itself. The concept centred on an interactive floor-plan navigator: hover a room, see its portfolio. Spatial thinking, applied to the screen.
+          </p>
+        </div>
+
+        <!-- Image grid -->
+        <div class="studio-grid">
+          <img src="/case/snapshots/studio/mb-9.webp" alt="The Studio — About page" loading="lazy" />
+          <img src="/case/snapshots/studio/mb-7.webp" alt="The Studio — Interactive floor plan" loading="lazy" />
+          <img src="/case/snapshots/studio/mb-8.webp" alt="The Studio — Portfolio gallery" loading="lazy" />
+          <img src="/case/snapshots/studio/mb-15.webp" alt="The Studio — Contact page" loading="lazy" />
+        </div>
+
+      </section>
+
+      <!-- ── WORKSHOP ── -->
+      <section class="snap-section workshop-section">
+
+        <div class="snap-header">
+          <div class="snap-meta">
+            <span class="snap-index">[ 02 ]</span>
+            <span class="snap-rule" />
+            <span class="snap-title">The Workshop</span>
+          </div>
+          <div class="snap-info">
+            <span class="snap-tag">Web</span>
+            <span class="snap-tag">Woodworking · Lighting</span>
+          </div>
+        </div>
+
+        <div class="snap-body">
+          <p class="snap-desc">
+            A website for a friend — a craftsman who builds furniture and designs signature lamps by hand. Quiet, editorial, and material. The kind of site where the wood grain does the talking.
+          </p>
+        </div>
+
+        <div class="workshop-scroll">
+          <img src="/case/snapshots/workshop/full.jpg" alt="The Workshop — full site overview" loading="lazy" />
+        </div>
+
+      </section>
+
+      <!-- ── THE BRAND ── -->
+      <section class="snap-section brand-section">
+
+        <div class="brand-top">
+          <div class="brand-top__text">
+            <div class="snap-header">
+              <div class="snap-meta">
+                <span class="snap-index">[ 03 ]</span>
+                <span class="snap-rule" />
+                <span class="snap-title">The Brand</span>
+              </div>
+              <div class="snap-info">
+                <span class="snap-tag">Web · Mobile</span>
+                <span class="snap-tag">Fashion · E-commerce</span>
+              </div>
+            </div>
+            <div class="snap-body">
+              <p class="snap-desc">
+                A full e-commerce experience for a fashion brand — from browsing and filtering to product detail and checkout. Designed across web and mobile, end to end.
+              </p>
+            </div>
+          </div>
+
+          <!-- Desktop screens -->
+          <div class="brand-web">
+            <img src="/case/snapshots/brand/web-1.webp" alt="The Brand — product detail" loading="lazy" />
+            <img src="/case/snapshots/brand/web-2.webp" alt="The Brand — category listing" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Mobile screens -->
+        <div class="brand-mobile">
+          <img src="/case/snapshots/brand/mob-1.webp" alt="The Brand — mobile home" loading="lazy" />
+          <img src="/case/snapshots/brand/mob-5.webp" alt="The Brand — mobile nav" loading="lazy" />
+          <img src="/case/snapshots/brand/mob-2.webp" alt="The Brand — mobile category" loading="lazy" />
+          <img src="/case/snapshots/brand/mob-3.webp" alt="The Brand — mobile product" loading="lazy" />
+          <img src="/case/snapshots/brand/mob-4.webp" alt="The Brand — mobile bag" loading="lazy" />
+        </div>
+
       </section>
 
       <!-- ── Nav ── -->
@@ -64,19 +151,46 @@
 useHead({
   title: 'Here & There — Snapshots · Marina Markus',
 })
+
+onMounted(() => {
+  const scrollEls = [
+    document.querySelector('.workshop-scroll'),
+    document.querySelector('.brand-mobile'),
+  ]
+
+  scrollEls.forEach(el => {
+    if (!el) return
+    let isDown = false
+    let startX = 0
+    let scrollLeft = 0
+    el.addEventListener('mousedown', e => {
+      isDown = true
+      startX = (e as MouseEvent).pageX - (el as HTMLElement).offsetLeft
+      scrollLeft = (el as HTMLElement).scrollLeft
+    })
+    el.addEventListener('mouseleave', () => { isDown = false })
+    el.addEventListener('mouseup', () => { isDown = false })
+    el.addEventListener('mousemove', e => {
+      if (!isDown) return
+      e.preventDefault()
+      const x = (e as MouseEvent).pageX - (el as HTMLElement).offsetLeft
+      ;(el as HTMLElement).scrollLeft = scrollLeft - (x - startX) * 1.4
+    })
+  })
+})
 </script>
 
 <style scoped>
 main {
-  padding-top: 80px;
+  padding-top: 0;
 }
 
 /* ── Hero ── */
 .hero {
-  padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px) 0;
+  min-height: 100vh;
+  padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px) clamp(40px, 6vw, 80px);
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 60px;
+  grid-template-columns: 1fr;
   align-items: end;
 }
 
@@ -223,6 +337,251 @@ main {
   line-height: 1.6;
   color: rgba(11, 12, 11, 0.55);
   max-width: 56ch;
+}
+
+/* ── Snapshot sections ── */
+.snap-section {
+  padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px);
+  border-top: 1px solid rgba(11, 12, 11, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 5vw, 72px);
+}
+
+.snap-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.snap-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.snap-index {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(11, 12, 11, 0.4);
+}
+
+.snap-rule {
+  display: inline-block;
+  width: 36px;
+  height: 1px;
+  background: rgba(11, 12, 11, 0.2);
+}
+
+.snap-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(28px, 3.5vw, 52px);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #0B0C0B;
+}
+
+.snap-info {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.snap-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(11, 12, 11, 0.45);
+  border: 1px solid rgba(11, 12, 11, 0.15);
+  border-radius: 99px;
+  padding: 4px 12px;
+}
+
+.snap-desc {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(17px, 1.5vw, 22px);
+  line-height: 1.55;
+  letter-spacing: -0.015em;
+  color: rgba(11, 12, 11, 0.55);
+  max-width: 58ch;
+}
+
+/* Studio image grid */
+.studio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.studio-grid img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  background: rgba(11, 12, 11, 0.04);
+}
+
+@media (max-width: 760px) {
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Workshop section ── */
+.workshop-section {
+  background: #C9C2B2;
+}
+
+.workshop-section .snap-index {
+  color: rgba(11, 12, 11, 0.6);
+}
+
+.workshop-section .snap-rule {
+  background: rgba(11, 12, 11, 0.35);
+}
+
+.workshop-section .snap-desc {
+  color: rgba(11, 12, 11, 0.7);
+}
+
+.workshop-section .snap-title {
+  color: #0B0C0B;
+}
+
+.workshop-section .snap-tag {
+  color: rgba(11, 12, 11, 0.7);
+  border-color: rgba(11, 12, 11, 0.35);
+}
+
+.workshop-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 50vh;
+  cursor: grab;
+  border-radius: 2px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.workshop-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.workshop-scroll:active {
+  cursor: grabbing;
+}
+
+.workshop-scroll img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  display: block;
+  object-fit: cover;
+  object-position: top left;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ── Brand section ── */
+.brand-section {
+  background: #2C2A26;
+}
+
+.brand-section .snap-index {
+  color: rgba(232, 226, 213, 0.4);
+}
+
+.brand-section .snap-rule {
+  background: rgba(232, 226, 213, 0.15);
+}
+
+.brand-section .snap-title {
+  color: #E8E2D5;
+}
+
+.brand-section .snap-tag {
+  color: rgba(232, 226, 213, 0.5);
+  border-color: rgba(232, 226, 213, 0.15);
+}
+
+.brand-section .snap-desc {
+  color: rgba(232, 226, 213, 0.55);
+}
+
+.brand-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 5vw, 80px);
+  align-items: start;
+}
+
+.brand-top__text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: sticky;
+  top: 120px;
+}
+
+.brand-top__text .snap-header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.brand-web {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.brand-web img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+@media (max-width: 880px) {
+  .brand-top { grid-template-columns: 1fr; }
+  .brand-top__text { position: static; }
+  .brand-web img { max-height: 60vh; object-fit: cover; object-position: top; }
+}
+
+.brand-mobile {
+  display: flex;
+  gap: 12px;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.brand-mobile::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-mobile img {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 0;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .brand-web { grid-template-columns: 1fr; }
+  .brand-web img { max-height: none; }
+  .brand-mobile img { height: 50vh; }
 }
 
 /* ── Case nav ── */
