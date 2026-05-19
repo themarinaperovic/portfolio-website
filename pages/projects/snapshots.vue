@@ -581,7 +581,27 @@ main {
 @media (max-width: 760px) {
   .brand-web { grid-template-columns: 1fr; }
   .brand-web img { max-height: none; }
-  .brand-mobile img { height: 50vh; }
+
+  .brand-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    overflow-x: unset;
+    cursor: default;
+  }
+
+  .brand-mobile img {
+    flex: unset;
+    width: 100%;
+    height: auto;
+    min-width: unset;
+  }
+
+  .brand-mobile img:last-child {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    justify-self: center;
+  }
 }
 
 /* ── Case nav ── */

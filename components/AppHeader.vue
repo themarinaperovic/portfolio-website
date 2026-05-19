@@ -1,11 +1,11 @@
 <template>
+  <span class="dot-fixed" aria-hidden="true" />
   <nav class="top">
     <!-- Logo -->
     <NuxtLink class="logo" to="/" data-hoverable aria-label="Marina Markus — home"
       @mousemove="onLogoMove"
       @mouseleave="onLogoLeave"
     >
-      <span class="dot" aria-hidden="true" />
       <span>Marina Markus</span>
     </NuxtLink>
 
@@ -81,7 +81,7 @@ const onLogoLeave = (e: MouseEvent) => {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  padding-left: 18px;
   font-weight: 500;
   transition: transform 0.6s cubic-bezier(.7,.05,.2,1);
 }
@@ -90,13 +90,15 @@ const onLogoLeave = (e: MouseEvent) => {
   transition: transform 0.1s linear;
 }
 
-.dot {
+.dot-fixed {
+  position: fixed;
+  top: 26px;
+  left: clamp(20px, 3.4vw, 56px);
   width: 8px;
   height: 8px;
   background: #D63D14;
   border-radius: 50%;
-  display: inline-block;
-  flex-shrink: 0;
+  z-index: 90;
   animation: pulse 2.4s cubic-bezier(.7,.05,.2,1) infinite;
 }
 
