@@ -38,7 +38,7 @@
         <!-- Right column: CV rows -->
         <div class="facts">
           <div class="facts-hint">
-            <span>Click for more</span>
+            <span>Click for details</span>
             <span class="hint-line" />
             <span>↓</span>
           </div>

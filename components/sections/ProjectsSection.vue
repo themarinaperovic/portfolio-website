@@ -25,7 +25,7 @@
 
         <p class="desc">{{ item.desc }}</p>
 
-        <span class="arrow">{{ item.comingSoon ? '— Coming soon' : '→ Case study' }}</span>
+        <span class="arrow">{{ item.comingSoon ? '— Coming soon' : item.slug === 'snapshots' ? '→ Browse' : '→ Case study' }}</span>
       </NuxtLink>
     </div>
 

@@ -96,7 +96,7 @@
 
 @media (max-width: 760px) {
   .email-address {
-    font-size: 4.2vw;
+    font-size: calc((100vw - 112px) / 15.5);
     word-break: keep-all;
     white-space: nowrap;
     color: #E8E2D5;
