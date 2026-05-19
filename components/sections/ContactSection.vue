@@ -25,12 +25,12 @@
             class="group block"
             data-hoverable
           >
-            <div class="border border-border rounded-sm p-8 hover:border-ink transition-all duration-300 group-hover:bg-ink group-hover:text-cream">
-              <p class="font-display italic font-light break-all group-hover:text-cream transition-colors duration-300" style="font-size: clamp(calc(1.5rem * 0.95), 2.5vw, calc(1.875rem * 0.95))">
+            <div class="email-card border border-border rounded-sm p-8 hover:border-ink transition-all duration-300 group-hover:bg-ink group-hover:text-cream">
+              <p class="font-display italic font-light email-address group-hover:text-cream transition-colors duration-300">
                 themarinamarkus@gmail.com
               </p>
               <div class="flex items-center gap-2 mt-6">
-                <span class="text-xs tracking-widest uppercase font-mono text-smoke group-hover:text-cream/40 transition-colors duration-300">Email me</span>
+                <span class="email-label text-xs tracking-widest uppercase font-mono text-smoke group-hover:text-cream/40 transition-colors duration-300">Email me</span>
                 <span class="text-xl group-hover:translate-x-1 transition-transform duration-300">→</span>
               </div>
             </div>
@@ -88,6 +88,29 @@
   letter-spacing: -0.035em;
   font-variation-settings: 'opsz' 144, 'SOFT' 100;
   color: #0B0C0B;
+}
+
+.email-address {
+  font-size: clamp(calc(1.5rem * 0.95), 2.5vw, calc(1.875rem * 0.95));
+}
+
+@media (max-width: 760px) {
+  .email-address {
+    font-size: 4.2vw;
+    word-break: keep-all;
+    white-space: nowrap;
+    color: #E8E2D5;
+  }
+
+  .email-card {
+    background: #0B0C0B;
+    border-color: #0B0C0B;
+    color: #E8E2D5;
+  }
+
+  .email-label {
+    color: rgba(232, 226, 213, 0.4);
+  }
 }
 
 .contact-headline__main em {
