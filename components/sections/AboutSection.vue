@@ -219,9 +219,6 @@ section {
   color: #D63D14;
 }
 
-.big-statement .u {
-  text-decoration: none;
-}
 
 .about-grid {
   display: grid;

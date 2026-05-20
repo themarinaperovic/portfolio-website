@@ -200,8 +200,7 @@ main {
 }
 
 @media (max-width: 760px) {
-  .hero { grid-template-columns: 1fr; }
-  .hero-coming-soon { display: none; }
+  .hero-inner { padding-top: clamp(80px, 10vw, 160px); }
 }
 
 .hero-meta {
@@ -235,17 +234,6 @@ main {
   color: rgba(11, 12, 11, 0.18);
 }
 
-.hero-coming-soon {
-  font-family: 'Fraunces', Georgia, serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: clamp(28px, 3.5vw, 52px);
-  letter-spacing: -0.02em;
-  color: rgba(11, 12, 11, 0.25);
-  align-self: center;
-  margin-bottom: clamp(40px, 5vw, 80px);
-  white-space: nowrap;
-}
 
 .hero-sub {
   font-family: 'Fraunces', Georgia, serif;
@@ -293,9 +281,6 @@ main {
   color: #0B0C0B;
 }
 
-.ov-val--pending {
-  color: rgba(11, 12, 11, 0.35);
-}
 
 @media (max-width: 760px) {
   .overview-strip { flex-wrap: wrap; }

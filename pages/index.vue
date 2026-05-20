@@ -46,39 +46,6 @@ onMounted(() => {
   overflow: hidden;
 }
 
-.status-tag {
-  flex: 0 0 auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 10.5px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(232, 226, 213, 0.45);
-  z-index: 2;
-}
-
-.status-tag--right {
-  margin-left: auto;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
-  background: #C9A96E;
-}
-
-.status-blink {
-  display: inline-block;
-  color: #D63D14;
-  animation: statusBlink 1.1s steps(1) infinite;
-}
-
-@keyframes statusBlink {
-  50% { opacity: 0; }
-}
 
 .status-track {
   flex: 1 1 auto;
