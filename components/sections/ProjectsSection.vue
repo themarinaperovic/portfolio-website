@@ -63,7 +63,6 @@ const works = [
     tagline: 'Kroon Studio',
     tags: ['Web', 'Research', 'Pro bono'],
     desc: 'Research and proposal for a platform dedicated to reducing dog abandonment and promoting adoption.',
-    comingSoon: true,
   },
   {
     slug: 'snapshots',

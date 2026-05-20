@@ -146,7 +146,7 @@ const onLogoLeave = (e: MouseEvent) => {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 36px;
 }
 
 /* Get in touch + CV link */

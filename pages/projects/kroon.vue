@@ -9,9 +9,9 @@
         <div class="hero-inner">
           <div class="hero-meta">
             <span>Kroon Studio · Pro bono</span>
-            <span>UX/UI Designer · Research Lead</span>
+            <span>UX/UI Designer · Research</span>
           </div>
-          <h1 class="hero-title">For the<br><em>love of dog.</em></h1>
+          <h1 class="hero-title">For the<br><em>love</em> of dog.</h1>
           <p class="hero-sub">Dogster — platform dedicated to reducing abandonment and promoting adoption</p>
         </div>
 
@@ -24,7 +24,7 @@
           <span class="ov-val">UX/UI Designer · Research</span>
         </div>
         <div class="overview-item">
-          <span class="ov-label">Studio</span>
+          <span class="ov-label">Company</span>
           <span class="ov-val">Kroon Studio</span>
         </div>
 <div class="overview-item">
