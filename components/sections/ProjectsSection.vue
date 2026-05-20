@@ -2,8 +2,8 @@
   <section id="work" class="work-section">
 
     <div class="sect-header">
-      <span><span class="num">[ 02 ]</span> — Selected Works</span>
-      <span>Under construction · More case studies incoming</span>
+      <span><span class="num">[ 02 ]</span> Selected Works</span>
+      <span class="rule" />
     </div>
 
     <div class="work-list">
@@ -47,14 +47,14 @@ const works = [
     title: 'Reinventing fitness',
     tagline: 'ABC Fitness · App Redesign',
     tags: ['App Redesign', 'Design System', 'White-label'],
-    desc: 'Redesigning the app to modernise visual appeal, improve functionality and drive user satisfaction.',
+    desc: 'Full redesign of a large-scale fitness platform, new visual language and a design system built to scale across hundreds of clubs.',
   },
   {
     slug: 'abc-referral',
     title: 'Effortlessly increasing customer base',
     tagline: 'ABC Fitness · B2B2C',
     tags: ['B2B2C', 'SaaS', 'Feature Design'],
-    desc: 'Understanding and addressing the requirements of client businesses and their members.',
+    desc: 'Designing a referral program that gave gym owners a new way to expand their member base, grounded in user research.',
   },
   {
     slug: 'kroon',
@@ -76,15 +76,14 @@ const works = [
 
 <style scoped>
 .work-section {
-  padding: clamp(80px, 11vw, 180px) clamp(20px, 3.4vw, 56px);
+  padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px);
 }
 
 /* ── Section header ── */
 .sect-header {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  border-top: 1px solid rgba(11, 12, 11, 0.15);
+  align-items: center;
+  gap: 16px;
   padding-top: 20px;
   margin-bottom: clamp(60px, 9vw, 140px);
   font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -97,6 +96,13 @@ const works = [
 .sect-header .num {
   color: #0B0C0B;
   font-weight: 500;
+}
+
+.sect-header .rule {
+  flex: 1;
+  height: 1px;
+  background: rgba(11, 12, 11, 0.15);
+  max-width: 80px;
 }
 
 /* ── Work list ── */

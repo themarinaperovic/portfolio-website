@@ -52,7 +52,7 @@
           <p class="text-xs font-semibold uppercase tracking-widest mb-2" :style="`color: ${project.accentColor}; opacity: 0.7`">
             {{ project.company }} · {{ project.year }}
           </p>
-          <h3 class="font-display italic font-light text-white text-3xl md:text-4xl leading-tight">
+          <h3 class="font-display font-light text-white text-3xl md:text-4xl leading-tight">
             {{ project.title }}
           </h3>
         </div>

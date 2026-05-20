@@ -1,14 +1,14 @@
 <template>
-  <section class="py-28 md:py-40 overflow-hidden">
+  <section class="testimonials-section overflow-hidden">
 
     <!-- Section header -->
-    <div class="px-6 md:px-12 max-w-[1400px] mx-auto mb-16" data-reveal>
-      <div class="flex items-center gap-4 mb-4">
-        <span class="text-xs tracking-widest uppercase font-mono text-smoke">[04] Voices</span>
+    <div class="testimonials-header mb-16">
+      <div class="flex items-center gap-4" style="margin-bottom: clamp(60px, 9vw, 140px)">
+        <span class="sect-num">[ 04 ]</span><span class="sect-lbl"> Voices</span>
         <span class="flex-1 h-px bg-border max-w-[80px]" />
       </div>
-      <h2 class="font-display italic font-light text-5xl md:text-7xl leading-none text-ink">
-        What people<br/>say.
+      <h2 class="font-display font-light text-5xl md:text-7xl leading-none text-ink">
+        Words from<br/>my colleagues.
       </h2>
     </div>
 
@@ -91,3 +91,26 @@ const tickerItems = [...testimonials, ...testimonials]
 const initials = (name: string) =>
   name.split(' ').map((n) => n[0]).slice(0, 2).join('')
 </script>
+
+<style scoped>
+.testimonials-section {
+  padding: clamp(80px, 10vw, 160px) 0;
+}
+
+.testimonials-header {
+  padding: 0 clamp(20px, 3.4vw, 56px);
+}
+
+.sect-num, .sect-lbl {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(11, 12, 11, 0.55);
+}
+
+.sect-num {
+  color: #0B0C0B;
+  font-weight: 500;
+}
+</style>

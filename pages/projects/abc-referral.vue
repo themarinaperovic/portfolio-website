@@ -256,12 +256,12 @@ main { padding-top: 80px; }
   margin-bottom: 28px;
 }
 
-.hero-title em { font-style: italic; color: #D63D14; }
+.hero-title em { font-style: normal; color: #D63D14; }
 
 .hero-sub {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(18px, 2vw, 30px);
   color: rgba(11, 12, 11, 0.55);
   letter-spacing: -0.02em;
@@ -421,7 +421,7 @@ main { padding-top: 80px; }
 .seg-title {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(22px, 2.5vw, 36px);
   letter-spacing: -0.02em;
   color: #0B0C0B;

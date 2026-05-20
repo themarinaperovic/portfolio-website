@@ -421,14 +421,14 @@ main {
 }
 
 .hero-title em {
-  font-style: italic;
+  font-style: normal;
   color: #D63D14;
 }
 
 .hero-sub {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(20px, 2.4vw, 36px);
   color: rgba(11, 12, 11, 0.55);
   letter-spacing: -0.02em;
@@ -590,7 +590,7 @@ main {
 .sub-title {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(22px, 2.8vw, 40px);
   letter-spacing: -0.02em;
   color: #0B0C0B;
@@ -637,7 +637,7 @@ main {
 .pull-quote {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(22px, 2.8vw, 40px);
   line-height: 1.2;
   letter-spacing: -0.02em;

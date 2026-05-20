@@ -2,8 +2,8 @@
   <section id="about" :class="{ 'is-hovering-row': activeIndex !== null }">
 
     <div class="sect-header">
-      <span><span class="num">[ 01 ]</span> — About</span>
-      <span>EN · ES · SR</span>
+      <span><span class="num">[ 01 ]</span> About</span>
+      <span class="rule" />
     </div>
 
     <div class="about-stage">
@@ -18,7 +18,7 @@
         <!-- Left column: default paragraph + role detail overlay -->
         <div class="left-col">
           <p class="body-text" :class="{ 'is-faded': activeIndex !== null }">
-            Twelve years I lived behind a viewfinder — composing frames, lighting faces, cutting reels into stories that breathe at twenty-four per second. Then, in 2020, I traded the camera for a Figma board. The grammar turned out to be identical: pacing, contrast, focus. Product design is just cinema slowed down to the speed of a click.
+            Behind every great user experience is a lot of hidden complexity. My job is to do the heavy lifting: untangling messy workflows and transforming them into intuitive, accessible products that feel entirely obvious to the user. With roots in photography and visual storytelling, I bring a sharp eye for composition, hierarchy, and human emotion to digital design, but I always ground my work in research and business objectives. I love partnering closely with developers and product teams to build scalable solutions that look beautiful and work flawlessly for real people.
           </p>
 
           <!-- Role detail panel — swapped per hovered row -->
@@ -136,7 +136,7 @@ const cv = [
     yr: '2024 — 26',
     ti: 'Senior UX/UI Designer',
     co: 'Bucherer AG',
-    detail: 'Swiss luxury watch and jewellery house, part of the Rolex Group. Designing the e-commerce experience, watch market value tracking, notification center and interest alerts — translating heritage codes into a quiet digital language for a high-end clientele. Introduced the jewellery category, reshaped how collectors add valuables to their collections, and established scalable WCAG-aligned accessibility standards across the platform.',
+    detail: 'Swiss luxury watch and jewellery house, part of the Rolex Group. Designed the e-commerce experience, watch market value tracking, notification center and interest alerts. Translated heritage codes into a quiet digital language for a high-end clientele. Introduced the jewellery category, reshaped how collectors add valuables to their collections, and established scalable WCAG-aligned accessibility standards across the platform.',
   },
   {
     yr: '2021 — 24',
@@ -148,7 +148,7 @@ const cv = [
     yr: '2020 — 21',
     ti: 'UX/UI Designer, Independent',
     co: 'Self-employed',
-    detail: 'Independent product work — harmonising business goals with end-user needs and translating them into functional, appealing features. The pivot year from cinema to interface, one shipped product at a time.',
+    detail: 'The year I switched industries, started independent work and figured out how design actually works in practice. Business goals, user needs, shipped features. One at a time.',
   },
   {
     yr: '2016 — 23',
@@ -173,15 +173,14 @@ const cv = [
 
 <style scoped>
 section {
-  padding: clamp(80px, 11vw, 180px) clamp(20px, 3.4vw, 56px);
+  padding: clamp(50px, 7vw, 120px) clamp(20px, 3.4vw, 56px);
   position: relative;
 }
 
 .sect-header {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  border-top: 1px solid rgba(15, 15, 15, 0.15);
+  align-items: center;
+  gap: 16px;
   padding-top: 20px;
   margin-bottom: clamp(60px, 9vw, 140px);
   font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -194,6 +193,13 @@ section {
 .sect-header .num {
   color: #0B0C0B;
   font-weight: 500;
+}
+
+.sect-header .rule {
+  flex: 1;
+  height: 1px;
+  background: rgba(15, 15, 15, 0.15);
+  max-width: 80px;
 }
 
 .big-statement {

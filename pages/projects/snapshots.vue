@@ -225,19 +225,19 @@ main {
 }
 
 .hero-title em {
-  font-style: italic;
+  font-style: normal;
   color: #D63D14;
 }
 
 .amp {
-  font-style: italic;
+  font-style: normal;
   color: rgba(11, 12, 11, 0.18);
 }
 
 .hero-coming-soon {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(28px, 3.5vw, 52px);
   letter-spacing: -0.02em;
   color: rgba(11, 12, 11, 0.25);
@@ -249,7 +249,7 @@ main {
 .hero-sub {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(18px, 2vw, 28px);
   color: rgba(11, 12, 11, 0.45);
   letter-spacing: -0.02em;
@@ -328,7 +328,7 @@ main {
 }
 
 .cs-title em {
-  font-style: italic;
+  font-style: normal;
   color: #D63D14;
 }
 
@@ -406,7 +406,7 @@ main {
 .snap-desc {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(17px, 1.5vw, 22px);
   line-height: 1.55;
   letter-spacing: -0.015em;

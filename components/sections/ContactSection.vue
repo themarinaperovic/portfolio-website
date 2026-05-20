@@ -1,24 +1,24 @@
 <template>
-  <section id="contact" class="py-28 md:py-40 px-6 md:px-12">
+  <section id="contact" style="padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px)">
     <div class="max-w-[1400px] mx-auto">
 
       <!-- Section label -->
-      <div class="flex items-center gap-4 mb-16" data-reveal>
-        <span class="text-xs tracking-widest uppercase font-mono text-smoke">[05] Contact</span>
+      <div class="flex items-center gap-4" style="margin-bottom: clamp(60px, 9vw, 140px)">
+        <span class="sect-num">[ 05 ]</span><span class="sect-lbl"> Contact</span>
         <span class="flex-1 h-px bg-border max-w-[80px]" />
       </div>
 
       <!-- Main CTA block -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-end">
 
-        <div data-reveal>
+        <div>
           <h2 class="contact-headline font-display font-light text-ink">
             <span class="contact-headline__lead">If something caught your eye,</span>
             <span class="contact-headline__main">you know where to <em>find me.</em></span>
           </h2>
         </div>
 
-        <div class="flex flex-col gap-8" data-reveal style="--delay: 150ms">
+        <div class="flex flex-col gap-8">
           <!-- Email CTA -->
           <a
             href="mailto:themarinamarkus@gmail.com"
@@ -117,5 +117,18 @@
   font-style: normal;
   color: #D63D14;
   padding-right: 0.04em;
+}
+
+.sect-num, .sect-lbl {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(11, 12, 11, 0.55);
+}
+
+.sect-num {
+  color: #0B0C0B;
+  font-weight: 500;
 }
 </style>

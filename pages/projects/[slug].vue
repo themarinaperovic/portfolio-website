@@ -25,7 +25,7 @@
               <p class="text-xs font-semibold uppercase tracking-widest mb-3" :style="`color: ${project.accentColor}; opacity: 0.7`">
                 {{ project.company }} · {{ project.year }}
               </p>
-              <h1 class="font-display italic font-light text-cream text-5xl md:text-7xl leading-tight mb-4">
+              <h1 class="font-display font-light text-cream text-5xl md:text-7xl leading-tight mb-4">
                 {{ project.title }}
               </h1>
               <p class="text-cream/50 text-lg max-w-xl leading-relaxed">{{ project.description }}</p>
@@ -35,7 +35,7 @@
           <!-- Case study placeholder -->
           <div class="max-w-2xl mx-auto text-center py-24">
             <div class="w-16 h-px bg-border mx-auto mb-8" />
-            <p class="font-display italic text-3xl font-light text-ink mb-4">
+            <p class="font-display text-3xl font-light text-ink mb-4">
               Case study coming soon.
             </p>
             <p class="text-smoke leading-relaxed mb-10">

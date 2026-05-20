@@ -4,7 +4,7 @@
 
       <!-- Section label -->
       <div class="sect-label" data-reveal>
-        <span>[ 03 ] — Recognition</span>
+        <span>[ 03 ] Recognition</span>
         <span class="rule" />
       </div>
 
@@ -17,7 +17,7 @@
           </h2>
           <p class="award-eyebrow">Best of Swiss Apps 2025</p>
           <p class="awards-body">
-            Two bronze medals — one for Design, one for User Experience. Awarded to the Bucherer app, alongside a small, very talented team. Not bad for someone who started with a camera.
+            Two bronze medals, one for Design, one for User Experience. Awarded to the Bucherer app, alongside a small, very talented team. Not bad for someone who started with a camera.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ const awards = [
 .awards-section {
   background: #2C2A26;
   color: #E8E2D5;
-  padding: clamp(80px, 10vw, 140px) clamp(20px, 3.4vw, 56px);
+  padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px);
 }
 
 .awards-inner {
@@ -108,7 +108,7 @@ const awards = [
 .awards-headline {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(24px, 2.8vw, 38px);
   line-height: 1.15;
   letter-spacing: -0.015em;
@@ -160,7 +160,7 @@ const awards = [
 .award-medal {
   font-family: 'Fraunces', Georgia, serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(22px, 2.4vw, 32px);
   letter-spacing: -0.01em;
   color: #C9A96E;

@@ -62,7 +62,7 @@
       <div>
         <span class="block font-medium mb-2 label">Discipline</span>
         <p class="body-p" style="line-height: 1.6">
-          Product design, design systems, and the slow craft of getting the interface out of the way.
+          Product design, design systems, research, and the slow craft of getting the interface out of the way.
         </p>
 
       </div>
