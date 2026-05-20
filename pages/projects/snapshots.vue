@@ -149,7 +149,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Here & There — Snapshots · Marina Markus',
+  title: 'Snapshots — Marina Markus',
 })
 
 onMounted(() => {

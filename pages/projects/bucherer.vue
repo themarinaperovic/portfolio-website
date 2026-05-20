@@ -164,7 +164,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Timeless Elegance — Bucherer AG · Marina Markus',
+  title: 'Bucherer AG — Marina Markus',
 })
 </script>
 

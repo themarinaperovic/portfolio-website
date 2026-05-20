@@ -378,7 +378,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Reinventing Fitness — ABC Fitness App Redesign · Marina Markus',
+  title: 'ABC Fitness Redesign — Marina Markus',
 })
 </script>
 

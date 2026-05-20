@@ -19,7 +19,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Marina Markus — UX/UI Designer',
+      title: 'Marina Markus — Product Designer Portfolio',
       meta: [
         { name: 'description', content: 'Award-winning UX/UI Designer crafting digital experiences that feel inevitable. Based in Zurich, currently at Bucherer AG.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

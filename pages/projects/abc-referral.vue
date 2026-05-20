@@ -218,7 +218,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Effortlessly Increasing Customer Base — ABC Fitness Referral · Marina Markus',
+  title: 'ABC Fitness Referral — Marina Markus',
 })
 </script>
 

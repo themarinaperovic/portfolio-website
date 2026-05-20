@@ -440,7 +440,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'For the Love of Dog — Kroon Studio · Marina Markus',
+  title: 'Dogster · Kroon Studio — Marina Markus',
 })
 </script>
 
