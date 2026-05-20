@@ -14,9 +14,9 @@
           <h1 class="hero-title">Effortlessly increasing<br><em>customer base.</em></h1>
           <p class="hero-sub">Referral system</p>
         </div>
-
-        <img src="/case/abc-referral/1hero.webp" alt="ABC Fitness Referral System" class="case-img" />
       </section>
+
+      <img src="/case/abc-referral/1hero.webp" alt="ABC Fitness Referral System" class="case-img hero-img" />
 
       <!-- ── Overview strip ── -->
       <div class="overview-strip">
@@ -228,6 +228,13 @@ main { padding-top: 80px; }
 /* ── Hero ── */
 .hero {
   padding: 0 clamp(20px, 3.4vw, 56px) 0;
+}
+
+.hero-img {
+  display: block;
+  width: calc(100% - clamp(40px, 6.8vw, 112px));
+  margin: 0 clamp(20px, 3.4vw, 56px) 0;
+  border-radius: 4px;
 }
 
 .hero-inner {
