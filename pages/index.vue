@@ -7,7 +7,7 @@
         <div class="status-track">
           <div class="status-marquee">
             <span v-for="i in 8" :key="i" class="status-item">
-              Product Designer · UX Research · UI Design · Design Systems · B2B2C · SaaS
+              Product Design · UX Research · UI Design · Design Systems · B2B2C · SaaS
               <span class="status-sep">✦</span>
             </span>
           </div>
