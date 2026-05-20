@@ -389,31 +389,17 @@ main {
 
 /* ── Hero ── */
 .hero {
-  height: calc(100svh - 80px);
-  padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px) 0;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  overflow: hidden;
-}
-
-.img-hero {
-  flex: 1;
-  min-height: 0;
-  overflow: hidden;
-  border-radius: 4px 4px 0 0;
-}
-
-.img-hero .case-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  margin: 0;
+  padding: 0 clamp(20px, 3.4vw, 56px) 0;
 }
 
 .hero-inner {
+  min-height: calc(100svh - 80px);
   max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: clamp(80px, 10vw, 160px);
+  padding-bottom: clamp(40px, 6vw, 80px);
 }
 
 .hero-meta {

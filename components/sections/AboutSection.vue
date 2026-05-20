@@ -9,8 +9,7 @@
     <div class="about-stage">
 
       <h2 class="big-statement">
-        First I framed <em>light</em>.<br>
-        Now I frame <em>logic</em>.
+        <em>Complex</em> doesn't have to be complicated.
       </h2>
 
       <div class="about-grid">
@@ -142,7 +141,7 @@ const cv = [
     yr: '2021 — 24',
     ti: 'UX/UI Designer',
     co: 'ABC Fitness · Trainerize · Kroon Studio',
-    detail: 'A US-leading FitTech company. Redesigned the entire member-facing app and built a highly customisable design system tailored to different club needs and branding. Wrote briefs, scoped features, and proposed design solutions grounded in user research and customer behaviour. Integrated Trainerize — the trainer-focused product — into ABC’s ecosystem of clubs, memberships and white-labelled business models.',
+    detail: "A US-leading FitTech company. Redesigned the entire member-facing app and built a highly customisable design system tailored to different club needs and branding. Wrote briefs, scoped features, and proposed design solutions grounded in user research and customer behaviour. Integrated Trainerize, the trainer-focused product, into ABC’s ecosystem of clubs, memberships and white-labelled business models.",
   },
   {
     yr: '2020 — 21',
@@ -154,19 +153,19 @@ const cv = [
     yr: '2016 — 23',
     ti: 'Franchise Owner / Manager',
     co: 'Vista Photography S.L.',
-    detail: 'Fine art portrait photography studio. Ran an independent branch end-to-end: HR, marketing, customer service, logistics, admin and finance. Coached and mentored photographers — driving performance, retention and professional growth across the team.',
+    detail: 'Fine art portrait photography studio. Ran an independent branch end-to-end: HR, marketing, customer service, logistics, admin and finance. Coached and mentored photographers, driving performance, retention and professional growth across the team.',
   },
   {
     yr: '2007 — 20',
     ti: 'Photographer · Videographer',
     co: 'Self-employed',
-    detail: 'Thirteen years of independent work behind a lens — editorial, portrait, documentary and motion. Diverse storytelling through photography and video, across formats and clients.',
+    detail: 'Thirteen years of independent work behind a lens, editorial, portrait, documentary and motion. Diverse storytelling through photography and video, across formats and clients.',
   },
   {
     yr: '2007 — 12',
     ti: 'MFA, Cinematography',
     co: 'University of Arts, Belgrade · FDU',
-    detail: 'Master in Audiovisual Arts / Cinematography at the Faculty of Dramatic Arts — one of the most selective film schools in the region. Composition, light, narrative pacing, and the discipline of working inside a frame.',
+    detail: 'Master in Audiovisual Arts / Cinematography at the Faculty of Dramatic Arts, one of the most selective film schools in the region. Composition, light, narrative pacing, and the discipline of working inside a frame.',
   },
 ]
 </script>

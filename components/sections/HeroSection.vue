@@ -62,14 +62,14 @@
       <div>
         <span class="block font-medium mb-2 label">Discipline</span>
         <p class="body-p" style="line-height: 1.6">
-          Product design, design systems, research, and the slow craft of getting the interface out of the way.
+          Senior UX/UI Designer
         </p>
 
       </div>
       <div>
         <span class="block font-medium mb-2 label">Trajectory</span>
         <p class="body-p" style="line-height: 1.6">
-          Photography → Interfaces. Twelve years behind a lens, six years inside a viewport.
+          Photography → Interfaces. Twelve years of framing light, six years of framing logic.
         </p>
       </div>
       <div class="flex items-center gap-2.5 justify-self-end scroll-cue">

@@ -4,22 +4,13 @@
     <main>
       <HeroSection />
       <div class="status-strip" aria-label="Site status">
-        <div class="status-tag">
-          <span class="status-dot" />
-          <span>WIP — 2026</span>
-        </div>
         <div class="status-track">
           <div class="status-marquee">
             <span v-for="i in 8" :key="i" class="status-item">
-              This portfolio is currently in its
-              <em>&ldquo;just one more tiny adjustment&rdquo;</em>
-              phase.
+              Product Designer · UX Research · UI Design · Design Systems · B2B2C · SaaS
               <span class="status-sep">✦</span>
             </span>
           </div>
-        </div>
-        <div class="status-tag status-tag--right">
-          <span>v0.9.<span class="status-blink">_</span></span>
         </div>
       </div>
       <AboutSection />
