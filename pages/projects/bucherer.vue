@@ -52,47 +52,6 @@
         </div>
       </section>
 
-      <!-- ── Scope teaser ── -->
-      <section class="case-section case-section--alt">
-        <div class="sect-header">
-          <span><span class="num">[ — ]</span> What the Work Covers</span>
-          <span class="rule" />
-        </div>
-
-        <div class="scope-grid">
-          <div class="scope-item">
-            <span class="scope-num">01</span>
-            <h3 class="scope-title">Watch Market Value Tracking</h3>
-            <p class="scope-desc">Giving collectors and enthusiasts real-time insight into market movements, interest alerts, and watch valuations, building a feature set that rewards investment in the platform.</p>
-          </div>
-          <div class="scope-item">
-            <span class="scope-num">02</span>
-            <h3 class="scope-title">E-commerce Experience</h3>
-            <p class="scope-desc">Designing the end-to-end shopping journey for one of Europe's most distinguished luxury watch and jewellery retailers, translating heritage brand codes into a quiet, frictionless digital language.</p>
-          </div>
-          <div class="scope-item">
-            <span class="scope-num">03</span>
-            <h3 class="scope-title">Jewellery Category</h3>
-            <p class="scope-desc">Introducing an entirely new product category, reshaping how collectors discover and add fine jewellery to their existing collections.</p>
-          </div>
-          <div class="scope-item">
-            <span class="scope-num">04</span>
-            <h3 class="scope-title">Notification Center</h3>
-            <p class="scope-desc">Designing a smart notification system and interest-alert layer that keeps high-value clients informed without interrupting the silence that luxury demands.</p>
-          </div>
-          <div class="scope-item">
-            <span class="scope-num">05</span>
-            <h3 class="scope-title">Accessibility · WCAG</h3>
-            <p class="scope-desc">Establishing scalable, WCAG-aligned accessibility standards across the platform, proving that inclusive design and luxury positioning are not in conflict.</p>
-          </div>
-          <div class="scope-item scope-item--award">
-            <span class="scope-num award-num">✦ ✦</span>
-            <h3 class="scope-title">Swiss Apps Awards '25</h3>
-            <p class="scope-desc">The work was recognised with two Bronze awards at Swiss Apps 2025, <strong>Design</strong> and <strong>User Experience</strong>, one of the leading digital product awards in Switzerland.</p>
-          </div>
-        </div>
-      </section>
-
       <!-- ── Market Value Estimate ── -->
       <section class="case-section mv-section">
         <div class="sect-header">
@@ -144,6 +103,47 @@
           </div>
         </div>
 
+      </section>
+
+      <!-- ── Scope teaser ── -->
+      <section class="case-section case-section--alt">
+        <div class="sect-header">
+          <span><span class="num">[ — ]</span> What the Work Covers</span>
+          <span class="rule" />
+        </div>
+
+        <div class="scope-grid">
+          <div class="scope-item">
+            <span class="scope-num">01</span>
+            <h3 class="scope-title">Watch Market Value Tracking</h3>
+            <p class="scope-desc">Giving collectors and enthusiasts real-time insight into market movements, interest alerts, and watch valuations, building a feature set that rewards investment in the platform.</p>
+          </div>
+          <div class="scope-item">
+            <span class="scope-num">02</span>
+            <h3 class="scope-title">E-commerce Experience</h3>
+            <p class="scope-desc">Designing the end-to-end shopping journey for one of Europe's most distinguished luxury watch and jewellery retailers, translating heritage brand codes into a quiet, frictionless digital language.</p>
+          </div>
+          <div class="scope-item">
+            <span class="scope-num">03</span>
+            <h3 class="scope-title">Jewellery Category</h3>
+            <p class="scope-desc">Introducing an entirely new product category, reshaping how collectors discover and add fine jewellery to their existing collections.</p>
+          </div>
+          <div class="scope-item">
+            <span class="scope-num">04</span>
+            <h3 class="scope-title">Notification Center</h3>
+            <p class="scope-desc">Designing a smart notification system and interest-alert layer that keeps high-value clients informed without interrupting the silence that luxury demands.</p>
+          </div>
+          <div class="scope-item">
+            <span class="scope-num">05</span>
+            <h3 class="scope-title">Accessibility · WCAG</h3>
+            <p class="scope-desc">Establishing scalable, WCAG-aligned accessibility standards across the platform, proving that inclusive design and luxury positioning are not in conflict.</p>
+          </div>
+          <div class="scope-item scope-item--award">
+            <span class="scope-num award-num">✦ ✦</span>
+            <h3 class="scope-title">Swiss Apps Awards '25</h3>
+            <p class="scope-desc">The work was recognised with two Bronze awards at Swiss Apps 2025, <strong>Design</strong> and <strong>User Experience</strong>, one of the leading digital product awards in Switzerland.</p>
+          </div>
+        </div>
       </section>
 
       <!-- ── Nav ── -->
