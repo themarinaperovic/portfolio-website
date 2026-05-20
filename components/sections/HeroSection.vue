@@ -52,7 +52,7 @@
 
     <!-- Bottom grid: Discipline · Trajectory · Scroll -->
     <div
-      class="relative z-10 grid items-end font-mono text-[11px] tracking-[0.08em] uppercase bottom-grid"
+      class="relative z-10 grid items-start font-mono text-[11px] tracking-[0.08em] uppercase bottom-grid"
       style="gap: 30px; grid-template-columns: 1.4fr 1fr 1fr;"
       :style="{ opacity: isReady ? 1 : 0, transition: 'opacity 0.9s ease 0.72s' }"
     >
