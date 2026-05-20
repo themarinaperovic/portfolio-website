@@ -44,10 +44,7 @@
           >
             <em
               style="font-style: normal; color: #D63D14; font-variation-settings: 'opsz' 144, 'SOFT' 100"
-            >Markus</em><sup
-              class="font-mono"
-              style="font-style: normal; color: #0B0C0B; font-weight: 400; font-size: 0.13em; letter-spacing: 0.05em; vertical-align: top; margin-left: 0.15em"
-            >★</sup>
+            >Markus</em>
           </span>
         </div>
       </h1>

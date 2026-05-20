@@ -34,7 +34,12 @@
 
         <!-- Right column: CV rows -->
         <div class="facts">
-          <div class="facts-hint">
+          <div class="facts-hint facts-hint--desktop">
+            <span>Hover for details</span>
+            <span class="hint-line" />
+            <span>↓</span>
+          </div>
+          <div class="facts-hint facts-hint--mobile">
             <span>Click for details</span>
             <span class="hint-line" />
             <span>↓</span>
@@ -306,7 +311,7 @@ section {
 
 /* Hint */
 .facts-hint {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
@@ -427,10 +432,15 @@ section {
 }
 
 @media (max-width: 760px) {
-  .facts-hint {
-    display: flex;
-  }
+  .facts-hint--desktop { display: none; }
+  .facts-hint--mobile { display: flex; }
+}
 
+@media (min-width: 761px) {
+  .facts-hint--mobile { display: none; }
+}
+
+@media (max-width: 760px) {
   .row {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
@@ -453,7 +463,6 @@ section {
     grid-row: 2;
     text-align: right;
   }
-
 
   .role-detail-inline {
     display: flex;

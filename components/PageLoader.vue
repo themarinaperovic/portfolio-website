@@ -34,20 +34,20 @@ onMounted(() => {
   document.body.style.overflow = 'hidden'
 
   const tick = () => {
-    progress.value += Math.random() * 7 + 2
+    progress.value += Math.random() * 8.4 + 2.4
     if (progress.value >= 100) {
       progress.value = 100
       setTimeout(() => {
         gone.value = true
         isReady.value = true
         document.body.style.overflow = ''
-        setTimeout(() => { removed.value = true }, 1600)
-      }, 280)
+        setTimeout(() => { removed.value = true }, 1280)
+      }, 224)
     } else {
-      setTimeout(tick, 60 + Math.random() * 80)
+      setTimeout(tick, 48 + Math.random() * 64)
     }
   }
 
-  setTimeout(tick, 120)
+  setTimeout(tick, 96)
 })
 </script>
