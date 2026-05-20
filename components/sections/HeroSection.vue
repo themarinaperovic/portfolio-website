@@ -69,7 +69,7 @@
           Photography → Interfaces. Twelve years of framing light, six years of framing logic.
         </p>
       </div>
-      <div class="flex items-center gap-2.5 justify-self-end scroll-cue">
+      <div class="flex items-center gap-2.5 justify-self-end self-end scroll-cue">
         <span class="scroll-label">Scroll</span>
         <span class="scroll-cue-line" />
         <span class="scroll-label">↓</span>
