@@ -128,7 +128,7 @@ const awards = [
 .awards-body {
   font-size: 15px;
   line-height: 1.65;
-  color: rgba(232, 226, 213, 0.6);
+  color: rgba(232, 226, 213, 0.8);
   max-width: 46ch;
 }
 

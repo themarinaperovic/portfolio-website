@@ -187,11 +187,12 @@ main {
 
 /* ── Hero ── */
 .hero {
-  min-height: 100vh;
+  height: 100svh;
   padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px) clamp(40px, 6vw, 80px);
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .hero-inner {
@@ -251,7 +252,7 @@ main {
   font-weight: 300;
   font-style: normal;
   font-size: clamp(18px, 2vw, 28px);
-  color: rgba(11, 12, 11, 0.45);
+  color: rgba(11, 12, 11, 0.75);
   letter-spacing: -0.02em;
   max-width: 48ch;
 }
@@ -410,7 +411,7 @@ main {
   font-size: clamp(17px, 1.5vw, 22px);
   line-height: 1.55;
   letter-spacing: -0.015em;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.75);
   max-width: 58ch;
 }
 
@@ -513,7 +514,7 @@ main {
 }
 
 .brand-section .snap-desc {
-  color: rgba(232, 226, 213, 0.55);
+  color: rgba(232, 226, 213, 0.8);
 }
 
 .brand-top {

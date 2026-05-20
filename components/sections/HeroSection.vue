@@ -88,7 +88,7 @@ const isReady = useAppReady()
 
 <style scoped>
 .bottom-grid { color: #0B0C0B; }
-.body-p { color: rgba(11, 12, 11, 0.55); }
+.body-p { color: rgba(11, 12, 11, 0.75); }
 .scroll-label { color: rgba(11, 12, 11, 0.55); }
 
 @media (max-width: 760px) {
@@ -97,7 +97,7 @@ const isReady = useAppReady()
     grid-template-columns: 1fr !important;
     gap: 20px !important;
   }
-  .body-p { color: rgba(232, 226, 213, 0.6); }
+  .body-p { color: rgba(232, 226, 213, 0.8); }
   .scroll-label { color: rgba(232, 226, 213, 0.6); }
   .scroll-cue-line { background: rgba(232, 226, 213, 0.4); }
   .hero-name { color: rgba(232, 226, 213, 0.9) !important; }

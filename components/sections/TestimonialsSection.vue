@@ -7,7 +7,7 @@
         <span class="sect-num">[ 04 ]</span><span class="sect-lbl"> Voices</span>
         <span class="flex-1 h-px bg-border max-w-[80px]" />
       </div>
-      <h2 class="font-display font-light text-5xl md:text-7xl leading-none text-ink">
+      <h2 class="voices-headline">
         Words from<br/>my colleagues.
       </h2>
     </div>
@@ -112,5 +112,15 @@ const initials = (name: string) =>
 .sect-num {
   color: #0B0C0B;
   font-weight: 500;
+}
+
+.voices-headline {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(24px, 2.8vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: #0B0C0B;
 }
 </style>

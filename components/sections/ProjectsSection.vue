@@ -25,7 +25,7 @@
 
         <p class="desc">{{ item.desc }}</p>
 
-        <span class="arrow">{{ item.comingSoon ? '— Coming soon' : item.slug === 'snapshots' ? '→ Browse' : '→ Case study' }}</span>
+        <span class="arrow">{{ item.arrowText ?? (item.comingSoon ? '— Coming soon' : item.slug === 'snapshots' ? '→ Browse' : '→ Case study') }}</span>
       </NuxtLink>
     </div>
 
@@ -41,6 +41,7 @@ const works = [
     tags: ['E-commerce', 'WCAG', "Bronze · Swiss Apps '25"],
     desc: 'Simplifying complex systems into experiences aligned with the brand\'s premium positioning.',
     comingSoon: true,
+    arrowText: '→ Brief overview',
   },
   {
     slug: 'abc-redesign',
@@ -222,7 +223,7 @@ h3 {
   font-size: 11px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.75);
   max-width: 36ch;
   line-height: 1.7;
   transition: color 0.45s cubic-bezier(.7,.05,.2,1);
