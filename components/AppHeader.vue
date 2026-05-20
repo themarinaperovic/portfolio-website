@@ -16,10 +16,15 @@
       </li>
     </ul>
 
-    <!-- Get in touch -->
-    <a href="mailto:themarinamarkus@gmail.com" class="contact-link" data-hoverable>
-      Get in touch
-    </a>
+    <!-- Right actions -->
+    <div class="nav-actions">
+      <a href="mailto:themarinamarkus@gmail.com" class="contact-link" data-hoverable>
+        Get in touch
+      </a>
+      <a href="/marina-markus-cv-2026.pdf" download class="cv-link" data-hoverable>
+        Download CV
+      </a>
+    </div>
   </nav>
 </template>
 
@@ -137,14 +142,23 @@ const onLogoLeave = (e: MouseEvent) => {
   transform-origin: left center;
 }
 
-/* Get in touch */
-.contact-link {
+/* Right actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Get in touch + CV link */
+.contact-link,
+.cv-link {
   display: block;
   position: relative;
   padding: 6px 0;
 }
 
-.contact-link::after {
+.contact-link::after,
+.cv-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -157,13 +171,14 @@ const onLogoLeave = (e: MouseEvent) => {
   transition: transform 0.55s cubic-bezier(.7,.05,.2,1);
 }
 
-.contact-link:hover::after {
+.contact-link:hover::after,
+.cv-link:hover::after {
   transform: scaleX(1);
   transform-origin: left center;
 }
 
 @media (max-width: 720px) {
   .menu { display: none; }
-  .contact-link { display: none; }
+  .nav-actions { display: none; }
 }
 </style>
