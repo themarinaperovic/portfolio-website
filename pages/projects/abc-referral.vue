@@ -307,6 +307,7 @@ main { padding-top: 80px; }
 }
 
 @media (max-width: 760px) {
+  .hero-inner { min-height: unset; justify-content: flex-start; }
   .overview-strip { flex-wrap: wrap; }
   .overview-item { flex: 1 1 50%; border-bottom: 1px solid rgba(11, 12, 11, 0.15); }
 }

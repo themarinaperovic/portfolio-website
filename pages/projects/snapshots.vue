@@ -200,7 +200,7 @@ main {
 }
 
 @media (max-width: 760px) {
-  .hero-inner { padding-top: clamp(80px, 10vw, 160px); }
+  .hero { height: auto; justify-content: flex-start; }
 }
 
 .hero-meta {
