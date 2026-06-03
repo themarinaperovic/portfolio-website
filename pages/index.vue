@@ -92,10 +92,9 @@ onMounted(() => {
 }
 
 .status-item em {
-  font-family: 'Fraunces', Georgia, serif;
-  font-style: italic;
+  font-family: 'Stack Sans Notch', sans-serif;
+  font-style: normal;
   font-weight: 300;
-  font-variation-settings: 'opsz' 144, 'SOFT' 100;
   color: #C9A96E;
   font-size: 1.45em;
   line-height: 1;

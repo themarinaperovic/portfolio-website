@@ -207,7 +207,7 @@ section {
 }
 
 .big-statement {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(40px, 7.4vw, 140px);
   line-height: 0.96;
@@ -215,7 +215,7 @@ section {
 }
 
 .big-statement em {
-  font-style: italic;
+  font-style: normal;
   color: #D63D14;
 }
 

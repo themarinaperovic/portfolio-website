@@ -23,7 +23,7 @@
     <div class="relative z-10 flex flex-col my-auto pointer-events-none">
       <h1
         class="font-display font-light leading-[0.86] tracking-[-0.045em] hero-name"
-        style="font-size: clamp(74px, 16vw, 285px); font-variation-settings: 'opsz' 144; color: #0B0C0B"
+        style="font-size: clamp(74px, 16vw, 285px); color: #0B0C0B"
       >
         <div class="overflow-hidden flex items-baseline">
           <span
@@ -43,7 +43,7 @@
             }"
           >
             <em
-              style="font-style: normal; color: #D63D14; font-variation-settings: 'opsz' 144, 'SOFT' 100"
+              style="font-style: normal; color: #D63D14;"
             >Markus</em>
           </span>
         </div>
@@ -122,6 +122,10 @@ const isReady = useAppReady()
 @keyframes scrollLine {
   50% { transform: translateX(0); }
   100% { transform: translateX(100%); }
+}
+
+.hero-name {
+  font-family: 'Stack Sans Notch', sans-serif;
 }
 
 </style>

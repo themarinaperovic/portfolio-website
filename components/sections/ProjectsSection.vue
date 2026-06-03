@@ -166,7 +166,7 @@ const works = [
 }
 
 h3 {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(18px, 2.2vw, 32px);
   line-height: 1.1;

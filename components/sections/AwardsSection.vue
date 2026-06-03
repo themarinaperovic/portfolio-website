@@ -106,7 +106,7 @@ const awards = [
 
 /* Headline */
 .awards-headline {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(24px, 2.8vw, 38px);
@@ -158,7 +158,7 @@ const awards = [
 }
 
 .award-medal {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: clamp(22px, 2.4vw, 32px);

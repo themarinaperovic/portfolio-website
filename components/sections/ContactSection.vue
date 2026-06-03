@@ -26,7 +26,7 @@
             data-hoverable
           >
             <div class="email-card border border-border rounded-sm p-8 hover:border-ink transition-all duration-300 group-hover:bg-ink group-hover:text-cream">
-              <p class="font-display italic font-light email-address group-hover:text-cream transition-colors duration-300">
+              <p class="font-display font-light email-address group-hover:text-cream transition-colors duration-300">
                 themarinamarkus@gmail.com
               </p>
               <div class="flex items-center gap-2 mt-6">
@@ -130,5 +130,10 @@
 .sect-num {
   color: #0B0C0B;
   font-weight: 500;
+}
+
+/* Override font-display (Fraunces) → Stack Sans Notch on landing page */
+:deep(.font-display) {
+  font-family: 'Stack Sans Notch', sans-serif;
 }
 </style>

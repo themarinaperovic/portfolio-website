@@ -29,7 +29,7 @@
           >
             <div class="border border-border rounded-sm p-7 bg-cream hover:border-ink/20 transition-colors duration-300 h-full flex flex-col justify-between gap-6">
               <div>
-                <span class="font-display italic text-fire text-4xl leading-none">"</span>
+                <span class="font-display text-fire text-4xl leading-none">"</span>
                 <p class="text-ink/80 text-sm leading-relaxed mt-1">
                   {{ testimonial.quote }}
                 </p>
@@ -115,12 +115,17 @@ const initials = (name: string) =>
 }
 
 .voices-headline {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(24px, 2.8vw, 38px);
   line-height: 1.15;
   letter-spacing: -0.015em;
   color: #0B0C0B;
+}
+
+/* Override font-display (Fraunces) → Stack Sans Notch on landing page */
+:deep(.font-display) {
+  font-family: 'Stack Sans Notch', sans-serif;
 }
 </style>
