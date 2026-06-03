@@ -117,7 +117,7 @@ onMounted(() => {
       float g    = smoothstep(-.5, .6, vNoise);
       vec3  col  = mix(uColorA, uColorB, g);
       col = mix(col, uColorC, fres*.85);
-      col += pow(f, 6.0) * vec3(1.0,.8,.6) * .55;
+      col += pow(f, 6.0) * vec3(0.82,.78,.70) * .35;
       col *= 0.92 + 0.08*sin(vPos.y*9.0 + uTime*.8);
       gl_FragColor = vec4(col, 1.0);
     }
@@ -128,7 +128,7 @@ onMounted(() => {
     uDisp:   { value: 0.55 },
     uMouse:  { value: new THREE.Vector2(0, 0) },
     uColorA: { value: new THREE.Color('#0B0C0B') },
-    uColorB: { value: new THREE.Color('#D63D14') },
+    uColorB: { value: new THREE.Color('#007070') },
     uColorC: { value: new THREE.Color('#E8E2D5') },
   }
 
@@ -147,7 +147,7 @@ onMounted(() => {
 
   // Orbiting red dot
   const dotGeo = new THREE.SphereGeometry(0.022, 16, 16)
-  const dotMat = new THREE.MeshBasicMaterial({ color: 0xE92B00 })
+  const dotMat = new THREE.MeshBasicMaterial({ color: 0x007070 })
   const dot    = new THREE.Mesh(dotGeo, dotMat)
   scene.add(dot)
 

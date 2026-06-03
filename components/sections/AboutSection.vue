@@ -216,7 +216,7 @@ section {
 
 .big-statement em {
   font-style: normal;
-  color: #D63D14;
+  color: #007070;
 }
 
 
@@ -279,7 +279,7 @@ section {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #D63D14;
+  background: #007070;
   flex-shrink: 0;
 }
 
@@ -333,7 +333,7 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: #D63D14;
+  background: #007070;
   transform: translateX(-100%);
   animation: hintLine 2.4s cubic-bezier(.7,.05,.2,1) infinite;
 }
@@ -392,7 +392,7 @@ section {
 }
 
 .row.is-active {
-  background-color: rgba(214, 61, 20, 0.05);
+  background-color: rgba(0, 112, 112, 0.05);
 }
 
 .row.is-dimmed {
@@ -407,7 +407,7 @@ section {
 }
 
 .row.is-active b {
-  color: #D63D14;
+  color: #007070;
 }
 
 .row .ti {

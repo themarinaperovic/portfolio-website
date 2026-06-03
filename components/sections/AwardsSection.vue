@@ -163,7 +163,7 @@ const awards = [
   font-style: normal;
   font-size: clamp(22px, 2.4vw, 32px);
   letter-spacing: -0.01em;
-  color: #C9A96E;
+  color: #D2843C;
 }
 
 .award-year {

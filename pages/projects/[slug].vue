@@ -55,7 +55,7 @@
         <!-- 404 state -->
         <div v-else class="text-center py-24">
           <p class="text-smoke text-lg">Project not found.</p>
-          <NuxtLink to="/" class="text-ink font-semibold mt-4 inline-block hover:text-fire transition-colors duration-200">
+          <NuxtLink to="/" class="text-ink font-semibold mt-4 inline-block hover:text-petrol transition-colors duration-200">
             ← Go home
           </NuxtLink>
         </div>

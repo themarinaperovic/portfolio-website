@@ -135,7 +135,7 @@ const works = [
   width: 100vw;
   margin-left: -50vw;
   top: 0; bottom: 0;
-  background: #D63D14;
+  background: #007070;
   transform: scaleY(0);
   transform-origin: bottom center;
   transition: transform 0.6s cubic-bezier(.7,.05,.2,1);
@@ -265,7 +265,7 @@ h3 {
     position: static;
     transform: none;
     opacity: 1;
-    color: #D63D14;
+    color: #007070;
     margin-top: 6px;
   }
 
@@ -273,7 +273,7 @@ h3 {
     color: #4A4642;
   }
 
-  .work-item:active h3 { color: #D63D14; }
+  .work-item:active h3 { color: #007070; }
   .is-coming-soon:active h3 { color: rgba(11, 12, 11, 0.6); }
 }
 </style>

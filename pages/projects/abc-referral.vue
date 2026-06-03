@@ -259,7 +259,7 @@ main { padding-top: 80px; }
 }
 
 .hero-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(52px, 10vw, 160px);
   line-height: 0.88;
@@ -268,10 +268,10 @@ main { padding-top: 80px; }
   margin-bottom: 28px;
 }
 
-.hero-title em { font-style: normal; color: #D63D14; }
+.hero-title em { font-style: normal; color: #007070; }
 
 .hero-sub {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(18px, 2vw, 30px);
@@ -342,7 +342,7 @@ main { padding-top: 80px; }
 .num { color: #0B0C0B; font-weight: 500; }
 
 .section-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(32px, 5vw, 80px);
   line-height: 0.95;
@@ -399,12 +399,12 @@ main { padding-top: 80px; }
 }
 
 .stat-num {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(48px, 7vw, 100px);
   line-height: 1;
   letter-spacing: -0.04em;
-  color: #D63D14;
+  color: #007070;
   flex-shrink: 0;
 }
 
@@ -432,7 +432,7 @@ main { padding-top: 80px; }
 }
 
 .seg-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(22px, 2.5vw, 36px);
@@ -494,7 +494,7 @@ main { padding-top: 80px; }
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
   font-weight: 500;
   margin-bottom: 16px;
 }
@@ -556,7 +556,7 @@ main { padding-top: 80px; }
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
   font-weight: 500;
   margin: 56px 0 0;
   padding-top: 24px;
@@ -571,7 +571,7 @@ main { padding-top: 80px; }
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
   font-weight: 600;
   margin: 80px 0 0;
   padding-top: 24px;

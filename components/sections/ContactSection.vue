@@ -50,7 +50,7 @@
             </a>
             <span class="w-1 h-1 rounded-full bg-border" />
             <span class="inline-flex items-center gap-1.5 text-sm text-smoke">
-              <span class="w-1.5 h-1.5 rounded-full bg-fire animate-pulse" />
+              <span class="w-1.5 h-1.5 rounded-full bg-petrol animate-pulse" />
               Open to opportunities
             </span>
           </div>
@@ -115,7 +115,7 @@
 
 .contact-headline__main em {
   font-style: normal;
-  color: #D63D14;
+  color: #007070;
   padding-right: 0.04em;
 }
 
@@ -132,8 +132,4 @@
   font-weight: 500;
 }
 
-/* Override font-display (Fraunces) → Stack Sans Notch on landing page */
-:deep(.font-display) {
-  font-family: 'Stack Sans Notch', sans-serif;
-}
 </style>

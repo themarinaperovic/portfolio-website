@@ -215,7 +215,7 @@ main {
 }
 
 .hero-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(80px, 15vw, 240px);
   line-height: 0.88;
@@ -226,7 +226,7 @@ main {
 
 .hero-title em {
   font-style: normal;
-  color: #D63D14;
+  color: #007070;
 }
 
 .amp {
@@ -236,7 +236,7 @@ main {
 
 
 .hero-sub {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(18px, 2vw, 28px);
@@ -305,7 +305,7 @@ main {
 }
 
 .cs-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(22px, 2.8vw, 42px);
   line-height: 1.2;
@@ -315,7 +315,7 @@ main {
 
 .cs-title em {
   font-style: normal;
-  color: #D63D14;
+  color: #007070;
 }
 
 .cs-body {
@@ -364,7 +364,7 @@ main {
 }
 
 .snap-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(28px, 3.5vw, 52px);
   letter-spacing: -0.03em;
@@ -390,7 +390,7 @@ main {
 }
 
 .snap-desc {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(17px, 1.5vw, 22px);

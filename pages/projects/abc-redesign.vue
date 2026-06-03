@@ -414,7 +414,7 @@ main {
 }
 
 .hero-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(64px, 12vw, 200px);
   line-height: 0.88;
@@ -425,11 +425,11 @@ main {
 
 .hero-title em {
   font-style: normal;
-  color: #D63D14;
+  color: #007070;
 }
 
 .hero-sub {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(20px, 2.4vw, 36px);
@@ -508,7 +508,7 @@ main {
 }
 
 .section-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(32px, 5vw, 80px);
   line-height: 0.95;
@@ -571,7 +571,7 @@ main {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #E0291A;
+  color: #006060;
   margin-bottom: 40px;
   text-align: left;
   align-self: flex-start;
@@ -587,12 +587,12 @@ main {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #E0291A;
+  color: #006060;
   margin-bottom: 8px;
 }
 
 .sub-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(22px, 2.8vw, 40px);
@@ -639,14 +639,14 @@ main {
 }
 
 .pull-quote {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(22px, 2.8vw, 40px);
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: #0B0C0B;
-  border-left: 2px solid #D63D14;
+  border-left: 2px solid #007070;
   padding-left: 32px;
   max-width: 56ch;
   margin-bottom: 40px;
@@ -671,12 +671,12 @@ main {
 }
 
 .persona-pct {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(40px, 5vw, 72px);
   line-height: 1;
   letter-spacing: -0.04em;
-  color: #D63D14;
+  color: #007070;
 }
 
 .persona-name {
@@ -736,7 +736,7 @@ main {
 }
 
 .package-card--accent .pkg-label {
-  color: #D63D14;
+  color: #007070;
 }
 
 .pkg-label {
@@ -745,7 +745,7 @@ main {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
 }
 
 .pkg-member {
@@ -823,7 +823,7 @@ main {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
 }
 
 .ds-pillar p {
@@ -838,7 +838,7 @@ main {
 
 .callout {
   border: 1px solid rgba(11, 12, 11, 0.12);
-  border-left: 3px solid #D63D14;
+  border-left: 3px solid #007070;
   padding: 28px 32px;
   margin: 40px 0;
   max-width: 68ch;
@@ -850,7 +850,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
   margin-bottom: 12px;
 }
 
@@ -901,7 +901,7 @@ main {
 .variant-badge {
   font-size: 9px;
   letter-spacing: 0.08em;
-  background: #D63D14;
+  background: #007070;
   color: #E8E2D5;
   padding: 2px 8px;
   border-radius: 99px;
@@ -955,7 +955,7 @@ main {
 
 .hmw-card p::before {
   content: 'HMW ';
-  color: #D63D14;
+  color: #007070;
   font-weight: 500;
 }
 
@@ -998,7 +998,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
 }
 
 .mvp-core p {
@@ -1029,7 +1029,7 @@ main {
   content: '→';
   position: absolute;
   left: 0;
-  color: #D63D14;
+  color: #007070;
 }
 
 .mvp-features--muted li {
@@ -1049,7 +1049,7 @@ main {
   margin: 32px 0 48px;
   padding: 28px 32px;
   border: 1px solid rgba(11, 12, 11, 0.12);
-  border-left: 3px solid #D63D14;
+  border-left: 3px solid #007070;
 }
 
 .improvements-label {
@@ -1058,7 +1058,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
   margin-bottom: 16px;
 }
 

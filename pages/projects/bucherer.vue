@@ -199,7 +199,7 @@ main {
 }
 
 .hero-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(48px, 9vw, 160px);
   line-height: 0.88;
@@ -210,11 +210,11 @@ main {
 
 .hero-title em {
   font-style: normal;
-  color: #D63D14;
+  color: #007070;
 }
 
 .hero-sub {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(18px, 2vw, 30px);
@@ -310,14 +310,14 @@ main {
 }
 
 .pull-quote {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(24px, 3vw, 48px);
   line-height: 1.15;
   letter-spacing: -0.025em;
   color: #0B0C0B;
-  border-left: 2px solid #D63D14;
+  border-left: 2px solid #007070;
   padding-left: 32px;
   margin-bottom: 40px;
 }
@@ -346,8 +346,8 @@ main {
 }
 
 .cta-link:hover {
-  color: #D63D14;
-  border-color: #D63D14;
+  color: #007070;
+  border-color: #007070;
 }
 
 .cta-link .arrow {
@@ -392,7 +392,7 @@ main {
 }
 
 .scope-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(18px, 1.8vw, 26px);
   letter-spacing: -0.02em;
@@ -461,7 +461,7 @@ main {
 }
 
 .mv-headline {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(24px, 3vw, 44px);
   line-height: 1.1;
@@ -499,11 +499,11 @@ main {
 .mv-decision-num {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 14px;
-  color: #D63D14;
+  color: #007070;
 }
 
 .mv-decision-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(18px, 1.6vw, 24px);
   letter-spacing: -0.02em;
@@ -575,7 +575,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
   margin-bottom: 14px;
 }
 

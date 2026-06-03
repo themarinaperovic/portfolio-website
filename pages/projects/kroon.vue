@@ -475,7 +475,7 @@ main {
 }
 
 .hero-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(64px, 12vw, 200px);
   line-height: 0.88;
@@ -486,11 +486,11 @@ main {
 
 .hero-title em {
   font-style: normal;
-  color: #D63D14;
+  color: #007070;
 }
 
 .hero-sub {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(16px, 1.8vw, 26px);
@@ -621,7 +621,7 @@ main {
 }
 
 .user-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(20px, 2vw, 28px);
   letter-spacing: -0.02em;
@@ -661,7 +661,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
 }
 
 .kpi-val {
@@ -694,7 +694,7 @@ main {
 }
 
 .vp-heading {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(18px, 1.8vw, 26px);
   letter-spacing: -0.02em;
@@ -762,7 +762,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #D63D14;
+  color: #007070;
 }
 
 .hyp-type {
@@ -790,7 +790,7 @@ main {
 }
 
 .hyp-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(18px, 1.8vw, 26px);
   letter-spacing: -0.02em;
@@ -865,7 +865,7 @@ main {
 }
 
 .strategy-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(18px, 1.8vw, 26px);
   letter-spacing: -0.02em;
@@ -902,7 +902,7 @@ main {
 }
 
 .revenue-heading {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(18px, 1.8vw, 26px);
   letter-spacing: -0.02em;
@@ -1001,7 +1001,7 @@ main {
   text-align: center;
   border-left: none;
   padding-left: 0;
-  border-top: 2px solid #D63D14;
+  border-top: 2px solid #007070;
   padding-top: 32px;
   font-size: clamp(20px, 2.5vw, 36px);
 }
@@ -1019,14 +1019,14 @@ main {
 }
 
 .pull-quote {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(24px, 3vw, 48px);
   line-height: 1.15;
   letter-spacing: -0.025em;
   color: #0B0C0B;
-  border-left: 2px solid #D63D14;
+  border-left: 2px solid #007070;
   padding-left: 32px;
   margin-bottom: 40px;
 }
@@ -1067,11 +1067,11 @@ main {
 }
 
 .scope-item--warm .scope-num {
-  color: #D63D14;
+  color: #007070;
 }
 
 .scope-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(18px, 1.8vw, 26px);
   letter-spacing: -0.02em;

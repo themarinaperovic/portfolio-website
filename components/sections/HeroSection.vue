@@ -43,7 +43,7 @@
             }"
           >
             <em
-              style="font-style: normal; color: #D63D14;"
+              style="font-style: normal; color: #007070;"
             >Markus</em>
           </span>
         </div>
@@ -114,7 +114,7 @@ const isReady = useAppReady()
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--accent, #D63D14);
+  background: var(--accent, #007070);
   transform: translateX(-100%);
   animation: scrollLine 2.4s cubic-bezier(.7,.05,.2,1) infinite;
 }
@@ -124,8 +124,5 @@ const isReady = useAppReady()
   100% { transform: translateX(100%); }
 }
 
-.hero-name {
-  font-family: 'Stack Sans Notch', sans-serif;
-}
 
 </style>
