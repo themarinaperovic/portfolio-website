@@ -78,7 +78,6 @@
   line-height: 1;
   letter-spacing: -0.035em;
   color: #0B0C0B;
-  font-variation-settings: 'opsz' 144, 'SOFT' 100;
 }
 
 .contact-headline__main {
@@ -86,7 +85,6 @@
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.035em;
-  font-variation-settings: 'opsz' 144, 'SOFT' 100;
   color: #0B0C0B;
 }
 
@@ -99,17 +97,17 @@
     font-size: calc((100vw - 112px) / 15.5);
     word-break: keep-all;
     white-space: nowrap;
-    color: #E8E2D5;
+    color: #EAEAE8;
   }
 
   .email-card {
     background: #0B0C0B;
     border-color: #0B0C0B;
-    color: #E8E2D5;
+    color: #EAEAE8;
   }
 
   .email-label {
-    color: rgba(232, 226, 213, 0.4);
+    color: rgba(234, 234, 232, 0.4);
   }
 }
 
@@ -124,7 +122,7 @@
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .sect-num {

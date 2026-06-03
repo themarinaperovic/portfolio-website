@@ -187,12 +187,11 @@ main {
 
 /* ── Hero ── */
 .hero {
-  height: 100svh;
+  min-height: calc(100svh - 80px);
   padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px) clamp(40px, 6vw, 80px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  overflow: hidden;
 }
 
 .hero-inner {
@@ -201,6 +200,7 @@ main {
 
 @media (max-width: 760px) {
   .hero { height: auto; justify-content: flex-start; }
+  .hero-title { font-size: clamp(52px, 14vw, 80px); letter-spacing: -0.025em; }
 }
 
 .hero-meta {
@@ -210,7 +210,7 @@ main {
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   margin-bottom: 32px;
 }
 
@@ -218,7 +218,7 @@ main {
   font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(80px, 15vw, 240px);
-  line-height: 0.88;
+  line-height: 0.92;
   letter-spacing: -0.04em;
   color: #0B0C0B;
   margin-bottom: 32px;
@@ -271,7 +271,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.45);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .ov-val {
@@ -321,7 +321,7 @@ main {
 .cs-body {
   font-size: clamp(16px, 1.2vw, 20px);
   line-height: 1.6;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   max-width: 56ch;
 }
 
@@ -383,7 +383,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.45);
+  color: rgba(11, 12, 11, 0.65);
   border: 1px solid rgba(11, 12, 11, 0.15);
   border-radius: 99px;
   padding: 4px 12px;
@@ -422,7 +422,7 @@ main {
 
 /* ── Workshop section ── */
 .workshop-section {
-  background: #C9C2B2;
+  background: #C4C3C1;
 }
 
 .workshop-section .snap-index {
@@ -443,7 +443,7 @@ main {
 
 .workshop-section .snap-tag {
   color: rgba(11, 12, 11, 0.7);
-  border-color: rgba(11, 12, 11, 0.35);
+  border-color: rgba(11, 12, 11, 0.65);
 }
 
 .workshop-scroll {
@@ -482,24 +482,24 @@ main {
 }
 
 .brand-section .snap-index {
-  color: rgba(232, 226, 213, 0.4);
+  color: rgba(234, 234, 232, 0.4);
 }
 
 .brand-section .snap-rule {
-  background: rgba(232, 226, 213, 0.15);
+  background: rgba(234, 234, 232, 0.15);
 }
 
 .brand-section .snap-title {
-  color: #E8E2D5;
+  color: #EAEAE8;
 }
 
 .brand-section .snap-tag {
-  color: rgba(232, 226, 213, 0.5);
-  border-color: rgba(232, 226, 213, 0.15);
+  color: rgba(234, 234, 232, 0.5);
+  border-color: rgba(234, 234, 232, 0.15);
 }
 
 .brand-section .snap-desc {
-  color: rgba(232, 226, 213, 0.8);
+  color: rgba(234, 234, 232, 0.8);
 }
 
 .brand-top {
@@ -608,7 +608,7 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   text-decoration: none;
   transition: color 0.3s ease;
 }

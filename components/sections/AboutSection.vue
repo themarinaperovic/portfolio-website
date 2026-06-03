@@ -77,12 +77,28 @@
 
       </div>
 
+      <div class="skills-tags">
+        <span v-for="t in tools" :key="t" class="skill-tag skill-tag--tool">{{ t }}</span>
+        <span v-for="m in methods" :key="m" class="skill-tag">{{ m }}</span>
+      </div>
+
     </div>
 
   </section>
 </template>
 
 <script setup lang="ts">
+const tools = ['Figma', 'Framer', 'Claude Code']
+
+const methods = [
+  'User Interviews', 'Stakeholder Interviews', 'Empathy Map', 'Personas',
+  'Customer Profile', 'Value Map', 'A Day In The Life', 'Competition Analysis',
+  'Storyboarding', 'Customer Journey', 'Moodboard', 'Card Sorting',
+  'User Stories', 'Sitemap', 'Information Architecture', 'Feature Prioritisation',
+  'Low Fidelity Wireframes', 'High Fidelity Wireframes', 'Prototyping',
+  'Usability Testing', 'Design System', 'Design Sprints',
+]
+
 const activeIndex = ref<number | null>(null)
 const isTouch = ref(false)
 onMounted(() => {
@@ -483,5 +499,28 @@ section {
   .body-text.is-faded {
     opacity: 1;
   }
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: clamp(40px, 5vw, 64px);
+}
+
+.skill-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: rgba(11, 12, 11, 0.65);
+  border: 1px solid rgba(11, 12, 11, 0.15);
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+.skill-tag--tool {
+  color: #0B0C0B;
+  border-color: rgba(11, 12, 11, 0.3);
+  font-weight: 500;
 }
 </style>

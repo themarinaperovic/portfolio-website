@@ -129,7 +129,7 @@ onMounted(() => {
     uMouse:  { value: new THREE.Vector2(0, 0) },
     uColorA: { value: new THREE.Color('#0B0C0B') },
     uColorB: { value: new THREE.Color('#007070') },
-    uColorC: { value: new THREE.Color('#E8E2D5') },
+    uColorC: { value: new THREE.Color('#EAEAE8') },
   }
 
   const geo  = new THREE.IcosahedronGeometry(1.1, 64)

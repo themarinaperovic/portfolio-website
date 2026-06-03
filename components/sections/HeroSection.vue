@@ -10,7 +10,7 @@
     <!-- Top meta bar -->
     <div
       class="relative z-10 flex justify-between font-mono text-[11px] tracking-[0.1em] uppercase"
-      style="color: rgba(11,12,11,0.55)"
+      style="color: rgba(11,12,11,0.65)"
       :style="{ opacity: isReady ? 1 : 0, transition: 'opacity 0.8s ease 0.5s' }"
     >
       <div class="max-w-[34ch]">
@@ -86,18 +86,18 @@ const isReady = useAppReady()
 <style scoped>
 .bottom-grid { color: #0B0C0B; }
 .body-p { color: rgba(11, 12, 11, 0.75); }
-.scroll-label { color: rgba(11, 12, 11, 0.55); }
+.scroll-label { color: rgba(11, 12, 11, 0.65); }
 
 @media (max-width: 760px) {
   .bottom-grid {
-    color: rgba(232, 226, 213, 0.9);
+    color: rgba(234, 234, 232, 0.9);
     grid-template-columns: 1fr !important;
     gap: 20px !important;
   }
-  .body-p { color: rgba(232, 226, 213, 0.8); }
-  .scroll-label { color: rgba(232, 226, 213, 0.6); }
-  .scroll-cue-line { background: rgba(232, 226, 213, 0.4); }
-  .hero-name { color: rgba(232, 226, 213, 0.9) !important; }
+  .body-p { color: rgba(234, 234, 232, 0.8); }
+  .scroll-label { color: rgba(234, 234, 232, 0.6); }
+  .scroll-cue-line { background: rgba(234, 234, 232, 0.4); }
+  .hero-name { color: rgba(234, 234, 232, 0.9) !important; line-height: 0.92; letter-spacing: -0.025em; }
   .scroll-cue { justify-self: start; }
 }
 

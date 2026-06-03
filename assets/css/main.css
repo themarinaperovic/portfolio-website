@@ -4,14 +4,14 @@
 
 /* ─── Reference palette ─────────────────────────────────────────────────── */
 :root {
-  --bg:       #E8E2D5;
-  --bg-2:     #DED7C7;
+  --bg:       #EAEAE8;
+  --bg-2:     #DEDDDA;
   --ink:      #0B0C0B;
-  --ink-soft: rgba(11, 12, 11, 0.55);
+  --ink-soft: rgba(11, 12, 11, 0.65);
   --ink-line: rgba(11, 12, 11, 0.15);
   --accent:   #007070;
   --gold:     #FFB800;
-  --soft:     #8C8475;
+  --soft:     #6E6760;
 }
 
 /* ─── Base ──────────────────────────────────────────────────────────────── */
@@ -217,13 +217,13 @@ body {
 .page-loader-bar-track {
   width: 100%;
   height: 1px;
-  background: rgba(232, 226, 213, 0.12);
+  background: rgba(234, 234, 232, 0.12);
   margin-bottom: 2.5rem;
 }
 
 .page-loader-bar {
   height: 100%;
-  background: rgba(232, 226, 213, 0.6);
+  background: rgba(234, 234, 232, 0.6);
   transition: width 0.08s linear;
 }
 
@@ -324,10 +324,10 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #E8E2D5;
+  background: #EAEAE8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #8C8475;
+  background: #6E6760;
   border-radius: 10px;
 }

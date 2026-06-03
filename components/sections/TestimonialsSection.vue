@@ -16,9 +16,9 @@
     <div class="relative">
       <!-- Fade edges -->
       <div class="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-        style="background: linear-gradient(to right, #E8E2D5, transparent);" />
+        style="background: linear-gradient(to right, #EAEAE8, transparent);" />
       <div class="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-        style="background: linear-gradient(to left, #E8E2D5, transparent);" />
+        style="background: linear-gradient(to left, #EAEAE8, transparent);" />
 
       <div class="overflow-hidden">
         <div class="ticker-track">
@@ -27,7 +27,7 @@
             :key="i"
             class="shrink-0 w-[min(85vw,420px)] mx-3"
           >
-            <div class="border border-border rounded-sm p-7 bg-cream hover:border-ink/20 transition-colors duration-300 h-full flex flex-col justify-between gap-6">
+            <div class="border border-ink/10 rounded-sm p-7 bg-white hover:border-ink/20 transition-colors duration-300 h-full flex flex-col justify-between gap-6">
               <div>
                 <span class="font-display text-petrol text-4xl leading-none">"</span>
                 <p class="text-ink/80 text-sm leading-relaxed mt-1">
@@ -106,7 +106,7 @@ const initials = (name: string) =>
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .sect-num {

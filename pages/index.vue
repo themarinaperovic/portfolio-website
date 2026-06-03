@@ -39,10 +39,10 @@ onMounted(() => {
   gap: 24px;
   width: 100%;
   background: #2C2A26;
-  color: #E8E2D5;
+  color: #EAEAE8;
   padding: 16px clamp(20px, 3.4vw, 56px);
-  border-top: 1px solid rgba(232, 226, 213, 0.06);
-  border-bottom: 1px solid rgba(232, 226, 213, 0.06);
+  border-top: 1px solid rgba(234, 234, 232, 0.06);
+  border-bottom: 1px solid rgba(234, 234, 232, 0.06);
   overflow: hidden;
 }
 
@@ -88,7 +88,7 @@ onMounted(() => {
   font-size: clamp(14px, 1.05vw, 17px);
   font-weight: 300;
   letter-spacing: 0.005em;
-  color: rgba(232, 226, 213, 0.78);
+  color: rgba(234, 234, 232, 0.78);
 }
 
 .status-item em {
@@ -103,7 +103,7 @@ onMounted(() => {
 }
 
 .status-sep {
-  color: rgba(232, 226, 213, 0.22);
+  color: rgba(234, 234, 232, 0.22);
   font-size: 11px;
   margin-left: 4px;
   transform: translateY(-1px);

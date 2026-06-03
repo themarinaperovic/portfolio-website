@@ -63,7 +63,7 @@ const awards = [
 <style scoped>
 .awards-section {
   background: #2C2A26;
-  color: #E8E2D5;
+  color: #EAEAE8;
   padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px);
 }
 
@@ -82,13 +82,13 @@ const awards = [
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(232, 226, 213, 0.4);
+  color: rgba(234, 234, 232, 0.65);
 }
 
 .sect-label .rule {
   flex: 1;
   height: 1px;
-  background: rgba(232, 226, 213, 0.12);
+  background: rgba(234, 234, 232, 0.12);
   max-width: 80px;
 }
 
@@ -112,7 +112,7 @@ const awards = [
   font-size: clamp(24px, 2.8vw, 38px);
   line-height: 1.15;
   letter-spacing: -0.015em;
-  color: rgba(232, 226, 213, 0.85);
+  color: rgba(234, 234, 232, 0.85);
   margin-bottom: 24px;
 }
 
@@ -121,14 +121,14 @@ const awards = [
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(232, 226, 213, 0.4);
+  color: rgba(234, 234, 232, 0.65);
   margin-bottom: 14px;
 }
 
 .awards-body {
   font-size: 15px;
   line-height: 1.65;
-  color: rgba(232, 226, 213, 0.8);
+  color: rgba(234, 234, 232, 0.8);
   max-width: 46ch;
 }
 
@@ -139,7 +139,7 @@ const awards = [
 }
 
 .award-row {
-  border-top: 1px solid rgba(232, 226, 213, 0.1);
+  border-top: 1px solid rgba(234, 234, 232, 0.1);
   padding: 22px 0;
   display: flex;
   flex-direction: column;
@@ -147,7 +147,7 @@ const awards = [
 }
 
 .award-row:last-child {
-  border-bottom: 1px solid rgba(232, 226, 213, 0.1);
+  border-bottom: 1px solid rgba(234, 234, 232, 0.1);
 }
 
 .award-meta {
@@ -171,7 +171,7 @@ const awards = [
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(232, 226, 213, 0.3);
+  color: rgba(234, 234, 232, 0.65);
 }
 
 .award-title {
@@ -180,7 +180,7 @@ const awards = [
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(232, 226, 213, 0.7);
+  color: rgba(234, 234, 232, 0.7);
   margin: 0;
 }
 
@@ -188,7 +188,7 @@ const awards = [
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 10px;
   letter-spacing: 0.04em;
-  color: rgba(232, 226, 213, 0.3);
+  color: rgba(234, 234, 232, 0.65);
   margin: 2px 0 0;
 }
 </style>

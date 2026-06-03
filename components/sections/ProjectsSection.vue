@@ -90,7 +90,7 @@ const works = [
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .sect-header .num {
@@ -176,7 +176,7 @@ h3 {
 }
 
 @media (hover: hover) {
-  .work-item:hover h3 { color: #E8E2D5; }
+  .work-item:hover h3 { color: #EAEAE8; }
 }
 
 .tagline {
@@ -184,12 +184,12 @@ h3 {
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.45);
+  color: rgba(11, 12, 11, 0.65);
   transition: color 0.45s cubic-bezier(.7,.05,.2,1);
 }
 
 @media (hover: hover) {
-  .work-item:hover .tagline { color: rgba(232, 226, 213, 0.65); }
+  .work-item:hover .tagline { color: rgba(234, 234, 232, 0.65); }
 }
 
 /* Tags */
@@ -208,12 +208,12 @@ h3 {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 10px;
   letter-spacing: 0.04em;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   transition: border-color 0.4s, color 0.4s;
 }
 
 @media (hover: hover) {
-  .work-item:hover .tag { border-color: rgba(232, 226, 213, 0.3); color: rgba(232, 226, 213, 0.85); }
+  .work-item:hover .tag { border-color: rgba(234, 234, 232, 0.3); color: rgba(234, 234, 232, 0.85); }
 }
 
 /* Description */
@@ -229,7 +229,7 @@ h3 {
 }
 
 @media (hover: hover) {
-  .work-item:hover .desc { color: rgba(232, 226, 213, 0.85); }
+  .work-item:hover .desc { color: rgba(234, 234, 232, 0.85); }
 }
 
 /* Arrow */
@@ -243,7 +243,7 @@ h3 {
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #E8E2D5;
+  color: #EAEAE8;
   transition: transform 0.6s cubic-bezier(.7,.05,.2,1),
               opacity 0.45s cubic-bezier(.7,.05,.2,1);
   pointer-events: none;

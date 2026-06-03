@@ -409,7 +409,7 @@ main {
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   margin-bottom: 32px;
 }
 
@@ -417,7 +417,7 @@ main {
   font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(64px, 12vw, 200px);
-  line-height: 0.88;
+  line-height: 0.92;
   letter-spacing: -0.04em;
   color: #0B0C0B;
   margin-bottom: 28px;
@@ -464,7 +464,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.45);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .ov-val {
@@ -476,6 +476,7 @@ main {
 
 @media (max-width: 760px) {
   .hero-inner { min-height: unset; justify-content: flex-start; }
+  .hero-title { font-size: clamp(48px, 12vw, 64px); letter-spacing: -0.025em; }
   .overview-strip { flex-wrap: wrap; }
   .overview-item { flex: 1 1 50%; border-bottom: 1px solid rgba(11, 12, 11, 0.15); }
 }
@@ -499,7 +500,7 @@ main {
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .num {
@@ -663,7 +664,7 @@ main {
 }
 
 .persona-card {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
@@ -693,7 +694,7 @@ main {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 10px;
   letter-spacing: 0.04em;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   line-height: 1.5;
   margin: 0;
 }
@@ -717,7 +718,7 @@ main {
 }
 
 .package-card {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 28px 20px;
   display: flex;
   flex-direction: column;
@@ -732,7 +733,7 @@ main {
 .package-card--accent .pkg-member,
 .package-card--accent .pkg-desc,
 .package-card--accent .pkg-features li {
-  color: #E8E2D5;
+  color: #EAEAE8;
 }
 
 .package-card--accent .pkg-label {
@@ -788,11 +789,11 @@ main {
   content: '—';
   position: absolute;
   left: 0;
-  color: rgba(11, 12, 11, 0.3);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .package-card--accent .pkg-features li::before {
-  color: rgba(232, 226, 213, 0.3);
+  color: rgba(234, 234, 232, 0.3);
 }
 
 @media (max-width: 880px) {
@@ -871,7 +872,7 @@ main {
 }
 
 .style-variant {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 28px 24px;
   display: flex;
   flex-direction: column;
@@ -895,14 +896,14 @@ main {
 }
 
 .style-variant--active .variant-name {
-  color: #E8E2D5;
+  color: #EAEAE8;
 }
 
 .variant-badge {
   font-size: 9px;
   letter-spacing: 0.08em;
   background: #007070;
-  color: #E8E2D5;
+  color: #EAEAE8;
   padding: 2px 8px;
   border-radius: 99px;
 }
@@ -917,7 +918,7 @@ main {
 }
 
 .style-variant--active .variant-desc {
-  color: rgba(232, 226, 213, 0.55);
+  color: rgba(234, 234, 232, 0.55);
 }
 
 @media (max-width: 600px) {
@@ -940,7 +941,7 @@ main {
 }
 
 .hmw-card {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 24px 20px;
 }
 
@@ -986,7 +987,7 @@ main {
 }
 
 .mvp-future {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 36px 32px;
   display: flex;
   flex-direction: column;
@@ -1004,7 +1005,7 @@ main {
 .mvp-core p {
   font-size: clamp(14px, 1vw, 16px);
   line-height: 1.65;
-  color: rgba(232, 226, 213, 0.75);
+  color: rgba(234, 234, 232, 0.75);
 }
 
 .mvp-features {
@@ -1020,7 +1021,7 @@ main {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 11px;
   letter-spacing: 0.04em;
-  color: #E8E2D5;
+  color: #EAEAE8;
   padding-left: 16px;
   position: relative;
 }
@@ -1118,6 +1119,10 @@ main {
   margin-right: auto;
 }
 
+@media (max-width: 760px) {
+  .img-row--70 { width: 100%; }
+}
+
 .img-row .case-img {
   flex: 1;
   width: 100%;
@@ -1165,7 +1170,7 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   text-decoration: none;
   transition: color 0.3s ease;
 }

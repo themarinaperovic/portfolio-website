@@ -451,12 +451,11 @@ main {
 
 /* ── Hero ── */
 .hero {
-  height: calc(100svh - 80px);
+  min-height: calc(100svh - 80px);
   padding: clamp(80px, 10vw, 160px) clamp(20px, 3.4vw, 56px) clamp(40px, 6vw, 80px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  overflow: hidden;
 }
 
 .hero-inner {
@@ -470,7 +469,7 @@ main {
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   margin-bottom: 32px;
 }
 
@@ -478,7 +477,7 @@ main {
   font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
   font-size: clamp(64px, 12vw, 200px);
-  line-height: 0.88;
+  line-height: 0.92;
   letter-spacing: -0.04em;
   color: #0B0C0B;
   margin-bottom: 28px;
@@ -526,7 +525,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.45);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .ov-val {
@@ -538,6 +537,7 @@ main {
 
 @media (max-width: 760px) {
   .hero { height: auto; justify-content: flex-start; }
+  .hero-title { font-size: clamp(48px, 12vw, 64px); letter-spacing: -0.025em; }
   .overview-strip { flex-wrap: wrap; }
   .overview-item { flex: 1 1 50%; border-bottom: 1px solid rgba(11, 12, 11, 0.15); }
 }
@@ -561,7 +561,7 @@ main {
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .sect-header .rule {
@@ -592,7 +592,7 @@ main {
 }
 
 .user-card {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 36px 28px;
   display: flex;
   flex-direction: column;
@@ -608,7 +608,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.35);
+  color: rgba(11, 12, 11, 0.65);
   border: 1px solid rgba(11, 12, 11, 0.15);
   border-radius: 99px;
   padding: 3px 10px;
@@ -616,8 +616,8 @@ main {
 }
 
 .user-card--primary .user-tag {
-  color: rgba(232, 226, 213, 0.45);
-  border-color: rgba(232, 226, 213, 0.15);
+  color: rgba(234, 234, 232, 0.45);
+  border-color: rgba(234, 234, 232, 0.15);
 }
 
 .user-title {
@@ -630,7 +630,7 @@ main {
 }
 
 .user-card--primary .user-title {
-  color: #E8E2D5;
+  color: #EAEAE8;
 }
 
 .user-desc {
@@ -641,7 +641,7 @@ main {
 }
 
 .user-card--primary .user-desc {
-  color: rgba(232, 226, 213, 0.65);
+  color: rgba(234, 234, 232, 0.65);
 }
 
 .user-kpi {
@@ -653,7 +653,7 @@ main {
 }
 
 .user-card--primary .user-kpi {
-  border-top-color: rgba(232, 226, 213, 0.1);
+  border-top-color: rgba(234, 234, 232, 0.1);
 }
 
 .kpi-label {
@@ -673,7 +673,7 @@ main {
 }
 
 .user-card--primary .kpi-val {
-  color: rgba(232, 226, 213, 0.45);
+  color: rgba(234, 234, 232, 0.45);
 }
 
 @media (max-width: 760px) {
@@ -744,7 +744,7 @@ main {
 }
 
 .hyp-card {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 36px 28px;
   display: flex;
   flex-direction: column;
@@ -818,7 +818,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.35);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .hyp-success p {
@@ -826,7 +826,7 @@ main {
   font-size: 10px;
   letter-spacing: 0.03em;
   line-height: 1.7;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   margin: 0;
 }
 
@@ -894,7 +894,7 @@ main {
 }
 
 .revenue-col {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 36px 28px;
   display: flex;
   flex-direction: column;
@@ -950,7 +950,7 @@ main {
 }
 
 .journey-item {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 24px 28px;
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -985,7 +985,7 @@ main {
 }
 
 .journey-step--pain {
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   background: rgba(11, 12, 11, 0.08);
   border-left: 2px solid rgba(11, 12, 11, 0.2);
 }
@@ -1048,7 +1048,7 @@ main {
 }
 
 .scope-item {
-  background: #E8E2D5;
+  background: #EAEAE8;
   padding: 36px 28px;
   display: flex;
   flex-direction: column;
@@ -1063,7 +1063,7 @@ main {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 10px;
   letter-spacing: 0.1em;
-  color: rgba(11, 12, 11, 0.3);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .scope-item--warm .scope-num {
@@ -1080,7 +1080,7 @@ main {
 }
 
 .scope-item--warm .scope-title {
-  color: #E8E2D5;
+  color: #EAEAE8;
 }
 
 .scope-desc {
@@ -1088,12 +1088,12 @@ main {
   font-size: 10px;
   letter-spacing: 0.04em;
   line-height: 1.7;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   margin: 0;
 }
 
 .scope-item--warm .scope-desc {
-  color: rgba(232, 226, 213, 0.5);
+  color: rgba(234, 234, 232, 0.5);
 }
 
 @media (max-width: 880px) {
@@ -1122,7 +1122,7 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   text-decoration: none;
   transition: color 0.3s ease;
 }

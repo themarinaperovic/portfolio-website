@@ -239,7 +239,7 @@ main { padding-top: 80px; }
 
 .hero-inner {
   min-height: calc(100svh - 80px);
-  max-width: 900px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -254,15 +254,15 @@ main { padding-top: 80px; }
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   margin-bottom: 32px;
 }
 
 .hero-title {
   font-family: 'Stack Sans Notch', sans-serif;
   font-weight: 300;
-  font-size: clamp(52px, 10vw, 160px);
-  line-height: 0.88;
+  font-size: clamp(52px, 9vw, 140px);
+  line-height: 0.92;
   letter-spacing: -0.04em;
   color: #0B0C0B;
   margin-bottom: 28px;
@@ -303,7 +303,7 @@ main { padding-top: 80px; }
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.45);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .ov-val {
@@ -315,6 +315,7 @@ main { padding-top: 80px; }
 
 @media (max-width: 760px) {
   .hero-inner { min-height: unset; justify-content: flex-start; }
+  .hero-title { letter-spacing: -0.025em; }
   .overview-strip { flex-wrap: wrap; }
   .overview-item { flex: 1 1 50%; border-bottom: 1px solid rgba(11, 12, 11, 0.15); }
 }
@@ -336,7 +337,7 @@ main { padding-top: 80px; }
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
 }
 
 .num { color: #0B0C0B; font-weight: 500; }
@@ -412,7 +413,7 @@ main { padding-top: 80px; }
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 12px;
   letter-spacing: 0.04em;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   line-height: 1.6;
 }
 
@@ -595,7 +596,7 @@ main { padding-top: 80px; }
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(11, 12, 11, 0.55);
+  color: rgba(11, 12, 11, 0.65);
   text-decoration: none;
   transition: color 0.3s ease;
 }

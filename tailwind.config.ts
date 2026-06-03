@@ -16,12 +16,12 @@ export default {
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
-        cream: '#E8E2D5',
-        'cream-2': '#DED7C7',
+        cream: '#EAEAE8',
+        'cream-2': '#DEDDDA',
         ink: '#0B0C0B',
         petrol: '#007070',
         gold: '#FFB800',
-        smoke: '#8C8475',
+        smoke: '#6E6760',
         border: '#BEB9AF',
         card: {
           bucherer: '#1C1B28',
