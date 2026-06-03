@@ -1,4 +1,34 @@
 {
+  "permissions": {
+    "allow": [
+      "Read(//Users/marinaadresta/Desktop/**)",
+      "Bash(awk '/nav/,/\\}/' \"/Users/marinaadresta/Desktop/PRIVATE/claude portfolio/index.html\")",
+      "Bash(sed -n '145,160p' /Users/marinaadresta/Desktop/claude-portfolio/assets/css/main.css)",
+      "Bash(sed -n '305,312p' /Users/marinaadresta/Desktop/claude-portfolio/assets/css/main.css)",
+      "WebFetch(domain:marinamarkus.framer.website)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(python3 -c ' *)",
+      "Bash(grep -v \"^$\\|^\\\\\\\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(grep -v \"^\\s*$\")",
+      "WebSearch",
+      "Bash(xargs cat -n)",
+      "Bash(sed -i '' 's/class=\"contact-headline font-display font-light text-ink\"/class=\"contact-headline font-display font-normal text-ink\"/' /Users/kraljica/Desktop/portfolio-website/components/sections/ContactSection.vue)",
+      "Bash(sed -i '' 's/class=\"font-display font-light email-address/class=\"font-display font-normal email-address/' /Users/kraljica/Desktop/portfolio-website/components/sections/ContactSection.vue)",
+      "Bash(sed -i '' 's/font-display font-normal leading-\\\\[0.86\\\\]/font-display font-light leading-[0.86]/' /Users/kraljica/Desktop/portfolio-website/components/sections/HeroSection.vue)",
+      "Bash(sed -i '' 's/contact-headline font-display font-normal/contact-headline font-display font-light/' /Users/kraljica/Desktop/portfolio-website/components/sections/ContactSection.vue)",
+      "Bash(sed -i '' 's/font-display font-normal email-address/font-display font-light email-address/' /Users/kraljica/Desktop/portfolio-website/components/sections/ContactSection.vue)",
+      "Bash(git -C /Users/kraljica/Desktop/portfolio-website status)",
+      "Bash(git -C /Users/kraljica/Desktop/portfolio-website log --oneline -3)",
+      "Bash(git -C /Users/kraljica/Desktop/portfolio-website add nuxt.config.ts pages/index.vue components/sections/HeroSection.vue components/sections/AboutSection.vue components/sections/ProjectsSection.vue components/sections/AwardsSection.vue components/sections/TestimonialsSection.vue components/sections/ContactSection.vue)",
+      "Bash(git -C /Users/kraljica/Desktop/portfolio-website commit -m ' *)",
+      "Bash(git -C /Users/kraljica/Desktop/portfolio-website push origin main)",
+      "Bash(git -C /Users/kraljica/Desktop/portfolio-website remote set-url origin git@github.com:themarinaperovic/portfolio-website.git)",
+      "Bash(ssh-keyscan github.com)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(mkdir -p ~/.ssh)"
+    ]
+  },
   "hooks": {
     "PostToolUse": [
       {
@@ -11,20 +41,6 @@
           }
         ]
       }
-    ]
-  },
-  "permissions": {
-    "allow": [
-      "Read(//Users/marinaadresta/Desktop/**)",
-      "Bash(awk '/nav/,/\\}/' \"/Users/marinaadresta/Desktop/PRIVATE/claude portfolio/index.html\")",
-      "Bash(sed -n '145,160p' /Users/marinaadresta/Desktop/claude-portfolio/assets/css/main.css)",
-      "Bash(sed -n '305,312p' /Users/marinaadresta/Desktop/claude-portfolio/assets/css/main.css)",
-      "WebFetch(domain:marinamarkus.framer.website)",
-      "mcp__Claude_in_Chrome__tabs_context_mcp",
-      "Bash(python3 -c ' *)",
-      "Bash(grep -v \"^$\\|^\\\\\\\")",
-      "Bash(grep -v \"^$\")",
-      "Bash(grep -v \"^\\s*$\")"
     ]
   }
 }
