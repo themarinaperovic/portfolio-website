@@ -25,7 +25,7 @@
         </div>
         <div class="overview-item">
           <span class="ov-label">My Role</span>
-          <span class="ov-val">Product Designer · End-to-end ownership</span>
+          <span class="ov-val">Product Designer</span>
         </div>
         <div class="overview-item">
           <span class="ov-label">Team</span>
@@ -43,6 +43,8 @@
 
       <!-- ── Scope teaser ── -->
       <section class="case-section case-section--alt">
+        <p class="body-copy app-context">Bucherer AG is one of Europe's most established luxury watch and jewellery retailers, part of the Rolex Group. Alongside its boutiques, Bucherer offers a companion app that extends the in-store relationship digitally: service requests, insurance, selling pieces back to Bucherer, collection management, market insights, and a curated shopping experience for watches and jewellery alike. The work below covers several parts of that app.</p>
+
         <div class="sect-header">
           <span><span class="num">[ — ]</span> What the Work Covers</span>
           <span class="rule" />
@@ -97,35 +99,6 @@
           <span class="sect-title-sub">Adding pieces and introduction of new category</span>
         </div>
 
-        <div class="atc-intro-grid">
-          <div class="atc-intro-col">
-            <span class="atc-intro-label">Need</span>
-            <p class="body-copy">Bucherer's ambition has always been to offer exceptional, personalised service, not just at the point of sale, but throughout the entire ownership journey. Customers were expressing a clear need: a single place to manage what they owned, track service history, and stay connected to Bucherer after leaving the boutique. At the same time, the business saw an opportunity. A feature that gave collectors visibility over their collection would also give Bucherer visibility over their customers, enabling the company to identify trends, understand preferences, and deliver genuinely personalised offers rather than generic outreach.</p>
-          </div>
-          <div class="atc-intro-col">
-            <span class="atc-intro-label">Approach</span>
-            <p class="body-copy">Add to Collection gave every Bucherer customer a private digital home for their pieces, watches and jewellery alike. Collectors could import existing CRM entries or add manually, attach purchase documents and personal photographs, and manage the full lifecycle of each piece: insurance policies, CPO sale enquiries back to Bucherer, and repair shipments. The research process included interviews with sales staff, direct user interviews, and persona workshops, giving us both the front-of-house perspective and the collector's real mental model. A/B testing was used to validate key flows before rollout.</p>
-          </div>
-        </div>
-
-        <div class="mv-decisions">
-          <div class="mv-decision">
-            <span class="mv-decision-num">—</span>
-            <h3 class="mv-decision-title">Sales people know the customer best.</h3>
-            <p class="mv-decision-desc">Before writing a single user story, we interviewed Bucherer's in-store sales staff. They spend hours each day with collectors, understand the language they use, the anxiety around documentation, and the pride of ownership. That perspective shaped the information architecture before any user research began.</p>
-          </div>
-          <div class="mv-decision">
-            <span class="mv-decision-num">—</span>
-            <h3 class="mv-decision-title">Personas grounded in real collector behaviour.</h3>
-            <p class="mv-decision-desc">User interviews revealed a clear split: the active collector who tracks every piece meticulously, and the casual owner who wants reassurance without complexity. Both needed to succeed in the same flow. Personas guided every prioritisation decision: from what to show on the empty state to how much detail to surface on the collection overview.</p>
-          </div>
-          <div class="mv-decision">
-            <span class="mv-decision-num">—</span>
-            <h3 class="mv-decision-title">A/B testing for comprehension, not conversion.</h3>
-            <p class="mv-decision-desc">We ran A/B tests across two distinct UX flows, not to optimise a funnel, but to understand which approach users actually grasped. The question was never which flow performed better on paper, but which one felt intuitive without explanation. Watching users navigate both variants revealed where mental models broke down and where the design was asking too much, informing the final flow directly.</p>
-          </div>
-        </div>
-
         <div class="atc-objective">
           <span class="atc-intro-label">Objective</span>
           <div class="atc-objective-body">
@@ -176,17 +149,26 @@
           <span class="atc-intro-label">Research</span>
           <div class="atc-research-body">
             <p class="body-copy">The process started with what we already had. App analytics showed us how customers engaged with the existing CRM collection, and support tickets gave us a direct line to improvement: what people were asking for and where the current experience fell short.</p>
+          </div>
+
+          <span class="atc-sub-label">Interviews</span>
+          <div class="atc-research-body">
             <p class="body-copy">From there we went out to talk to people. Sales staff were the first stop: they spend hours each day with collectors and understand the language, the anxieties, and the pride of ownership in a way no data can capture. That perspective shaped the early direction before any formal user research began.</p>
             <p class="body-copy">We then conducted interviews separately with two groups: watch collectors, to map their mental models around ownership and documentation, and jewellery buyers, to understand what owning a piece means to them and what they'd actually want to track. These were genuinely different conversations.</p>
+          </div>
+
+          <span class="atc-sub-label">User personas</span>
+          <div class="atc-research-body">
             <p class="body-copy">Findings from both were synthesised in persona workshops, resulting in four profiles grounded in real customer data.</p>
           </div>
-          <span class="atc-sub-label">User personas</span>
           <div class="atc-personas">
             <img data-pin-nopin="true" src="/case/bucherer/personas/persona-christina.jpg" alt="User persona: Christina" class="persona-card" />
             <img data-pin-nopin="true" src="/case/bucherer/personas/persona-roberto.jpg" alt="User persona: Roberto" class="persona-card" />
             <img data-pin-nopin="true" src="/case/bucherer/personas/persona-ana.jpg" alt="User persona: Ana" class="persona-card" />
             <img data-pin-nopin="true" src="/case/bucherer/personas/persona-sebastian.jpg" alt="User persona: Sebastian" class="persona-card" />
           </div>
+
+          <span class="atc-sub-label">Mapping</span>
           <div class="atc-research-body">
             <p class="body-copy">With the personas in place, the next step was to get a clear picture of the existing product. We mapped out the current Collection: its structure, the flows already in place, and every feature the user could interact with. Running alongside that was a map of new information that needed to be added. Analysing these side by side made it possible to understand what we were working with and where jewellery could slot in.</p>
           </div>
@@ -197,47 +179,79 @@
             <img data-pin-nopin="true" src="/case/bucherer/personas/map-jwlr.jpg" alt="Jewellery add flow mapping" class="map-img" />
           </div>
 
+          <span class="atc-sub-label">Brainstorming</span>
           <div class="atc-research-body">
             <p class="body-copy">To answer the question of where jewellery would live within the Collection, two directions were on the table: merge watches and jewellery into a single unified view, or keep them fully separate. User interviews pointed us toward the first option. Customers who owned both categories consistently spoke about their pieces as one collection, not two — they wanted the full picture before narrowing down. Our assumption was that a single view with clear filtering would serve everyone: mixed collectors get the overview they expect, while watch-only or jewellery-only users can filter immediately. To be sure, we decided to explore all possibilities, including the placement of other elements that were now crowding the home page, and made multiple suggestions. We then brainstormed around them as a team, noting pros and cons for each, voting, and settled on two options that we put in front of users for A/B testing.</p>
           </div>
 
           <img data-pin-nopin="true" src="/case/bucherer/personas/brainstorm.webp" alt="Wireframe brainstorming session" class="brainstorm-img" />
 
+          <span class="atc-sub-label">A/B testing</span>
           <div class="atc-research-body">
             <p class="body-copy">Two prototype flows were tested with small groups: one group owned both watches and jewellery, the other owned only one. The findings pointed clearly in one direction. Heavy separation between categories cluttered the view rather than clarifying it. Users who owned both wanted to see their full collection and filter down when needed, not navigate to separate places. Users who owned only one type were not troubled by seeing the option for the other, they simply saw what was theirs on screen. As for arranging the main navigation, we decided to keep it as close to its existing layout as possible for now, preserving the patterns users were already comfortable with.</p>
+          </div>
+        </div>
+
+        <div class="atc-solution">
+          <span class="atc-intro-label">Solution</span>
+
+          <div class="atc-showcase">
+            <div class="atc-showcase-text">
+              <span class="atc-sub-label">Collection</span>
+              <p class="body-copy">The Collection kept a single unified view. Watches and jewellery sit side by side in the order they were added, so the first thing anyone sees is everything they own. Filtering moved into a dedicated sort and filter panel with the category switch at the top.</p>
+              <p class="body-copy">Making room for it also meant revisiting the original UI and tightening the elements that were now competing for space. For a watch-only collector the jewellery option is present but never in the way, and for someone whose collection is entirely jewellery the same screen works unchanged. The selected filter persists between sessions.</p>
+            </div>
+
+            <div class="atc-showcase-devices">
+              <div class="atc-showcase-devices-row">
+                <div class="device">
+                  <img data-pin-nopin="true" src="/case/bucherer/personas/collection-all.webp" alt="Collection view showing watches and jewellery together" loading="lazy" />
+                </div>
+                <div class="device">
+                  <img data-pin-nopin="true" src="/case/bucherer/personas/filters.webp" alt="Sort and filter panel with All, Watches and Jewellery options" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <span class="atc-sub-label">Adding flow</span>
+          <div class="atc-research-body">
+            <p class="body-copy">As for the actual flow of adding new pieces, we had to approach it with more compromise. After weighing the options, we decided to split watches and jewellery at the very first step. It was an extra tap for the user, and we knew it, but it earned its place: it let the backend search and filter against a single category instead of the whole catalogue, and it returned far more relevant results. People tend to start a search with a brand name, and several brands sell both watches and jewellery. Knowing which one the user was looking for before they typed anything made the difference between a useful result list and a cluttered one.</p>
+          </div>
+
+          <div class="atc-flow-row">
+            <div class="device" v-for="n in 5" :key="`add-${n}`">
+              <img data-pin-nopin="true" :src="`/case/bucherer/personas/add${n}.webp`" :alt="`Add to Collection flow, step ${n}`" loading="lazy" />
+            </div>
+          </div>
+
+          <span class="atc-sub-label">Simplicity</span>
+          <div class="atc-research-body">
+            <p class="body-copy">Finally, what had seemed like an infinite list of data points and an overcomplicated prototype was shaped into a genuinely simple feature. Only three fields were made mandatory: brand, serial number and reference number. Everything else stayed optional and folded into expandable sections, fully available to the collector who wants to record every specification, and entirely out of the way for the one who does not. What people ended up with was a flow they understood without instruction, and adoption followed almost immediately.</p>
+          </div>
+
+          <div class="atc-proto-row">
+            <div class="atc-proto-verticals">
+              <img data-pin-nopin="true" src="/case/bucherer/personas/watch6a.webp" alt="Full add-a-watch form, collapsed specification sections" loading="lazy" />
+              <img data-pin-nopin="true" src="/case/bucherer/personas/watch6b.webp" alt="Full add-a-watch form, expanded specification sections" loading="lazy" />
+            </div>
+            <img data-pin-nopin="true" src="/case/bucherer/personas/catalogue-proto.webp" alt="Catalogue prototype overview" class="atc-proto-wide" loading="lazy" />
           </div>
         </div>
 
         <div class="atc-results">
           <div class="atc-result-intro">
             <span class="mv-states-tag">Results</span>
-            <p class="mv-states-note">Results exceeded expectations and were growing at approximately 7% month-over-month. The collection saw strong adoption across both piece types. Consistent with Bucherer's core business, watches led significantly. Jewellery was always a secondary market for the company, and the numbers reflected that as expected.</p>
+            <p class="mv-states-note">Adoption moved faster than we had planned for, growing at roughly 7% month over month. Nearly half of all users added pieces to their collection themselves, which told us the flow was doing its job and that the extra step we had accepted as a risk was not stopping people.</p>
+            <p class="mv-states-note">In absolute terms jewellery sits far behind watches, which is expected for a business built on watch enthusiasts. But the category did not exist in the app before this, so 959 pieces logged by 1.6% of users is a good start, not a disappointment. It gave us real data on a customer we previously knew very little about, and a base to keep promoting and developing jewellery across other services in the app.</p>
           </div>
 
           <div class="atc-stats">
-            <div class="atc-stat-row atc-stat-row--primary">
-              <div class="atc-stat">
-                <span class="atc-stat-num">46.2K</span>
-                <span class="atc-stat-label">Pieces imported from CRM</span>
-                <span class="atc-stat-sub">76% of users imported their collection</span>
-              </div>
-              <div class="atc-stat">
-                <span class="atc-stat-num">26.7K</span>
-                <span class="atc-stat-label">Pictures uploaded</span>
-                <span class="atc-stat-sub">10.3% of users added pictures</span>
-              </div>
-              <div class="atc-stat">
-                <span class="atc-stat-num">7.0K</span>
-                <span class="atc-stat-label">Documents uploaded</span>
-                <span class="atc-stat-sub">3.6% of users added documents</span>
-              </div>
-            </div>
-
             <div class="atc-split-tiles">
               <div class="atc-stat">
                 <span class="atc-stat-num">26.1K</span>
                 <span class="atc-stat-label">Watches added to collections</span>
-                <span class="atc-stat-sub">45.3% of users</span>
+                <span class="atc-stat-sub">45.3% of users added watches in app</span>
               </div>
               <div class="atc-stat">
                 <span class="atc-stat-num">959</span>
@@ -245,16 +259,37 @@
                 <span class="atc-stat-sub">1.6% of users. Secondary market, as expected.</span>
               </div>
             </div>
+
+            <div class="atc-stat-row atc-stat-row--primary">
+              <div class="atc-stat">
+                <span class="atc-stat-num">46.2K</span>
+                <span class="atc-stat-label">Pieces imported from CRM</span>
+                <span class="atc-stat-sub">76% of users imported their collection</span>
+              </div>
+              <div class="atc-stat">
+                <span class="atc-stat-num">7.0K</span>
+                <span class="atc-stat-label">Documents uploaded</span>
+                <span class="atc-stat-sub">3.6% of users added documents</span>
+              </div>
+              <div class="atc-stat">
+                <span class="atc-stat-num">26.7K</span>
+                <span class="atc-stat-label">Pictures uploaded</span>
+                <span class="atc-stat-sub">10.3% of users added pictures</span>
+              </div>
+            </div>
           </div>
+
+          <p class="atc-stats-note">Metrics reflect May 2026.</p>
         </div>
 
       </section>
 
       <!-- ── Market Value Estimate ── -->
       <section class="case-section mv-section">
-        <div class="sect-header">
-          <span><span class="num">[ 02 ]</span> Market Value Estimate</span>
-          <span class="rule" />
+        <div class="sect-header sect-header--stacked">
+          <span class="num">[ 02 ]</span>
+          <span class="sect-title-main">Market Value Estimate</span>
+          <span class="sect-title-sub">Quick overview</span>
         </div>
 
         <div class="mv-intro mv-intro--single">
@@ -435,6 +470,11 @@ main {
 
 .case-section--alt {
   background: rgba(11, 12, 11, 0.03);
+}
+
+.app-context {
+  max-width: 72ch;
+  margin-bottom: clamp(40px, 5vw, 64px);
 }
 
 .sect-header {
@@ -629,6 +669,14 @@ main {
 
 .mv-section .num {
   color: #EAEAE8;
+}
+
+.mv-section .sect-title-main {
+  color: #EAEAE8;
+}
+
+.mv-section .sect-title-sub {
+  color: rgba(234, 234, 232, 0.5);
 }
 
 .mv-section .mv-states-tag {
@@ -830,9 +878,9 @@ main {
 .atc-results {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: clamp(24px, 3vw, 36px);
   border-top: 1px solid rgba(11, 12, 11, 0.12);
-  padding-top: 28px;
+  padding-top: clamp(32px, 4vw, 48px);
   margin-top: clamp(36px, 4vw, 52px);
 }
 
@@ -853,7 +901,7 @@ main {
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: clamp(14px, 1vw, 16px);
   color: rgba(11, 12, 11, 0.55);
-  margin: 0 0 clamp(24px, 3vw, 36px) 0;
+  margin: 0 0 -12px 0;
   padding-top: clamp(32px, 4vw, 48px);
   border-top: 1px solid rgba(11, 12, 11, 0.12);
   margin-top: clamp(32px, 4vw, 48px);
@@ -895,7 +943,8 @@ main {
   .atc-design-questions { grid-template-columns: 1fr; }
 }
 
-.atc-research {
+.atc-research,
+.atc-solution {
   display: flex;
   flex-direction: column;
   gap: clamp(24px, 3vw, 36px);
@@ -907,7 +956,7 @@ main {
 .atc-research-body {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
   max-width: 72ch;
 }
 
@@ -917,6 +966,17 @@ main {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(11, 12, 11, 0.45);
+  /* Sits close to the content it labels, further from what precedes it,
+     so each label + block reads as one group inside the 36px flex gap. */
+  margin-top: 32px;
+  margin-bottom: -24px;
+}
+
+/* Inside the device column the label is already tight — keep default flow */
+.atc-sub-label--devices {
+  align-self: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .atc-research-body .body-copy {
@@ -953,6 +1013,145 @@ main {
   border-radius: 2px;
 }
 
+/* ── Solution showcase: copy left, devices right ── */
+.atc-showcase {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+}
+
+.atc-showcase-text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 60ch;
+}
+
+.atc-showcase-text .body-copy {
+  margin-bottom: 0;
+}
+
+/* First child of the copy column: align to the top, hug the paragraph below */
+.atc-showcase-text .atc-sub-label {
+  margin-top: 0;
+  margin-bottom: -14px;
+}
+
+.atc-showcase-devices {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.atc-showcase-devices-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(12px, 1.5vw, 20px);
+  align-items: start;
+}
+
+/* iPhone-style frame */
+.device {
+  position: relative;
+  border-radius: 14.5%/6.8%;
+  background: #0B0C0B;
+  padding: 2.6%;
+  box-shadow:
+    0 1px 2px rgba(11, 12, 11, 0.18),
+    0 18px 40px -12px rgba(11, 12, 11, 0.32);
+}
+
+.device img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12.4%/5.6%;
+}
+
+@media (max-width: 900px) {
+  .atc-showcase {
+    grid-template-columns: 1fr;
+    gap: clamp(28px, 5vw, 40px);
+  }
+
+  .atc-showcase-devices {
+    max-width: 420px;
+  }
+}
+
+/* Solution has no sub-labels: each paragraph owns the screens beneath it,
+   so pull the images up toward their copy and open the gap before the next block. */
+.atc-solution > .atc-research-body {
+  margin-top: 28px;
+}
+
+/* A sub-label already opens the group, so the copy hugs it instead */
+.atc-solution > .atc-sub-label + .atc-research-body {
+  margin-top: 0;
+}
+
+.atc-solution > .atc-flow-row,
+.atc-solution > .atc-proto-row {
+  margin-top: -14px;
+}
+
+/* Five-step adding flow */
+.atc-flow-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(10px, 1.4vw, 20px);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .atc-flow-row { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .atc-flow-row { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Long-form prototype scrolls + catalogue overview */
+.atc-proto-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 3vw, 48px);
+}
+
+.atc-proto-verticals {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(10px, 1.4vw, 18px);
+  flex: 0 0 auto;
+}
+
+.atc-proto-verticals img {
+  display: block;
+  width: auto;
+  max-height: clamp(280px, 34vw, 440px);
+  border: 1px solid rgba(11, 12, 11, 0.1);
+  border-radius: 2px;
+}
+
+.atc-proto-wide {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: auto;
+  border: 1px solid rgba(11, 12, 11, 0.1);
+  border-radius: 2px;
+}
+
+@media (max-width: 760px) {
+  .atc-proto-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .atc-proto-verticals { justify-content: center; }
+  .atc-proto-wide { width: 100%; }
+}
+
 .persona-card {
   width: 100%;
   height: auto;
@@ -969,7 +1168,7 @@ main {
 .atc-objective-body {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
   max-width: 72ch;
 }
 
@@ -983,6 +1182,8 @@ main {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #007070;
+  /* Tighten the section label to the copy it introduces */
+  margin-bottom: -14px;
 }
 
 .atc-obj-list {
@@ -1025,10 +1226,6 @@ main {
   font-weight: 500;
 }
 
-.atc-section .mv-decisions {
-  margin-bottom: clamp(36px, 4vw, 52px);
-}
-
 /* Cream mv- classes reused on light bg — override to ink */
 
 .atc-section .mv-states-note {
@@ -1042,7 +1239,12 @@ main {
 .atc-result-intro {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 26px;
+}
+
+/* Match the label-to-copy proximity used across the other sections */
+.atc-result-intro .mv-states-tag {
+  margin-bottom: -4px;
 }
 
 .atc-stats {
@@ -1098,6 +1300,15 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 1px;
   background: rgba(11, 12, 11, 0.1);
+}
+
+.atc-stats-note {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: rgba(11, 12, 11, 0.5);
+  /* Footnote hugs the table it annotates */
+  margin: -22px 0 0;
 }
 
 @media (max-width: 760px) {

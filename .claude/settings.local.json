@@ -49,7 +49,8 @@
       "Bash(python3 -m pip install Pillow -q)",
       "Bash(sed -i '' 's/<img data-pin-nopin=\"true\" /<img /g' /Users/kraljica/Desktop/portfolio-website/pages/projects/bucherer.vue)",
       "Bash(sed -i '' 's/<img /<img data-pin-nopin=\"true\" /g' /Users/kraljica/Desktop/portfolio-website/pages/projects/bucherer.vue)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -q -m ' *)"
     ]
   },
   "hooks": {
