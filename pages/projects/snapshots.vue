@@ -55,10 +55,10 @@
 
         <!-- Image grid -->
         <div class="studio-grid">
-          <img src="/case/snapshots/studio/mb-9.webp" alt="The Studio — About page" loading="lazy" />
-          <img src="/case/snapshots/studio/mb-7.webp" alt="The Studio — Interactive floor plan" loading="lazy" />
-          <img src="/case/snapshots/studio/mb-8.webp" alt="The Studio — Portfolio gallery" loading="lazy" />
-          <img src="/case/snapshots/studio/mb-15.webp" alt="The Studio — Contact page" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/studio/mb-9.webp" alt="The Studio — About page" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/studio/mb-7.webp" alt="The Studio — Interactive floor plan" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/studio/mb-8.webp" alt="The Studio — Portfolio gallery" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/studio/mb-15.webp" alt="The Studio — Contact page" loading="lazy" />
         </div>
 
       </section>
@@ -85,7 +85,7 @@
         </div>
 
         <div class="workshop-scroll">
-          <img src="/case/snapshots/workshop/full.jpg" alt="The Workshop — full site overview" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/workshop/full.jpg" alt="The Workshop — full site overview" loading="lazy" />
         </div>
 
       </section>
@@ -115,18 +115,18 @@
 
           <!-- Desktop screens -->
           <div class="brand-web">
-            <img src="/case/snapshots/brand/web-1.webp" alt="The Brand — product detail" loading="lazy" />
-            <img src="/case/snapshots/brand/web-2.webp" alt="The Brand — category listing" loading="lazy" />
+            <img data-pin-nopin="true" src="/case/snapshots/brand/web-1.webp" alt="The Brand — product detail" loading="lazy" />
+            <img data-pin-nopin="true" src="/case/snapshots/brand/web-2.webp" alt="The Brand — category listing" loading="lazy" />
           </div>
         </div>
 
         <!-- Mobile screens -->
         <div class="brand-mobile">
-          <img src="/case/snapshots/brand/mob-1.webp" alt="The Brand — mobile home" loading="lazy" />
-          <img src="/case/snapshots/brand/mob-5.webp" alt="The Brand — mobile nav" loading="lazy" />
-          <img src="/case/snapshots/brand/mob-2.webp" alt="The Brand — mobile category" loading="lazy" />
-          <img src="/case/snapshots/brand/mob-3.webp" alt="The Brand — mobile product" loading="lazy" />
-          <img src="/case/snapshots/brand/mob-4.webp" alt="The Brand — mobile bag" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/brand/mob-1.webp" alt="The Brand — mobile home" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/brand/mob-5.webp" alt="The Brand — mobile nav" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/brand/mob-2.webp" alt="The Brand — mobile category" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/brand/mob-3.webp" alt="The Brand — mobile product" loading="lazy" />
+          <img data-pin-nopin="true" src="/case/snapshots/brand/mob-4.webp" alt="The Brand — mobile bag" loading="lazy" />
         </div>
 
       </section>

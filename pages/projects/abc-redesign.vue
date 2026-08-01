@@ -16,7 +16,7 @@
         </div>
 
         <div class="img-hero">
-          <img src="/case/abc-redesign/abcshow10.webp" alt="Ignite App — The next level gym management software" class="case-img" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/abcshow10.webp" alt="Ignite App — The next level gym management software" class="case-img" />
         </div>
       </section>
 
@@ -64,8 +64,8 @@
         <p class="body-copy">Drawing from insights gathered through app usage, there was a clear opportunity to enhance the user experience beyond simple workout tracking and calorie counting — providing personalized, motivating solutions for users with varying fitness levels, preferences, and health conditions.</p>
 
         <div class="img-grid img-grid--2">
-          <img src="/case/abc-redesign/lifestyle11.webp" alt="Member logging a meal in the ABC Fitness app" class="case-img case-img--rounded" />
-          <img src="/case/abc-redesign/lifestyle12.webp" alt="Member checking in at the gym with the ABC Fitness app" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/lifestyle11.webp" alt="Member logging a meal in the ABC Fitness app" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/lifestyle12.webp" alt="Member checking in at the gym with the ABC Fitness app" class="case-img case-img--rounded" />
         </div>
       </section>
 
@@ -151,7 +151,7 @@
         </div>
         <p class="body-copy">ABC Fitness presents four distinct packages for businesses to choose from, allowing them to tailor their selection based on their needs and the types of members they intend to target — one or multiple packages that align with their specific requirements.</p>
 
-        <img src="/case/abc-redesign/abcshow11.webp" alt="ABC Fitness — Businesses to Packages diagram" class="case-img case-img--rounded" />
+        <img data-pin-nopin="true" src="/case/abc-redesign/abcshow11.webp" alt="ABC Fitness — Businesses to Packages diagram" class="case-img case-img--rounded" />
       </section>
 
       <!-- ── 04 Design System ── -->
@@ -176,7 +176,7 @@
             <p>A recognizable, highly simplified icon system. Icon content is constrained to a 20dp live area with 2dp padding, supporting six sizes: 20px, 24px, 40px, 48px, 64px, and 88px. Outlined style throughout.</p>
           </div>
         </div>
-        <img src="/case/abc-redesign/16.webp" alt="Design System — Color palette, typography and iconography" class="case-img case-img--rounded" />
+        <img data-pin-nopin="true" src="/case/abc-redesign/16.webp" alt="Design System — Color palette, typography and iconography" class="case-img case-img--rounded" />
 
         <div class="callout">
           <span class="callout-label">Custom Branded Colours</span>
@@ -184,11 +184,11 @@
         </div>
 
         <div class="img-row img-row--70">
-          <img src="/case/abc-redesign/17a.webp" alt="" class="case-img case-img--rounded" />
-          <img src="/case/abc-redesign/17b.webp" alt="" class="case-img case-img--rounded" />
-          <img src="/case/abc-redesign/17c.webp" alt="" class="case-img case-img--rounded" />
-          <img src="/case/abc-redesign/17d.webp" alt="" class="case-img case-img--rounded" />
-          <img src="/case/abc-redesign/17e.webp" alt="" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/17a.webp" alt="" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/17b.webp" alt="" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/17c.webp" alt="" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/17d.webp" alt="" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/17e.webp" alt="" class="case-img case-img--rounded" />
         </div>
 
         <!-- Softness styles -->
@@ -210,7 +210,7 @@
           </div>
         </div>
 
-        <img src="/case/abc-redesign/18.webp" alt="" class="case-img case-img--rounded" />
+        <img data-pin-nopin="true" src="/case/abc-redesign/18.webp" alt="" class="case-img case-img--rounded" />
 
       </section>
 
@@ -226,7 +226,7 @@
             <span class="label-red">Ignite Engagement Go</span>
             <p class="body-copy">The redesign was first implemented on the basic app version — Engagement Go — primarily used by members for check-ins and membership management.</p>
           </div>
-          <img src="/case/abc-redesign/19.webp" alt="" class="case-img case-img--rounded text-image-row__img" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/19.webp" alt="" class="case-img case-img--rounded text-image-row__img" />
         </div>
 
       </section>
@@ -295,15 +295,15 @@
 
         <div class="img-labeled">
           <span class="img-label">Original App</span>
-          <img src="/case/abc-redesign/23.webp" alt="" class="case-img case-img--rounded wireframe-img" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/23.webp" alt="" class="case-img case-img--rounded wireframe-img" />
         </div>
         <div class="img-labeled">
           <span class="img-label">Architecture</span>
-          <img src="/case/abc-redesign/24.webp" alt="" class="case-img case-img--rounded wireframe-img wireframe-img--sm" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/24.webp" alt="" class="case-img case-img--rounded wireframe-img wireframe-img--sm" />
         </div>
         <div class="img-labeled">
           <span class="img-label">Mockups</span>
-          <img src="/case/abc-redesign/25.webp" alt="" class="case-img case-img--rounded wireframe-img" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/25.webp" alt="" class="case-img case-img--rounded wireframe-img" />
         </div>
 
         <hr class="section-divider" />
@@ -312,11 +312,11 @@
         <h3 class="sub-title">Example 1 — "Find a club" UX &amp; UI</h3>
         <div class="img-labeled">
           <span class="img-label">Original</span>
-          <img src="/case/abc-redesign/abcshow13.webp" alt="Find a club — current design" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/abcshow13.webp" alt="Find a club — current design" class="case-img case-img--rounded" />
         </div>
         <div class="img-labeled">
           <span class="img-label">Redesigned</span>
-          <img src="/case/abc-redesign/abcshow14.webp" alt="Find a club — redesigned" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/abcshow14.webp" alt="Find a club — redesigned" class="case-img case-img--rounded" />
         </div>
 
         <div class="improvements-list">
@@ -337,11 +337,11 @@
 
         <div class="img-labeled">
           <span class="img-label">Original</span>
-          <img src="/case/abc-redesign/29.webp" alt="" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/29.webp" alt="" class="case-img case-img--rounded" />
         </div>
         <div class="img-labeled">
           <span class="img-label">Redesigned</span>
-          <img src="/case/abc-redesign/30.webp" alt="" class="case-img case-img--rounded" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/30.webp" alt="" class="case-img case-img--rounded" />
         </div>
 
       </section>
@@ -355,7 +355,7 @@
         <p class="body-copy">After establishing the visual concept through Ignite Go, we advanced to the app's most complex version — Ignite Total — containing all available features: workout tracking, class booking, nutrition logging, personal training, and more.</p>
         <div class="text-image-row">
           <p class="body-copy text-image-row__text">The project was put on hold before its completion.</p>
-          <img src="/case/abc-redesign/31.webp" alt="" class="case-img case-img--rounded text-image-row__img" />
+          <img data-pin-nopin="true" src="/case/abc-redesign/31.webp" alt="" class="case-img case-img--rounded text-image-row__img" />
         </div>
 
       </section>

@@ -91,9 +91,10 @@
 
       <!-- ── Add to Collection ── -->
       <section class="case-section atc-section">
-        <div class="sect-header">
-          <span><span class="num">[ 01 ]</span> Add to Collection</span>
-          <span class="rule" />
+        <div class="sect-header sect-header--stacked">
+          <span class="num">[ 01 ]</span>
+          <span class="sect-title-main">Collection</span>
+          <span class="sect-title-sub">Adding pieces and introduction of new category</span>
         </div>
 
         <div class="atc-intro-grid">
@@ -122,6 +123,88 @@
             <span class="mv-decision-num">—</span>
             <h3 class="mv-decision-title">A/B testing for comprehension, not conversion.</h3>
             <p class="mv-decision-desc">We ran A/B tests across two distinct UX flows, not to optimise a funnel, but to understand which approach users actually grasped. The question was never which flow performed better on paper, but which one felt intuitive without explanation. Watching users navigate both variants revealed where mental models broke down and where the design was asking too much, informing the final flow directly.</p>
+          </div>
+        </div>
+
+        <div class="atc-objective">
+          <span class="atc-intro-label">Objective</span>
+          <div class="atc-objective-body">
+            <p class="body-copy">The Bucherer app already had a collection. Any watch purchased in-store was automatically imported from the CRM and appeared in the customer's profile. It worked, but it only reflected Bucherer transactions: the pieces they sold you, nothing more. A watch inherited from a parent, a piece picked up at auction, anything bought elsewhere: none of it existed in the app. For a collector, that's half the picture at best.</p>
+            <p class="body-copy">Customers had been telling us this in different ways: they wanted to see their full collection in one place, not just their Bucherer purchases. We listened, recognised the need was real, and started exploring what it would take to build it. What became clear quickly was that the user need and a business opportunity weren't in tension. They were the same thing. A feature that gave collectors visibility over their pieces would also give Bucherer visibility over their customers: real preferences, real collections, not just transaction history. That alignment made the decision easy.</p>
+            <p class="body-copy">Then, in early brainstorming, a second conversation started. Bucherer has always sold jewellery, but the app had no trace of it. Jewellery didn't exist as a category. We saw the collection as a low-pressure way to change that: if a customer could add a necklace alongside their watches, they'd encounter that part of the brand without being sold to. Subtle, but deliberate.</p>
+          </div>
+          <ol class="atc-obj-list">
+            <li><strong>Respond to a real user need.</strong> Collectors wanted their pieces tracked in one place, with full ownership detail, accessible from their phone.</li>
+            <li><strong>Deepen brand engagement.</strong> A feature worth returning to keeps the customer in the Bucherer ecosystem long after the purchase.</li>
+            <li><strong>Enable personalised outreach.</strong> Preference data from real collections gives the business context to offer something genuinely relevant.</li>
+            <li><strong>Extend services beyond Bucherer purchases.</strong> Insurance, CPO sales, and repairs are now available for any watch in the collection, not just those bought from us.</li>
+            <li><strong>Introduce jewellery.</strong> Not as a push, but as a quiet presence. An invitation rather than a sales pitch.</li>
+          </ol>
+        </div>
+
+        <div class="atc-challenge">
+          <span class="atc-intro-label">Challenge</span>
+          <div class="atc-objective-body">
+            <p class="body-copy">The feature had to work for two very different audiences, inside a brand where visual restraint isn't optional.</p>
+            <p class="body-copy">The Bucherer customer base is overwhelmingly made up of watch enthusiasts. Collectors who know reference numbers, track complications, and care deeply about provenance. That group was the primary audience, and nothing about the experience could feel cluttered or off-brand for them.</p>
+            <p class="body-copy">Jewellery had to live here too, and that raised its own questions. The flow ultimately shared the same starting point as watches, but finding where jewellery belonged, both in the existing Collection view and within the adding flow, was itself part of the work. We needed to understand the jewellery customer well enough to know how far that held, and that research mattered beyond this feature, shaping how we would develop jewellery across the rest of the app. We also wanted a clearer picture of whether watch enthusiasts could actually be reached through this entry point. Introducing jewellery added an extra step to the flow for regular users. We considered that a calculated risk worth taking.</p>
+          </div>
+          <ol class="atc-obj-list">
+            <li><strong>A watch-first user base.</strong> Most customers were not there for jewellery. The design had to serve them without making the jewellery category feel invisible or irrelevant.</li>
+            <li><strong>Introducing jewellery without pushing it.</strong> Watch users needed to become aware that jewellery existed in the app, but any heavy-handed approach would have felt misaligned with the brand.</li>
+            <li><strong>Finding the right place for jewellery.</strong> We had to decide where jewellery would live — both inside the existing Collection view and within the new adding flow. It needed to feel like it had always been there, not like something bolted on.</li>
+            <li><strong>An unfamiliar user group.</strong> The jewellery customer was new territory. We needed to go out and learn who this person was — how they think about ownership, what they track, and what a piece means to them. That understanding had to be built before we could design for them with any confidence.</li>
+            <li><strong>Luxury constraints.</strong> Bucherer's brand language is built on minimalism and restraint. These are not aesthetic preferences, they are requirements. Every screen had to feel considered.</li>
+            <li><strong>Depth without overwhelm.</strong> We knew collectors cared about technical detail, and we wanted to give them the ability to log everything. The challenge was making that richness available without letting the entry process become so heavy that users would abandon it halfway through.</li>
+          </ol>
+
+          <p class="atc-questions-lead">Mapping the challenges brought two concrete design questions into focus.</p>
+
+          <div class="atc-design-questions">
+            <div class="atc-design-q">
+              <span class="atc-q-num">01</span>
+              <p class="atc-q-text">Where do we place jewellery inside the already existing Collection?</p>
+            </div>
+            <div class="atc-design-q">
+              <span class="atc-q-num">02</span>
+              <p class="atc-q-text">How do we organise the new Adding flow?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="atc-research">
+          <span class="atc-intro-label">Research</span>
+          <div class="atc-research-body">
+            <p class="body-copy">The process started with what we already had. App analytics showed us how customers engaged with the existing CRM collection, and support tickets gave us a direct line to improvement: what people were asking for and where the current experience fell short.</p>
+            <p class="body-copy">From there we went out to talk to people. Sales staff were the first stop: they spend hours each day with collectors and understand the language, the anxieties, and the pride of ownership in a way no data can capture. That perspective shaped the early direction before any formal user research began.</p>
+            <p class="body-copy">We then conducted interviews separately with two groups: watch collectors, to map their mental models around ownership and documentation, and jewellery buyers, to understand what owning a piece means to them and what they'd actually want to track. These were genuinely different conversations.</p>
+            <p class="body-copy">Findings from both were synthesised in persona workshops, resulting in four profiles grounded in real customer data.</p>
+          </div>
+          <span class="atc-sub-label">User personas</span>
+          <div class="atc-personas">
+            <img data-pin-nopin="true" src="/case/bucherer/personas/persona-christina.jpg" alt="User persona: Christina" class="persona-card" />
+            <img data-pin-nopin="true" src="/case/bucherer/personas/persona-roberto.jpg" alt="User persona: Roberto" class="persona-card" />
+            <img data-pin-nopin="true" src="/case/bucherer/personas/persona-ana.jpg" alt="User persona: Ana" class="persona-card" />
+            <img data-pin-nopin="true" src="/case/bucherer/personas/persona-sebastian.jpg" alt="User persona: Sebastian" class="persona-card" />
+          </div>
+          <div class="atc-research-body">
+            <p class="body-copy">With the personas in place, the next step was to get a clear picture of the existing product. We mapped out the current Collection: its structure, the flows already in place, and every feature the user could interact with. Running alongside that was a map of new information that needed to be added. Analysing these side by side made it possible to understand what we were working with and where jewellery could slot in.</p>
+          </div>
+
+          <div class="atc-map-bento">
+            <img data-pin-nopin="true" src="/case/bucherer/personas/map-dashboard.jpg" alt="Collection home dashboard mapping" class="map-img" />
+            <img data-pin-nopin="true" src="/case/bucherer/personas/map-branches.jpg" alt="Collection branches mapping" class="map-img" />
+            <img data-pin-nopin="true" src="/case/bucherer/personas/map-jwlr.jpg" alt="Jewellery add flow mapping" class="map-img" />
+          </div>
+
+          <div class="atc-research-body">
+            <p class="body-copy">To answer the question of where jewellery would live within the Collection, two directions were on the table: merge watches and jewellery into a single unified view, or keep them fully separate. User interviews pointed us toward the first option. Customers who owned both categories consistently spoke about their pieces as one collection, not two — they wanted the full picture before narrowing down. Our assumption was that a single view with clear filtering would serve everyone: mixed collectors get the overview they expect, while watch-only or jewellery-only users can filter immediately. To be sure, we decided to explore all possibilities, including the placement of other elements that were now crowding the home page, and made multiple suggestions. We then brainstormed around them as a team, noting pros and cons for each, voting, and settled on two options that we put in front of users for A/B testing.</p>
+          </div>
+
+          <img data-pin-nopin="true" src="/case/bucherer/personas/brainstorm.webp" alt="Wireframe brainstorming session" class="brainstorm-img" />
+
+          <div class="atc-research-body">
+            <p class="body-copy">Two prototype flows were tested with small groups: one group owned both watches and jewellery, the other owned only one. The findings pointed clearly in one direction. Heavy separation between categories cluttered the view rather than clarifying it. Users who owned both wanted to see their full collection and filter down when needed, not navigate to separate places. Users who owned only one type were not troubled by seeing the option for the other, they simply saw what was theirs on screen. As for arranging the main navigation, we decided to keep it as close to its existing layout as possible for now, preserving the patterns users were already comfortable with.</p>
           </div>
         </div>
 
@@ -198,15 +281,15 @@
 
         <div class="mv-screens">
           <div class="mv-screen-slot">
-            <img src="/case/bucherer/market1.webp" alt="Services screen — Market Value Estimate entry point" class="mv-screen-img" loading="lazy" />
+            <img data-pin-nopin="true" src="/case/bucherer/market1.webp" alt="Services screen — Market Value Estimate entry point" class="mv-screen-img" loading="lazy" />
             <p class="mv-screen-caption">Entry point from Services</p>
           </div>
           <div class="mv-screen-slot">
-            <img src="/case/bucherer/market2.webp" alt="Collection overview — total portfolio value with chart" class="mv-screen-img" loading="lazy" />
+            <img data-pin-nopin="true" src="/case/bucherer/market2.webp" alt="Collection overview — total portfolio value with chart" class="mv-screen-img" loading="lazy" />
             <p class="mv-screen-caption">Total collection value</p>
           </div>
           <div class="mv-screen-slot">
-            <img src="/case/bucherer/market3.webp" alt="Single watch valuation with timeframe chart" class="mv-screen-img" loading="lazy" />
+            <img data-pin-nopin="true" src="/case/bucherer/market3.webp" alt="Single watch valuation with timeframe chart" class="mv-screen-img" loading="lazy" />
             <p class="mv-screen-caption">Per-watch breakdown</p>
           </div>
         </div>
@@ -239,6 +322,7 @@
 <script setup lang="ts">
 useHead({
   title: 'Bucherer AG — Marina Markus',
+  meta: [{ name: 'pinterest', content: 'nopin' }],
 })
 </script>
 
@@ -376,6 +460,30 @@ main {
 .num {
   color: #0B0C0B;
   font-weight: 500;
+}
+
+.sect-header--stacked {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.sect-title-main {
+  font-family: 'Stack Sans Notch', sans-serif;
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  color: #0B0C0B;
+  margin-right: 10px;
+}
+
+.sect-title-sub {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(11, 12, 11, 0.45);
 }
 
 /* ── NDA stage ── */
@@ -728,22 +836,144 @@ main {
   margin-top: clamp(36px, 4vw, 52px);
 }
 
-.atc-intro-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(32px, 4vw, 64px);
+.atc-objective,
+.atc-challenge {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 3vw, 36px);
   margin-bottom: clamp(36px, 4vw, 52px);
 }
 
-.atc-intro-col {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+.atc-challenge {
   border-top: 1px solid rgba(11, 12, 11, 0.12);
-  padding-top: 20px;
+  padding-top: clamp(32px, 4vw, 48px);
 }
 
-.atc-intro-col .body-copy {
+.atc-questions-lead {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: clamp(14px, 1vw, 16px);
+  color: rgba(11, 12, 11, 0.55);
+  margin: 0 0 clamp(24px, 3vw, 36px) 0;
+  padding-top: clamp(32px, 4vw, 48px);
+  border-top: 1px solid rgba(11, 12, 11, 0.12);
+  margin-top: clamp(32px, 4vw, 48px);
+}
+
+.atc-design-questions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(24px, 3vw, 48px);
+}
+
+.atc-design-q {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-left: 2px solid #007070;
+  padding-left: 24px;
+}
+
+.atc-q-num {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: #007070;
+}
+
+.atc-q-text {
+  font-family: 'Stack Sans Notch', sans-serif;
+  font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #0B0C0B;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .atc-design-questions { grid-template-columns: 1fr; }
+}
+
+.atc-research {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 3vw, 36px);
+  border-top: 1px solid rgba(11, 12, 11, 0.12);
+  padding-top: clamp(32px, 4vw, 48px);
+  margin-bottom: clamp(36px, 4vw, 52px);
+}
+
+.atc-research-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 72ch;
+}
+
+.atc-sub-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(11, 12, 11, 0.45);
+}
+
+.atc-research-body .body-copy {
+  margin-bottom: 0;
+}
+
+.atc-personas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.atc-map-bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.map-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+@media (max-width: 760px) {
+  .atc-map-bento { grid-template-columns: 1fr; }
+}
+
+.brainstorm-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+.persona-card {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+@media (max-width: 760px) {
+  .atc-personas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.atc-objective-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 72ch;
+}
+
+.atc-objective-body .body-copy {
   margin-bottom: 0;
 }
 
@@ -755,8 +985,44 @@ main {
   color: #007070;
 }
 
-@media (max-width: 760px) {
-  .atc-intro-grid { grid-template-columns: 1fr; }
+.atc-obj-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 72ch;
+}
+
+.atc-obj-list li {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 1.6;
+  color: rgba(11, 12, 11, 0.75);
+  padding-left: 20px;
+  position: relative;
+}
+
+.atc-obj-list li::before {
+  content: counter(obj-num) '.';
+  counter-increment: obj-num;
+  position: absolute;
+  left: 0;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: #007070;
+  top: 4px;
+}
+
+.atc-obj-list {
+  counter-reset: obj-num;
+}
+
+.atc-obj-list strong {
+  color: #0B0C0B;
+  font-weight: 500;
 }
 
 .atc-section .mv-decisions {
