@@ -82,13 +82,6 @@
             <p class="scope-desc">The work was recognised with two Bronze awards at Swiss Apps 2025, <strong>Design</strong> and <strong>User Experience</strong>, one of the leading digital product awards in Switzerland.</p>
           </div>
         </div>
-
-        <div class="nda-stage">
-          <blockquote class="pull-quote">
-            The full case study is on its way — precision takes time.
-          </blockquote>
-          <p class="body-copy">This is the most recent and ongoing project in the portfolio. The documentation is still being put together. In the meantime, two key features are documented below.</p>
-        </div>
       </section>
 
       <!-- ── Add to Collection ── -->
@@ -329,11 +322,11 @@
           </div>
         </div>
 
-        <div class="mv-states-row">
-          <div class="mv-states-label">
-            <span class="mv-states-tag">Edge cases</span>
-            <p class="mv-states-note">The feature was designed across seven distinct states, from the standard interaction view to empty states for users with no watches or no available estimate. Each one was given the same care as the main flow, because edge cases are where composure matters most.</p>
-          </div>
+        <div class="nda-stage">
+          <blockquote class="pull-quote">
+            The full case study is on its way — precision takes time.
+          </blockquote>
+          <p class="body-copy">This is the most recent and ongoing project in the portfolio. New case studies are being put together.</p>
         </div>
 
       </section>
@@ -681,6 +674,16 @@ main {
 
 .mv-section .mv-states-tag {
   color: #00A8A8;
+}
+
+.mv-section .nda-stage .pull-quote {
+  color: #EAEAE8;
+  border-left-color: #00A8A8;
+  font-size: clamp(18px, 2vw, 28px);
+}
+
+.mv-section .nda-stage .body-copy {
+  color: rgba(234, 234, 232, 0.7);
 }
 
 .mv-intro {
@@ -1091,9 +1094,15 @@ main {
   margin-top: 0;
 }
 
+/* Media blocks are tall — give them air above and below so they read as
+   their own beat rather than sitting flush against the copy. */
+.atc-research > .atc-personas,
+.atc-research > .atc-map-bento,
+.atc-research > .brainstorm-img,
 .atc-solution > .atc-flow-row,
 .atc-solution > .atc-proto-row {
-  margin-top: -14px;
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 /* Five-step adding flow */

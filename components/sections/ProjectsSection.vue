@@ -40,8 +40,6 @@ const works = [
     tagline: 'Bucherer AG',
     tags: ['E-commerce', 'WCAG', "Bronze · Swiss Apps '25"],
     desc: 'Simplifying complex systems into experiences aligned with the brand\'s premium positioning.',
-    comingSoon: true,
-    arrowText: '→ Brief overview',
   },
   {
     slug: 'abc-redesign',
@@ -140,11 +138,6 @@ const works = [
   transform-origin: bottom center;
   transition: transform 0.6s cubic-bezier(.7,.05,.2,1);
   z-index: -1;
-}
-
-/* Coming-soon items use warm graphite fill instead of accent */
-.work-item.is-coming-soon::before {
-  background: #4A4642;
 }
 
 @media (hover: hover) {
