@@ -30,9 +30,7 @@
             <div class="border border-ink/10 rounded-sm p-7 bg-white hover:border-ink/20 transition-colors duration-300 h-full flex flex-col justify-between gap-6">
               <div>
                 <span class="font-display text-petrol text-4xl leading-none">"</span>
-                <p class="text-ink/80 text-sm leading-relaxed mt-1">
-                  {{ testimonial.quote }}
-                </p>
+                <p class="text-ink/80 text-sm leading-relaxed mt-1" v-html="testimonial.quote"></p>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-9 h-9 rounded-full bg-ink/10 flex items-center justify-center shrink-0">
@@ -60,7 +58,7 @@ const testimonials = [
     role: 'Product Manager, ABC Financial Services',
   },
   {
-    quote: "She was the first designer who actually asked if we could implement it on the backend — that mindset changed everything about how we collaborate.",
+    quote: "OMG! You are the first designer who has ever asked me if we can do it on backend!",
     name: 'Luka Lovre',
     role: 'Backend Developer, ABC Fitness',
   },
@@ -70,7 +68,7 @@ const testimonials = [
     role: 'Director of Product, ABC Fitness',
   },
   {
-    quote: "Marina brings exceptional value to every project. Her ability to align user needs with business goals while maintaining design excellence is truly rare.",
+    quote: "Just let them call me. I will tell them if they don’t hire you, they are <s>an idiot</s> nuts. (Yeah, she has used a movie quote.)",
     name: 'Miriam Zumstein',
     role: 'Business Solutions & Innovation, Bucherer AG',
   },

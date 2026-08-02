@@ -38,7 +38,7 @@ const works = [
     slug: 'bucherer',
     title: 'Timeless elegance, exceptional craftsmanship',
     tagline: 'Bucherer AG',
-    tags: ['E-commerce', 'WCAG', "Bronze · Swiss Apps '25"],
+    tags: ["Bronze · Swiss Apps '25", 'WCAG', 'Feature Design'],
     desc: 'Simplifying complex systems into experiences aligned with the brand\'s premium positioning.',
   },
   {

@@ -104,6 +104,7 @@
             <li><strong>Deepen brand engagement.</strong> A feature worth returning to keeps the customer in the Bucherer ecosystem long after the purchase.</li>
             <li><strong>Enable personalised outreach.</strong> Preference data from real collections gives the business context to offer something genuinely relevant.</li>
             <li><strong>Extend services beyond Bucherer purchases.</strong> Insurance, CPO sales, and repairs are now available for any watch in the collection, not just those bought from us.</li>
+            <li><strong>Compete as a standalone collector's tool.</strong> Letting anyone log any piece, not just Bucherer purchases, put the app on equal footing with dedicated collector platforms. That made it genuinely useful to people who had never bought from Bucherer, turning the app itself into a lead channel for future customers.</li>
             <li><strong>Introduce jewellery.</strong> Not as a push, but as a quiet presence. An invitation rather than a sales pitch.</li>
           </ol>
         </div>
