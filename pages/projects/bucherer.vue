@@ -243,6 +243,11 @@
           <div class="atc-stats">
             <div class="atc-split-tiles">
               <div class="atc-stat">
+                <span class="atc-stat-num">52.0K</span>
+                <span class="atc-stat-label">Downloads</span>
+                <span class="atc-stat-sub">+7.3% month-over-month</span>
+              </div>
+              <div class="atc-stat">
                 <span class="atc-stat-num">26.1K</span>
                 <span class="atc-stat-label">Watches added to collections</span>
                 <span class="atc-stat-sub">45.3% of users added watches in app</span>
@@ -274,6 +279,11 @@
           </div>
 
           <p class="atc-stats-note">Metrics reflect May 2026.</p>
+        </div>
+
+        <div class="atc-next-steps">
+          <span class="atc-intro-label">Next Steps</span>
+          <p class="body-copy">What I'd improve now, with AI far more capable and accessible than it was at the time, is agentic image recognition: letting a collector simply photograph their piece and have the app identify it automatically, pulling in the information without a single search or manual entry. It would remove the last real friction point in the adding flow, turning the least glamorous part of onboarding a piece into something as effortless as taking a photo.</p>
         </div>
 
       </section>
@@ -901,6 +911,20 @@ main {
   padding-top: clamp(32px, 4vw, 48px);
 }
 
+.atc-next-steps {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 3vw, 36px);
+  border-top: 1px solid rgba(11, 12, 11, 0.12);
+  padding-top: clamp(32px, 4vw, 48px);
+  margin-top: clamp(36px, 4vw, 52px);
+}
+
+.atc-next-steps .body-copy {
+  max-width: 72ch;
+  margin-bottom: 0;
+}
+
 .atc-questions-lead {
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: clamp(14px, 1vw, 16px);
@@ -1307,7 +1331,7 @@ main {
 
 .atc-split-tiles {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: rgba(11, 12, 11, 0.1);
 }

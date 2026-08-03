@@ -50,7 +50,8 @@
       "Bash(sed -i '' 's/<img data-pin-nopin=\"true\" /<img /g' /Users/kraljica/Desktop/portfolio-website/pages/projects/bucherer.vue)",
       "Bash(sed -i '' 's/<img /<img data-pin-nopin=\"true\" /g' /Users/kraljica/Desktop/portfolio-website/pages/projects/bucherer.vue)",
       "Bash(git add *)",
-      "Bash(git commit -q -m ' *)"
+      "Bash(git commit -q -m ' *)",
+      "Bash(grep -n \"^\\\\.atc-objective,\\\\|^\\\\.atc-challenge {\" -A10 /Users/kraljica/Desktop/portfolio-website/pages/projects/bucherer.vue)"
     ]
   },
   "hooks": {
